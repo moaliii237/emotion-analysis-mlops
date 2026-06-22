@@ -1,0 +1,102 @@
+name: Model Training Pipeline
+
+on:
+  schedule:
+    - cron: '0 8 * * 1'  # every Monday 08:00 UTC
+  workflow_dispatch:
+    inputs:
+      epochs:
+        description: "Number of training epochs"
+        required: false
+        default: "3"
+      batch_size:
+        description: "Training batch size"
+        required: false
+        default: "16"
+      learning_rate:
+        description: "Learning rate"
+        required: false
+        default: "2e-5"
+      deployment_name:
+        description: "Deployment name (blue or green)"
+        required: false
+        default: "green"
+        type: choice
+        options:
+          - blue
+          - green
+
+permissions:
+  id-token: write
+  contents: read
+
+jobs:
+  train:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+          pip install -e .
+
+      - name: Azure login (OIDC)
+        uses: azure/login@v2
+        with:
+          client-id: ${{ vars.AZURE_CLIENT_ID }}
+          tenant-id: ${{ vars.AZURE_TENANT_ID }}
+          subscription-id: ${{ vars.AZURE_SUBSCRIPTION_ID }}
+
+      - name: Create config.json
+        run: |
+          echo '{
+            "subscription_id": "${{ vars.AZURE_SUBSCRIPTION_ID }}",
+            "resource_group": "${{ vars.AZURE_RESOURCE_GROUP }}",
+            "workspace_name": "${{ vars.AZURE_WORKSPACE_NAME }}"
+          }' > config.json
+
+      - name: Submit Azure ML training pipeline
+        env:
+          AZURE_SUBSCRIPTION_ID: ${{ vars.AZURE_SUBSCRIPTION_ID }}
+          AZURE_RESOURCE_GROUP: ${{ vars.AZURE_RESOURCE_GROUP }}
+          AZURE_WORKSPACE_NAME: ${{ vars.AZURE_WORKSPACE_NAME }}
+        run: |
+          PYTHONPATH=src python src/emotion_mlops/azure/pipeline.py \
+            --epochs ${{ inputs.epochs || '3' }} \
+            --batch-size ${{ inputs.batch_size || '16' }} \
+            --max-steps -1 \
+            --learning-rate ${{ inputs.learning_rate || '2e-5' }} \
+            --display-name "scheduled-train-$(date +%Y%m%d)"
+
+      - name: Register best model
+        env:
+          AZURE_SUBSCRIPTION_ID: ${{ vars.AZURE_SUBSCRIPTION_ID }}
+          AZURE_RESOURCE_GROUP: ${{ vars.AZURE_RESOURCE_GROUP }}
+          AZURE_WORKSPACE_NAME: ${{ vars.AZURE_WORKSPACE_NAME }}
+        run: |
+          PYTHONPATH=src python src/emotion_mlops/azure/register_best.py
+
+      - name: Deploy registered model
+        env:
+          AZURE_SUBSCRIPTION_ID: ${{ vars.AZURE_SUBSCRIPTION_ID }}
+          AZURE_RESOURCE_GROUP: ${{ vars.AZURE_RESOURCE_GROUP }}
+          AZURE_WORKSPACE_NAME: ${{ vars.AZURE_WORKSPACE_NAME }}
+        run: |
+          PYTHONPATH=src python src/emotion_mlops/azure/deploy_endpoint.py \
+            --deployment-name ${{ inputs.deployment_name || 'green' }}
+
+      - name: Print summary
+        if: always()
+        run: |
+          echo "## Model Training Summary" >> $GITHUB_STEP_SUMMARY
+          echo "- Epochs: ${{ inputs.epochs || '3' }}" >> $GITHUB_STEP_SUMMARY
+          echo "- Batch size: ${{ inputs.batch_size || '16' }}" >> $GITHUB_STEP_SUMMARY
+          echo "- Learning rate: ${{ inputs.learning_rate || '2e-5' }}" >> $GITHUB_STEP_SUMMARY
+          echo "- Deployment: ${{ inputs.deployment_name || 'green' }}" >> $GITHUB_STEP_SUMMARY
+          echo "- Status: ${{ job.status }}" >> $GITHUB_STEP_SUMMARY

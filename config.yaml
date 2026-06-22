@@ -1,0 +1,6 @@
+device: "cpu"                         # or "cuda"
+whisper_model: "base"                 # tiny / base / small / medium / large
+mt_nl_en_model: "Helsinki-NLP/opus-mt-en-nl"
+best_model_dir: "./models"      # folder of the fine-tuned emotion classifier
+batch_size: 8
+max_length: 192

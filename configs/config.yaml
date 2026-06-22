@@ -1,0 +1,6 @@
+device: cpu
+whisper_model: base
+mt_en_nl_model: Helsinki-NLP/opus-mt-en-nl
+best_model_dir: models/best_model_v3
+batch_size: 16
+max_length: 192

@@ -1,0 +1,22 @@
+name: Validate Branch Name
+
+on:
+  push:
+    branches-ignore: [main, develop]
+  pull_request:
+    branches: [main, develop]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check branch name
+        run: |
+          BRANCH="${GITHUB_HEAD_REF:-${GITHUB_REF#refs/heads/}}"
+          echo "Branch name: $BRANCH"
+          if [[ ! "$BRANCH" =~ ^(feature|fix|chore)/.+ ]]; then
+            echo "Branch '$BRANCH' does not follow naming convention."
+            echo "   Must start with: feature/, fix/, or chore/"
+            exit 1
+          fi
+          echo "Branch name is valid."

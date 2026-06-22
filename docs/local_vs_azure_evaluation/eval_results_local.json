@@ -1,0 +1,5 @@
+{
+  "f1": 0.09569992331038046,
+  "accuracy": 0.45380372328200413,
+  "report": "              precision    recall  f1-score   support\n\n       anger       0.00      0.00      0.00      1371\n     disgust       0.00      0.00      0.00        93\n        fear       0.00      0.00      0.00       119\n   happiness       0.45      1.00      0.62      3896\n     neutral       0.63      0.02      0.05      2415\n     sadness       0.00      0.00      0.00       424\n    surprise       0.00      0.00      0.00       384\n\n    accuracy                           0.45      8702\n   macro avg       0.15      0.15      0.10      8702\nweighted avg       0.38      0.45      0.29      8702\n"
+}

@@ -1,0 +1,3 @@
+[console_scripts]
+emotion-pipeline = emotion_mlops.cli.infer:main
+emotionscope = emotion_mlops.cli.main:main

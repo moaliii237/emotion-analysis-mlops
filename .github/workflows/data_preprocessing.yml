@@ -1,0 +1,74 @@
+name: Data Preprocessing Pipeline
+
+on:
+  workflow_dispatch:
+    inputs:
+      input_file:
+        description: "Input CSV file path"
+        required: false
+        default: "data/raw/goemotions_collapsed_majority.csv"
+      output_dir:
+        description: "Output directory"
+        required: false
+        default: "data/processed/"
+
+permissions:
+  id-token: write
+  contents: read
+
+jobs:
+  preprocess:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+          pip install -e .
+
+      - name: Azure login (OIDC)
+        uses: azure/login@v2
+        with:
+          client-id: ${{ vars.AZURE_CLIENT_ID }}
+          tenant-id: ${{ vars.AZURE_TENANT_ID }}
+          subscription-id: ${{ vars.AZURE_SUBSCRIPTION_ID }}
+
+      - name: Create config.json
+        run: |
+          echo '{
+            "subscription_id": "${{ vars.AZURE_SUBSCRIPTION_ID }}",
+            "resource_group": "${{ vars.AZURE_RESOURCE_GROUP }}",
+            "workspace_name": "${{ vars.AZURE_WORKSPACE_NAME }}"
+          }' > config.json
+
+      - name: Run data preprocessing
+        env:
+          AZURE_SUBSCRIPTION_ID: ${{ vars.AZURE_SUBSCRIPTION_ID }}
+          AZURE_RESOURCE_GROUP: ${{ vars.AZURE_RESOURCE_GROUP }}
+          AZURE_WORKSPACE_NAME: ${{ vars.AZURE_WORKSPACE_NAME }}
+        run: |
+          PYTHONPATH=src python -m emotion_mlops.data.data_preprocessing \
+            --input ${{ inputs.input_file }} \
+            --output ${{ inputs.output_dir }}
+
+      - name: Upload data asset to Azure ML
+        env:
+          AZURE_SUBSCRIPTION_ID: ${{ vars.AZURE_SUBSCRIPTION_ID }}
+          AZURE_RESOURCE_GROUP: ${{ vars.AZURE_RESOURCE_GROUP }}
+          AZURE_WORKSPACE_NAME: ${{ vars.AZURE_WORKSPACE_NAME }}
+        run: |
+          PYTHONPATH=src python src/emotion_mlops/azure/data_assets.py
+
+      - name: Print summary
+        if: always()
+        run: |
+          echo "## Data Preprocessing Summary" >> $GITHUB_STEP_SUMMARY
+          echo "- Input: ${{ inputs.input_file }}" >> $GITHUB_STEP_SUMMARY
+          echo "- Output: ${{ inputs.output_dir }}" >> $GITHUB_STEP_SUMMARY
+          echo "- Status: ${{ job.status }}" >> $GITHUB_STEP_SUMMARY

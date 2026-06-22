@@ -1,0 +1,1432 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EmotionScope, Content Intelligence</title>
+  <meta name="description" content="AI-powered emotion analysis for TV, podcast and video content." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700;800;900&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+
+  <link rel="stylesheet" href="/static/app.css" />
+  <link rel="icon" type="image/png" href="/static/logo.png" />
+</head>
+<body>
+
+  <!-- ===================== TOP NAV ===================== -->
+  <header class="topnav">
+    <div class="topnav-inner">
+      <a href="#home" class="brand" data-route="home">
+          <img src="/static/logo.png" alt="EmotionScope" class="brand-img" />
+          <span class="brand-name">EmotionScope</span>
+        </a>
+      <nav class="topnav-links">
+        <a href="#home"        class="topnav-link" data-route="home">Home</a>
+        <a href="#analyse"     class="topnav-link" data-route="analyse">Analyse</a>
+        <a href="#compare"     class="topnav-link" data-route="compare">Compare</a>
+        <a href="#history"     class="topnav-link" data-route="history">History</a>
+        <a href="#about"       class="topnav-link" data-route="about">About</a>
+        <div class="topnav-dropdown">
+          <button class="topnav-link">Features ▾</button>
+          <div class="topnav-menu">
+          <div class="topnav-menu-inner">
+            <a href="#cast"       data-route="cast">Cast</a>
+            <a href="#timeline"   data-route="timeline">Timeline</a>
+            <a href="#scenes"     data-route="scenes">Scenes</a>
+            <a href="#trailer"    data-route="trailer">Trailer</a>
+            <a href="#score"      data-route="score">Score</a>
+            <a href="#shifts"     data-route="shifts">Shifts</a>
+            <a href="#persuasion" data-route="persuasion">Persuasion</a>
+            <a href="#dashboard"  data-route="dashboard">Monitor</a>
+          </div>
+        </div>
+        </div>
+      </nav>
+
+      <div class="topnav-right">
+        <div class="status-card" id="navStatus" data-state="connecting">
+          <span class="status-dot"></span>
+          <span class="status-value" id="navStatusText">connecting…</span>
+        </div>
+        <a href="/docs" target="_blank" rel="noopener" class="topnav-link topnav-link--api">
+          API ↗
+        </a>
+      </div>
+
+      <button class="burger" id="burger" aria-label="Menu">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===================== MAIN ===================== -->
+  <main class="main">
+
+    <!-- ============ PAGE: HOME ============ -->
+    <section class="page page--home" data-page="home" id="page-home">
+
+      <!-- Ribbon -->
+      <div class="ribbon">
+        <span class="ribbon-pill">Live</span>
+        <span>8 features · 13 endpoints · Powered by Groq AI</span>
+        <a href="#analyse" data-route="analyse" class="ribbon-cta">Try it now -></a>
+      </div>
+
+      <!-- HERO -->
+      <section class="hero">
+        <div class="hero-grid" aria-hidden="true"></div>
+
+        <h1 class="hero-title">
+          <span class="hero-word hero-word--1">Read</span>
+          <span class="hero-word hero-word--2">every</span>
+          <span class="hero-word hero-word--3">emotion</span><br>
+          <span class="hero-word hero-word--4">in</span>
+          <span class="hero-word hero-word--5">your</span>
+          <span class="hero-word hero-word--6">content.</span>
+        </h1>
+
+        <p class="hero-sub">
+          EmotionScope is a content-intelligence backend that tells you who's in your show, where the energy peaks, what audience it fits, and how it stacks up against another piece of content, all powered by AI.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#analyse" class="btn btn--primary" data-route="analyse">
+            <span class="btn-logo">▲</span>
+            Start analysing
+          </a>
+          <a href="#compare" class="btn btn--ghost" data-route="compare">Compare two shows</a>
+        </div>
+
+        <div class="hero-prism" aria-hidden="true">
+          <div class="halo">
+            <div class="halo-blue"></div>
+            <div class="halo-green"></div>
+            <div class="halo-yellow"></div>
+            <div class="halo-red"></div>
+            <div class="halo-violet"></div>
+          </div>
+
+          <svg class="prism" viewBox="0 0 320 280" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="prism-face" x1="50%" y1="0%" x2="50%" y2="100%">
+                <stop offset="0%" stop-color="#ffffff" stop-opacity="1"/>
+                <stop offset="100%" stop-color="#888888" stop-opacity="0.85"/>
+              </linearGradient>
+              <linearGradient id="prism-right" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#cccccc" stop-opacity="1"/>
+                <stop offset="100%" stop-color="#555555" stop-opacity="1"/>
+              </linearGradient>
+              <linearGradient id="prism-left" x1="100%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" stop-color="#bbbbbb" stop-opacity="1"/>
+                <stop offset="100%" stop-color="#444444" stop-opacity="1"/>
+              </linearGradient>
+              <pattern id="prism-lines" x="0" y="0" width="2" height="2" patternUnits="userSpaceOnUse">
+                <rect width="2" height="0.5" fill="rgba(0,0,0,0.55)"/>
+              </pattern>
+            </defs>
+            <polygon points="160,30 30,260 160,260" fill="url(#prism-left)"/>
+            <polygon points="160,30 290,260 160,260" fill="url(#prism-right)"/>
+            <polygon points="160,30 30,260 290,260" fill="url(#prism-face)" opacity="0.4"/>
+            <polygon points="160,30 30,260 290,260" fill="url(#prism-lines)" opacity="0.85"/>
+            <polygon points="160,30 30,260 160,260" fill="url(#prism-lines)" opacity="0.6"/>
+            <polygon points="160,30 290,260 160,260" fill="url(#prism-lines)" opacity="0.6"/>
+          </svg>
+        </div>
+      </section>
+
+      <!-- STATS -->
+       <!-- MARQUEE -->
+      <section class="marquee-section" aria-hidden="true">
+        <div class="marquee-label">Now analysing</div>
+        <div class="marquee">
+          <div class="marquee-track">
+            <span class="marquee-item">Drama scripts</span>
+            <span class="marquee-dot">●</span>
+            <span class="marquee-item">Bake-Off finales</span>
+            <span class="marquee-dot">●</span>
+            <span class="marquee-item">Press conferences</span>
+            <span class="marquee-dot">●</span>
+            <span class="marquee-item">Podcast interviews</span>
+            <span class="marquee-dot">●</span>
+            <span class="marquee-item">Reality TV</span>
+            <span class="marquee-dot">●</span>
+            <span class="marquee-item">TED talks</span>
+            <span class="marquee-dot">●</span>
+            <span class="marquee-item">Shakespeare plays</span>
+            <span class="marquee-dot">●</span>
+            <span class="marquee-item">Political debates</span>
+            <span class="marquee-dot">●</span>
+            <span class="marquee-item">News broadcasts</span>
+            <span class="marquee-dot">●</span>
+            <span class="marquee-item">Documentary films</span>
+            <span class="marquee-dot">●</span>
+            <!-- Duplicate for seamless loop -->
+            <span class="marquee-item">Drama scripts</span>
+            <span class="marquee-dot">●</span>
+            <span class="marquee-item">Bake-Off finales</span>
+            <span class="marquee-dot">●</span>
+            <span class="marquee-item">Press conferences</span>
+            <span class="marquee-dot">●</span>
+            <span class="marquee-item">Podcast interviews</span>
+            <span class="marquee-dot">●</span>
+            <span class="marquee-item">Reality TV</span>
+            <span class="marquee-dot">●</span>
+            <span class="marquee-item">TED talks</span>
+            <span class="marquee-dot">●</span>
+            <span class="marquee-item">Shakespeare plays</span>
+            <span class="marquee-dot">●</span>
+            <span class="marquee-item">Political debates</span>
+            <span class="marquee-dot">●</span>
+            <span class="marquee-item">News broadcasts</span>
+            <span class="marquee-dot">●</span>
+            <span class="marquee-item">Documentary films</span>
+            <span class="marquee-dot">●</span>
+          </div>
+        </div>
+      </section>
+      <section class="stats">
+        <div class="stat">
+          <span class="stat-num">8</span>
+          <span class="stat-label">production features</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">13</span>
+          <span class="stat-label">REST endpoints</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">5</span>
+          <span class="stat-label">AI-generated outputs</span>
+        </div>
+        <div class="stat stat--note">
+          <p>Built on top of the existing Whisper -> MarianMT -> DeBERTa pipeline. Adds spaCy NER for character detection and Groq LLM for narrative summaries.</p>
+        </div>
+      </section>
+
+      <!-- TAB GROUP -->
+      <section class="tabgroup">
+        <div class="tabgroup-tabs" id="tabGroupTabs">
+          <button class="tabgroup-tab is-active" data-tab="film">Film &amp; TV</button>
+          <button class="tabgroup-tab" data-tab="podcast">Podcasts</button>
+          <button class="tabgroup-tab" data-tab="news">News &amp; politics</button>
+          <button class="tabgroup-tab" data-tab="reality">Reality TV</button>
+        </div>
+        <div class="tabgroup-cta">
+          <a href="#analyse" class="btn btn--primary btn--sm" data-route="analyse">
+            <span class="btn-logo">▲</span>
+            <span id="tabCtaText">Analyse a TV episode in seconds</span>
+          </a>
+        </div>
+      </section>
+
+      <!-- FEATURE ROW 1, Big card -->
+      <section class="featuresrow">
+        <a href="#analyse" class="feature feature--big" data-route="analyse">
+          <h3>Your show,<br>read instantly.</h3>
+          <p class="feature-desc">Pipeline-grade analysis on any audio, video, transcript or text input. Detects characters, builds an emotion timeline, picks trailer clips and scores the content, all in one call.</p>
+          <span class="feature-arrow">-></span>
+          <div class="feature-mock feature-mock--analyse">
+            <div class="mock-bar"><span class="mock-dot mock-dot--r"></span><span class="mock-dot mock-dot--y"></span><span class="mock-dot mock-dot--g"></span></div>
+            <div class="mock-body">
+              <div class="mock-line mock-line--cyan" style="width: 80%;"></div>
+              <div class="mock-line" style="width: 65%;"></div>
+              <div class="mock-line" style="width: 90%;"></div>
+              <div class="mock-line mock-line--pink" style="width: 50%;"></div>
+            </div>
+          </div>
+        </a>
+      </section>
+
+      <!-- FEATURE ROW 2, 3 cards -->
+      <section class="featuresrow">
+        <a href="#cast" class="feature" data-route="cast">
+          <h3>Cast detection.</h3>
+          <p class="feature-desc">spaCy NER finds the characters; DeBERTa profiles their emotions and assigns an archetype.</p>
+          <span class="feature-arrow">-></span>
+          <div class="feature-mock feature-mock--cast">
+            <div class="mock-cast"><span class="mock-avatar mock-avatar--blue">T</span><span>Trump · Antagonist</span></div>
+            <div class="mock-cast"><span class="mock-avatar mock-avatar--green">B</span><span>Biden · Hero</span></div>
+            <div class="mock-cast"><span class="mock-avatar mock-avatar--yellow">M</span><span>Mary Berry · Comic Relief</span></div>
+          </div>
+        </a>
+
+        <a href="#compare" class="feature" data-route="compare">
+          <h3>Compare mode.</h3>
+          <p class="feature-desc">Drop two pieces of content. Get AI-generated titles, winner badges, and a similarity score.</p>
+          <span class="feature-arrow">-></span>
+          <div class="feature-mock feature-mock--compare">
+            <div class="mock-vs">
+              <div class="mock-vs-left"><span class="mock-bar-blue"></span></div>
+              <div class="mock-vs-mid">VS</div>
+              <div class="mock-vs-right"><span class="mock-bar-pink"></span></div>
+            </div>
+            <div class="mock-pills">
+              <span class="mock-pill mock-pill--blue">87% similar</span>
+              <span class="mock-pill mock-pill--pink">2 winners</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="#timeline" class="feature" data-route="timeline">
+          <h3>Timeline.</h3>
+          <p class="feature-desc">Time-series of emotion intensity with peak detection. Hover any second to read the line that was spoken.</p>
+          <span class="feature-arrow">-></span>
+          <svg class="feature-spark" viewBox="0 0 120 36" preserveAspectRatio="none">
+            <polyline points="0,28 12,20 24,24 36,10 48,18 60,6 72,22 84,14 96,8 108,16 120,12" fill="none" stroke="#10b981" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </a>
+      </section>
+
+      <!-- FEATURE ROW 3, 3 cards -->
+      <section class="featuresrow">
+        <a href="#scenes" class="feature" data-route="scenes">
+          <h3>Scenes.</h3>
+          <p class="feature-desc">Auto-detects scene boundaries by tracking emotional shifts. Each scene gets an AI title.</p>
+          <span class="feature-arrow">-></span>
+          <div class="feature-scenes">
+            <span class="scene-pill scene-pill--red">Tension</span>
+            <span class="scene-pill scene-pill--yellow">Comic</span>
+            <span class="scene-pill scene-pill--orange">Climax</span>
+          </div>
+        </a>
+
+        <a href="#trailer" class="feature" data-route="trailer">
+          <h3>Trailer cuts.</h3>
+          <p class="feature-desc">Picks the best 30 seconds across scenes, mood-diverse and AI-tagged.</p>
+          <span class="feature-arrow">-></span>
+          <div class="feature-trailer">
+            <div class="trailer-frame trailer-frame--1"></div>
+            <div class="trailer-frame trailer-frame--2"></div>
+            <div class="trailer-frame trailer-frame--3"></div>
+          </div>
+        </a>
+
+        <a href="#score" class="feature" data-route="score">
+          <h3>Content score.</h3>
+          <p class="feature-desc">Producer scorecard: drama, comedy, intensity, pacing, plus letter grade and target audience.</p>
+          <span class="feature-arrow">-></span>
+          <div class="feature-grade">A+</div>
+        </a>
+      </section>
+
+      <!-- FEATURE ROW 4, 3 cards -->
+      <section class="featuresrow">
+        <a href="#shifts" class="feature" data-route="shifts">
+          <h3>Emotion shifts.</h3>
+          <p class="feature-desc">Sharp turning points across the transcript. Useful for spotting plot beats.</p>
+          <span class="feature-arrow">-></span>
+          <div class="feature-shifts">
+            <span class="shift-tag shift-tag--happy">happy</span>
+            <span class="shift-arr">-></span>
+            <span class="shift-tag shift-tag--angry">anger</span>
+          </div>
+        </a>
+
+        <a href="#persuasion" class="feature" data-route="persuasion">
+          <h3>Persuasion.</h3>
+          <p class="feature-desc">Measures rhetorical strength, emotional appeal, consistency and variety. AI writes the verdict.</p>
+          <span class="feature-arrow">-></span>
+          <div class="feature-meter">
+            <div class="meter-track"><div class="meter-fill" style="width: 87%;"></div></div>
+            <span class="meter-val">0.87 · Very High</span>
+          </div>
+        </a>
+
+        <a href="/docs" target="_blank" rel="noopener" class="feature">
+          <h3>API ↗</h3>
+          <p class="feature-desc">Every feature has a REST endpoint with Swagger docs. Try it directly from the browser.</p>
+          <span class="feature-arrow">-></span>
+          <div class="feature-mock" style="padding: 14px; font-family: var(--font-mono); font-size: 11px; color: var(--text-muted);">
+            <div>POST /predict/pipeline</div>
+            <div>POST /predict/cast</div>
+            <div>POST /compare</div>
+            <div>GET  /health</div>
+          </div>
+        </a>
+      </section>
+
+      <!-- PIPELINE -->
+      <section class="pipeline">
+        <div class="pipeline-head">
+          <h2 class="section-h">From any input to actionable insight.</h2>
+          <p class="section-sub">Audio, transcripts and YouTube URLs all flow through the same pipeline and feed every feature.</p>
+        </div>
+
+        <div class="pipeline-graph">
+          <div class="pipe-col">
+            <div class="pipe-label">INPUTS</div>
+            <div class="pipe-node">.mp3 / .wav</div>
+            <div class="pipe-node">.mp4 / .webm</div>
+            <div class="pipe-node">.csv transcript</div>
+            <div class="pipe-node">YouTube URL</div>
+            <div class="pipe-node">Raw text</div>
+          </div>
+
+          <div class="pipe-arrow">-></div>
+
+          <div class="pipe-col">
+            <div class="pipe-label">MODELS</div>
+            <div class="pipe-node pipe-node--blue">Whisper · speech-to-text</div>
+            <div class="pipe-node pipe-node--green">MarianMT · EN->NL</div>
+            <div class="pipe-node pipe-node--yellow">DeBERTa · 7 emotions</div>
+            <div class="pipe-node pipe-node--orange">spaCy · NER</div>
+            <div class="pipe-node pipe-node--red">Groq Llama · narrative</div>
+          </div>
+
+          <div class="pipe-arrow">-></div>
+
+          <div class="pipe-col">
+            <div class="pipe-label">OUTPUTS</div>
+            <div class="pipe-node">Cast + archetypes</div>
+            <div class="pipe-node">Timeline + peaks</div>
+            <div class="pipe-node">Scenes + AI titles</div>
+            <div class="pipe-node">Trailer + taglines</div>
+            <div class="pipe-node">Score + grade</div>
+            <div class="pipe-node">Shifts + magnitudes</div>
+            <div class="pipe-node">Persuasion + verdict</div>
+            <div class="pipe-node">Compare + winners</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TEMPLATES -->
+      <section class="templates">
+        <div class="templates-head">
+          <h2 class="section-h">Try with a sample.</h2>
+          <p class="section-sub">Pre-loaded scripts so you can see the output instantly, with no upload.</p>
+        </div>
+
+        <div class="templates-grid">
+          <button class="template" data-demo="trump">
+            <div class="template-icon">📰</div>
+            <h4>Press conference</h4>
+            <p>Donald Trump · anger-heavy political clip</p>
+          </button>
+          <button class="template" data-demo="bake">
+            <div class="template-icon">🍰</div>
+            <h4>Bake-Off finale</h4>
+            <p>Mary Berry · joyful reality competition</p>
+          </button>
+          <button class="template" data-demo="bigbrother">
+            <div class="template-icon">📺</div>
+            <h4>Big Brother</h4>
+            <p>Mixed-emotion reality moment</p>
+          </button>
+          <button class="template" data-demo="podcast">
+            <div class="template-icon">🎙️</div>
+            <h4>Podcast interview</h4>
+            <p>Calm conversation, low intensity</p>
+          </button>
+        </div>
+      </section>
+
+      <!-- BOTTOM CTA -->
+      <section class="bottomcta">
+        <a href="#analyse" class="btn btn--cta" data-route="analyse">
+          Start analysing
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="/docs" target="_blank" rel="noopener" class="btn btn--ghost">API documentation ↗</a>
+      </section>
+
+      <!-- FOOTER -->
+      <footer class="footer">
+        <div class="footer-col">
+          <div class="footer-head">Features</div>
+          <a href="#analyse" data-route="analyse">Analyse</a>
+          <a href="#cast" data-route="cast">Cast</a>
+          <a href="#compare" data-route="compare">Compare</a>
+          <a href="#timeline" data-route="timeline">Timeline</a>
+        </div>
+        <div class="footer-col">
+          <div class="footer-head">Story</div>
+          <a href="#scenes" data-route="scenes">Scenes</a>
+          <a href="#trailer" data-route="trailer">Trailer</a>
+          <a href="#score" data-route="score">Score</a>
+          <a href="#shifts" data-route="shifts">Shifts</a>
+          <a href="#persuasion" data-route="persuasion">Persuasion</a>
+        </div>
+        <div class="footer-col">
+          <div class="footer-head">API</div>
+          <a href="/docs" target="_blank" rel="noopener">Swagger UI</a>
+          <a href="/health" target="_blank" rel="noopener">Health</a>
+          <a href="/feedback/stats" target="_blank" rel="noopener">Feedback stats</a>
+        </div>
+        <div class="footer-col">
+          <div class="footer-head">About</div>
+          <a href="#history" data-route="history">History</a>
+          <span class="footer-meta">Block D · Sprint 4</span>
+          <span class="footer-meta">BUas · NLP Group 1</span>
+          <span class="footer-meta">Made by NLP Group 1</span>
+        </div>
+      </footer>
+    </section>
+
+    <!-- ============ PLACEHOLDER PAGES ============ -->
+   <section class="page page--analyse" data-page="analyse" id="page-analyse" hidden>
+      <div class="page-head">
+        <h2 class="page-title">Analyse</h2>
+        <p class="page-sub">Choose an input type to begin. We'll run all 8 features in one pass.</p>
+      </div>
+
+      <!-- ===== INPUT PANEL ===== -->
+      <div class="input-panel">
+
+        <!-- Input type tabs -->
+        <div class="input-tabs" role="tablist">
+          <button class="input-tab is-active" data-tab="text">
+            <span class="input-tab-icon">📝</span>
+            <span>Text</span>
+          </button>
+          <button class="input-tab" data-tab="audio">
+            <span class="input-tab-icon">🎙️</span>
+            <span>Audio / Video</span>
+          </button>
+          <button class="input-tab" data-tab="csv">
+            <span class="input-tab-icon">📊</span>
+            <span>Transcript CSV</span>
+          </button>
+          <button class="input-tab" data-tab="youtube">
+            <span class="input-tab-icon">▶</span>
+            <span>YouTube</span>
+          </button>
+        </div>
+
+        <!-- Tab bodies -->
+        <div class="input-bodies">
+          <!-- TEXT -->
+          <div class="input-body is-active" data-body="text">
+            <textarea class="input-textarea" id="analyseText" maxlength="1000" placeholder="Paste your transcript, script, or any text here…&#10;&#10;Example: Trump shouted angrily at the journalists. Mary Berry laughed warmly at the contestants. Biden calmly responded to the questions."></textarea>
+            <div class="input-meta">
+              <div class="input-emotion-buttons">
+                <span class="input-quick-label">Quick test:</span>
+                <button class="quick-btn" data-quick="surprise">😲 Surprise</button>
+                <button class="quick-btn" data-quick="happiness">😄 Happiness</button>
+                <button class="quick-btn" data-quick="sadness">😢 Sadness</button>
+                <button class="quick-btn" data-quick="anger">😡 Anger</button>
+              </div>
+              <span class="input-counter" id="analyseCounter">0 / 1000</span>
+            </div>
+          </div>
+
+          <!-- AUDIO / VIDEO -->
+          <div class="input-body" data-body="audio">
+            <label class="input-drop">
+              <input type="file" accept="audio/*,video/*" id="analyseAudioFile" hidden />
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 3v12M7 8l5-5 5 5M5 21h14"/></svg>
+              <strong>Click to upload</strong>
+              <span class="input-drop-hint">.mp3, .wav, .mp4, .webm (max ~5 min for fast demo)</span>
+              <span class="input-drop-file" id="analyseAudioName"></span>
+            </label>
+            <!-- Whisper model size selector -->
+          <div class="whisper-config" style="margin-top: 16px;">
+            <label for="whisper-model-audio" style="display:block; margin-bottom:6px; font-size:0.85rem; color:var(--text-muted);">
+              Whisper model · speed vs accuracy
+            </label>
+            <select id="whisper-model-audio" class="input-select" style="width: 100%; padding: 10px 12px; background: var(--bg-2, #1a1a1a); color: var(--text, #fff); border: 1px solid var(--border, #2a2a2a); border-radius: 8px; font-family: inherit; cursor: pointer;">
+              <option value="tiny">⚡ Tiny, Fastest (39 MB)</option>
+              <option value="base" selected>⚖️ Base, Balanced (74 MB)</option>
+              <option value="small">🎯 Small, Better accuracy (244 MB)</option>
+              <option value="medium">🔥 Medium, High quality (769 MB)</option>
+              <option value="large">💎 Large, Best (1.5 GB)</option>
+            </select>
+          </div>
+          </div>
+
+          <!-- CSV -->
+          <div class="input-body" data-body="csv">
+            <label class="input-drop">
+              <input type="file" accept=".csv,.tsv,text/csv" id="analyseCsvFile" hidden />
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 7h18M3 12h18M3 17h18M7 3v18M17 3v18"/></svg>
+              <strong>Upload CSV transcript</strong>
+              <span class="input-drop-hint">Must have Sentence/Text/Utterance column</span>
+              <span class="input-drop-file" id="analyseCsvName"></span>
+            </label>
+          </div>
+
+          <!-- YOUTUBE -->
+          <div class="input-body" data-body="youtube">
+            <input type="url" class="input-url" id="analyseYouTube" placeholder="https://www.youtube.com/watch?v=…" />
+            <span class="input-drop-hint" style="margin-top: 10px; display: block;">Short clips work best (under 2 min keeps the demo fast).</span>
+            <!-- Whisper model size selector -->
+          <div class="whisper-config" style="margin-top: 16px;">
+            <label for="whisper-model-youtube" style="display:block; margin-bottom:6px; font-size:0.85rem; color:var(--text-muted);">
+              Whisper model · speed vs accuracy
+            </label>
+            <select id="whisper-model-youtube" class="input-select" style="width: 100%; padding: 10px 12px; background: var(--bg-2, #1a1a1a); color: var(--text, #fff); border: 1px solid var(--border, #2a2a2a); border-radius: 8px; font-family: inherit; cursor: pointer;">
+              <option value="tiny">⚡ Tiny, Fastest (39 MB)</option>
+              <option value="base" selected>⚖️ Base, Balanced (74 MB)</option>
+              <option value="small">🎯 Small, Better accuracy (244 MB)</option>
+              <option value="medium">🔥 Medium, High quality (769 MB)</option>
+              <option value="large">💎 Large, Best (1.5 GB)</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Actions -->
+        <div class="input-actions">
+          <button class="btn btn--ghost btn--sm" id="btnRandomSample">🎲 Random sample</button>
+          <button class="btn btn--primary" id="btnAnalyse">
+            <span class="btn-logo">▲</span>
+            Analyse
+          </button>
+        </div>
+
+        <div class="input-status" id="analyseStatus"></div>
+      </div>
+      </div> <!-- /input-panel -->
+
+      <!-- ===== RESULTS DASHBOARD ===== -->
+      <!-- Hidden until a run completes; runAnalyse() reveals it. This wrapper
+           is also what app.js scrolls into view when the analysis is done. -->
+      <div class="results" id="analyseResults" hidden>
+
+      <!-- AI Verdict card -->
+            <div class="result-ai-verdict" id="resultAiVerdict" hidden>
+              <div class="result-ai-verdict-head">
+                <span class="result-ai-verdict-eyebrow">
+                  <span class="result-ai-spark">✨</span> AI Verdict
+                </span>
+                <span class="result-ai-verdict-badge" id="resultAiBadge">Groq · Llama 3.1</span>
+              </div>
+              <p class="result-ai-verdict-text" id="resultAiText">Generating verdict…</p>
+            </div>
+
+        <!-- Verdict header -->
+        <div class="result-verdict">
+          <div class="result-verdict-left">
+            <span class="result-eyebrow">Analysis complete</span>
+            <h3 class="result-title" id="resultTitle">-</h3>
+            <span class="result-meta" id="resultMeta">-</span>
+          </div>
+          <div class="result-verdict-right">
+            <div class="result-grade" id="resultGrade">-</div>
+            <span class="result-grade-label">Grade</span>
+          </div>
+        </div>
+
+        <!-- 2-col grid: radar + score -->
+        <div class="result-grid result-grid--2">
+          <div class="result-card">
+            <div class="result-card-head">
+              <span class="result-card-eyebrow">Emotional fingerprint</span>
+              <h4 class="result-card-title">7-emotion distribution</h4>
+            </div>
+            <div class="chart-wrap"><canvas id="analyseRadarChart"></canvas></div>
+          </div>
+
+          <div class="result-card">
+            <div class="result-card-head">
+              <span class="result-card-eyebrow">Content score</span>
+              <h4 class="result-card-title" id="resultClass">-</h4>
+              <p class="result-card-sub" id="resultAudience">-</p>
+            </div>
+            <div class="score-axes" id="resultScoreAxes"></div>
+          </div>
+        </div>
+
+        <!-- Timeline -->
+        <div class="result-card">
+          <div class="result-card-head">
+            <span class="result-card-eyebrow">Timeline</span>
+            <h4 class="result-card-title">Emotion intensity over time</h4>
+            <p class="result-card-sub">Hover any second to see what was said.</p>
+          </div>
+          <div class="chart-wrap chart-wrap--line"><canvas id="analyseTimelineChart"></canvas></div>
+        </div>
+
+        <!-- Cast + Persuasion -->
+        <div class="result-grid result-grid--2">
+          <div class="result-card">
+            <div class="result-card-head">
+              <span class="result-card-eyebrow">Cast</span>
+              <h4 class="result-card-title">Detected characters</h4>
+            </div>
+            <div class="cast-list" id="resultCast"></div>
+          </div>
+
+          <div class="result-card">
+            <div class="result-card-head">
+              <span class="result-card-eyebrow">Persuasion</span>
+              <h4 class="result-card-title" id="resultPersLevel">-</h4>
+            </div>
+            <div class="result-meter">
+              <div class="result-meter-track"><div class="result-meter-fill" id="resultPersFill"></div></div>
+              <span class="result-meter-num" id="resultPersNum">0%</span>
+            </div>
+            <p class="result-quote" id="resultPersText">-</p>
+          </div>
+        </div>
+
+        <!-- Scenes + Trailer -->
+        <div class="result-grid result-grid--2">
+          <div class="result-card">
+            <div class="result-card-head">
+              <span class="result-card-eyebrow">Scenes</span>
+              <h4 class="result-card-title">Story beats</h4>
+            </div>
+            <div class="scene-list" id="resultScenes"></div>
+          </div>
+
+          <div class="result-card">
+            <div class="result-card-head">
+              <span class="result-card-eyebrow">Trailer cuts</span>
+              <h4 class="result-card-title">Best moments</h4>
+            </div>
+            <div class="trailer-clips" id="resultClips"></div>
+          </div>
+        </div>
+
+        <!-- Shifts -->
+        <div class="result-card">
+          <div class="result-card-head">
+            <span class="result-card-eyebrow">Emotion shifts</span>
+            <h4 class="result-card-title">Turning points</h4>
+          </div>
+          <div class="shift-list" id="resultShifts"></div>
+        </div>
+
+        <!-- Segment-level feedback -->
+        <div class="result-card">
+          <div class="result-card-head">
+            <span class="result-card-eyebrow">Verify predictions</span>
+            <h4 class="result-card-title">Was the model right?</h4>
+            <p class="result-card-sub">Click 👍 or 👎 on any line. Disagreement feeds future retraining.</p>
+          </div>
+          <div class="segment-list" id="resultSegments"></div>
+        </div>
+
+        <!-- Ask the AI about this content (Groq Q&A over the transcript) -->
+        <div class="result-card" id="resultQa">
+          <div class="result-card-head">
+            <span class="result-card-eyebrow">Ask the AI</span>
+            <h4 class="result-card-title">Questions about this content?</h4>
+            <p class="result-card-sub">Ask anything about the video, audio or text you just analysed. Answers come straight from its transcript.</p>
+          </div>
+          <div class="qa-thread" id="qaThread"></div>
+          <div class="qa-input-row">
+            <input type="text" class="input-url qa-input" id="qaInput" maxlength="300"
+                   placeholder="e.g. What is this about? Who sounds the most angry?" />
+            <button class="btn btn--primary btn--sm" id="btnQa" type="button">Ask</button>
+          </div>
+          <div class="input-status" id="qaStatus"></div>
+        </div>
+      </div>
+    </section>
+    <!-- ============ PAGE: CAST ============ -->
+    <section class="page page--cast" data-page="cast" id="page-cast" hidden>
+      <div class="page-head">
+        <h2 class="page-title">Cast</h2>
+        <p class="page-sub">Detect named characters and profile their emotional archetype. Paste any text, script, transcript, novel excerpt.</p>
+      </div>
+
+      <div class="input-panel">
+        <div class="input-bodies">
+          <div class="input-body is-active">
+            <textarea class="input-textarea" id="castText" maxlength="3000" placeholder="Paste a script or transcript with named characters…&#10;&#10;Example: Hamlet stared at the ghost in terror. Claudius poured the poison while smiling. Ophelia sang sadly by the river. Polonius hid behind the curtain, nervous."></textarea>
+            <div class="input-meta">
+              <div class="input-emotion-buttons">
+                <span class="input-quick-label">Quick test:</span>
+                <button class="quick-btn" data-cast-quick="hamlet">🎭 Shakespeare</button>
+                <button class="quick-btn" data-cast-quick="press">📰 Press conference</button>
+                <button class="quick-btn" data-cast-quick="bake">🍰 Bake-Off</button>
+              </div>
+              <span class="input-counter" id="castCounter">0 / 3000</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="input-actions">
+          <button class="btn btn--primary" id="btnCast">
+            <span class="btn-logo">▲</span>
+            Detect cast
+          </button>
+        </div>
+
+        <div class="input-status" id="castStatus"></div>
+      </div>
+
+      <div class="results" id="castResults" hidden>
+        <div class="result-card">
+          <div class="result-card-head">
+            <span class="result-card-eyebrow">Cast</span>
+            <h4 class="result-card-title" id="castSummary">-</h4>
+          </div>
+          <div class="cast-grid" id="castGrid"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PAGE: COMPARE ============ -->
+    <section class="page page--compare" data-page="compare" id="page-compare" hidden>
+      <div class="page-head">
+        <h2 class="page-title">Compare</h2>
+        <p class="page-sub">Two sources, side-by-side. Drop in content on each side and get AI-named titles, winner badges, and a similarity score.</p>
+      </div>
+
+      <div class="twin">
+        <!-- LEFT -->
+        <div class="twin-panel twin-panel--left" data-side="left">
+          <div class="twin-head">
+            <span class="twin-channel">CH 01</span>
+            <input type="text" class="twin-label" placeholder="Name (or auto-name with AI)" data-field="label" />
+          </div>
+          <textarea class="input-textarea" data-field="text" placeholder="Paste content for side A…"></textarea>
+          <div class="twin-status" data-field="status"></div>
+        </div>
+
+        <div class="versus"><span>VS</span></div>
+
+        <!-- RIGHT -->
+        <div class="twin-panel twin-panel--right" data-side="right">
+          <div class="twin-head">
+            <span class="twin-channel">CH 02</span>
+            <input type="text" class="twin-label" placeholder="Name (or auto-name with AI)" data-field="label" />
+          </div>
+          <textarea class="input-textarea" data-field="text" placeholder="Paste content for side B…"></textarea>
+          <div class="twin-status" data-field="status"></div>
+        </div>
+      </div>
+
+      <div class="input-actions" style="justify-content: center; margin-top: 24px;">
+        <button class="btn btn--ghost btn--sm" id="btnCompareDemo">🎲 Try with sample data</button>
+        <button class="btn btn--primary" id="btnCompare">
+          <span class="btn-logo">▲</span>
+          Analyse both sides
+        </button>
+      </div>
+
+      <div class="input-status" id="compareStatus" style="text-align: center;"></div>
+
+      <!-- Results -->
+      <div class="results" id="compareResults" hidden style="margin-top: 32px;">
+
+        <div class="result-verdict compare-verdict">
+          <div class="compare-verdict-side compare-verdict-side--left">
+            <span class="result-eyebrow">CH 01</span>
+            <h3 class="result-title" id="cmpLeftName">-</h3>
+            <span class="result-meta" id="cmpLeftMeta">-</span>
+          </div>
+          <div class="compare-verdict-center">
+            <div class="compare-similarity">
+              <span class="compare-similarity-num" id="cmpSimilarity">-</span>
+              <span class="compare-similarity-lbl">similarity</span>
+            </div>
+          </div>
+          <div class="compare-verdict-side compare-verdict-side--right">
+            <span class="result-eyebrow">CH 02</span>
+            <h3 class="result-title" id="cmpRightName">-</h3>
+            <span class="result-meta" id="cmpRightMeta">-</span>
+          </div>
+        </div>
+
+        <div class="result-card">
+          <div class="result-card-head">
+            <span class="result-card-eyebrow">Winners</span>
+            <h4 class="result-card-title">Who wins on each axis</h4>
+          </div>
+          <div class="winners-grid" id="cmpWinners"></div>
+        </div>
+
+        <div class="result-grid result-grid--2">
+          <div class="result-card">
+            <div class="result-card-head">
+              <span class="result-card-eyebrow">Fingerprint</span>
+              <h4 class="result-card-title">Emotion distribution overlay</h4>
+            </div>
+            <div class="chart-wrap"><canvas id="cmpRadarChart"></canvas></div>
+          </div>
+          <div class="result-card">
+            <div class="result-card-head">
+              <span class="result-card-eyebrow">Deltas</span>
+              <h4 class="result-card-title">Positive = stronger on left</h4>
+            </div>
+            <div id="cmpDeltaBars" class="delta-bars"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PAGE: TIMELINE ============ -->
+    <section class="page page--timeline" data-page="timeline" id="page-timeline" hidden>
+      <div class="page-head">
+        <h2 class="page-title">Timeline</h2>
+        <p class="page-sub">See exactly when the emotional energy peaks. Hover any second to read what was said.</p>
+      </div>
+
+      <div class="input-panel">
+        <div class="input-bodies">
+          <div class="input-body is-active">
+            <textarea class="input-textarea" id="timelineText" maxlength="3000" placeholder="Paste a transcript or script with multiple sentences…&#10;&#10;Tip: longer passages create richer timelines."></textarea>
+            <div class="input-meta">
+              <div class="input-emotion-buttons">
+                <span class="input-quick-label">Quick test:</span>
+                <button class="quick-btn" data-tl-quick="trump">📰 Press</button>
+                <button class="quick-btn" data-tl-quick="bake">🍰 Bake-Off</button>
+                <button class="quick-btn" data-tl-quick="mixed">🎭 Mixed drama</button>
+              </div>
+              <span class="input-counter" id="timelineCounter">0 / 3000</span>
+            </div>
+          </div>
+        </div>
+        <div class="input-actions">
+          <button class="btn btn--primary" id="btnTimeline">
+            <span class="btn-logo">▲</span>
+            Build timeline
+          </button>
+        </div>
+        <div class="input-status" id="timelineStatus"></div>
+      </div>
+
+      <div class="results" id="timelineResults" hidden>
+        <div class="result-card">
+          <div class="result-card-head">
+            <span class="result-card-eyebrow">Emotional timeline</span>
+            <h4 class="result-card-title" id="timelineSummary">-</h4>
+          </div>
+          <div class="chart-wrap chart-wrap--line" style="height: 320px;">
+            <canvas id="timelineChart"></canvas>
+          </div>
+        </div>
+
+        <div class="result-card">
+          <div class="result-card-head">
+            <span class="result-card-eyebrow">Peaks</span>
+            <h4 class="result-card-title">Highest-intensity moments</h4>
+            <p class="result-card-sub">Top 5 sentences sorted by classifier confidence.</p>
+          </div>
+          <div class="peak-list" id="peakList"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PAGE: SCENES ============ -->
+    <section class="page page--scenes" data-page="scenes" id="page-scenes" hidden>
+      <div class="page-head">
+        <h2 class="page-title">Scenes</h2>
+        <p class="page-sub">Group consecutive sentences into emotional scenes. Each scene gets an AI-generated title.</p>
+      </div>
+
+      <div class="input-panel">
+        <div class="input-bodies">
+          <div class="input-body is-active">
+            <textarea class="input-textarea" id="scenesText" maxlength="3000" placeholder="Paste a transcript with at least 6-8 sentences for best results…"></textarea>
+            <div class="input-meta">
+              <div class="input-emotion-buttons">
+                <span class="input-quick-label">Quick test:</span>
+                <button class="quick-btn" data-sc-quick="drama">🎭 Drama</button>
+                <button class="quick-btn" data-sc-quick="news">📰 News</button>
+              </div>
+              <span class="input-counter" id="scenesCounter">0 / 3000</span>
+            </div>
+          </div>
+        </div>
+        <div class="input-actions">
+          <button class="btn btn--primary" id="btnScenes">
+            <span class="btn-logo">▲</span>
+            Detect scenes
+          </button>
+        </div>
+        <div class="input-status" id="scenesStatus"></div>
+      </div>
+
+      <div class="results" id="scenesResults" hidden>
+        <div class="result-card">
+          <div class="result-card-head">
+            <span class="result-card-eyebrow">Story flow</span>
+            <h4 class="result-card-title" id="scenesSummary">-</h4>
+          </div>
+          <div class="scene-strip" id="sceneStrip"></div>
+        </div>
+        <div class="result-card">
+          <div class="result-card-head">
+            <span class="result-card-eyebrow">Scene details</span>
+            <h4 class="result-card-title">Each scene, expanded</h4>
+          </div>
+          <div class="scene-cards" id="sceneCards"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PAGE: TRAILER ============ -->
+    <section class="page page--trailer" data-page="trailer" id="page-trailer" hidden>
+      <div class="page-head">
+        <h2 class="page-title">Trailer</h2>
+        <p class="page-sub">Pick the best 30 seconds. AI selects mood-diverse highlights and writes a tagline for each clip.</p>
+      </div>
+
+      <div class="input-panel">
+        <div class="input-bodies">
+          <div class="input-body is-active">
+            <textarea class="input-textarea" id="trailerText" maxlength="3000" placeholder="Paste a script or transcript, we'll detect scenes first, then pick highlights."></textarea>
+            <div class="input-meta">
+              <div class="input-emotion-buttons">
+                <span class="input-quick-label">Quick test:</span>
+                <button class="quick-btn" data-tr-quick="drama">🎬 Drama clip</button>
+                <button class="quick-btn" data-tr-quick="reality">📺 Reality</button>
+              </div>
+              <span class="input-counter" id="trailerCounter">0 / 3000</span>
+            </div>
+          </div>
+        </div>
+        <div class="input-actions">
+          <button class="btn btn--primary" id="btnTrailer">
+            <span class="btn-logo">▲</span>
+            Build trailer
+          </button>
+        </div>
+        <div class="input-status" id="trailerStatus"></div>
+      </div>
+
+      <div class="results" id="trailerResults" hidden>
+        <div class="result-card trailer-stats-card">
+          <div class="trailer-stats">
+            <div class="trailer-stat">
+              <span class="trailer-stat-num" id="trailerClipCount">0</span>
+              <span class="trailer-stat-label">clips</span>
+            </div>
+            <div class="trailer-stat">
+              <span class="trailer-stat-num" id="trailerDuration">0s</span>
+              <span class="trailer-stat-label">total runtime</span>
+            </div>
+            <div class="trailer-stat">
+              <span class="trailer-stat-num" id="trailerMoods">-</span>
+              <span class="trailer-stat-label">moods covered</span>
+            </div>
+          </div>
+        </div>
+        <div class="trailer-clips" id="trailerCards"></div>
+      </div>
+    </section>
+
+   <!-- ============ PAGE: SCORE ============ -->
+    <section class="page page--score" data-page="score" id="page-score" hidden>
+      <div class="page-head">
+        <h2 class="page-title">Score</h2>
+        <p class="page-sub">Producer-facing scorecard. Letter grade, audience match, and 6-axis breakdown, powered by AI classification.</p>
+      </div>
+
+      <div class="input-panel">
+        <div class="input-bodies">
+          <div class="input-body is-active">
+            <textarea class="input-textarea" id="scoreText" maxlength="3000" placeholder="Paste your script, transcript or pitch…"></textarea>
+            <div class="input-meta">
+              <div class="input-emotion-buttons">
+                <span class="input-quick-label">Quick test:</span>
+                <button class="quick-btn" data-sco-quick="drama">🎭 Drama</button>
+                <button class="quick-btn" data-sco-quick="comedy">😄 Comedy</button>
+                <button class="quick-btn" data-sco-quick="political">📰 Political</button>
+              </div>
+              <span class="input-counter" id="scoreCounter">0 / 3000</span>
+            </div>
+          </div>
+        </div>
+        <div class="input-actions">
+          <button class="btn btn--primary" id="btnScore">
+            <span class="btn-logo">▲</span>
+            Generate scorecard
+          </button>
+        </div>
+        <div class="input-status" id="scoreStatus"></div>
+      </div>
+
+      <div class="results" id="scoreResults" hidden>
+        <!-- Big grade card -->
+        <div class="result-card score-headline">
+          <div class="score-grade-big" id="scoreGradeBig">-</div>
+          <div class="score-headline-info">
+            <span class="result-card-eyebrow">Content classification</span>
+            <h3 class="score-headline-title" id="scoreClassBig">-</h3>
+            <p class="score-headline-audience" id="scoreAudienceBig">-</p>
+            <div class="score-suitable" id="scoreSuitable"></div>
+          </div>
+        </div>
+
+        <!-- 6 axes -->
+        <div class="result-card">
+          <div class="result-card-head">
+            <span class="result-card-eyebrow">Breakdown</span>
+            <h4 class="result-card-title">Six production axes</h4>
+          </div>
+          <div class="score-axes-big" id="scoreAxesBig"></div>
+        </div>
+      </div>
+    </section>
+
+   <!-- ============ PAGE: SHIFTS ============ -->
+    <section class="page page--shifts" data-page="shifts" id="page-shifts" hidden>
+      <div class="page-head">
+        <h2 class="page-title">Shifts</h2>
+        <p class="page-sub">Sharp emotional turning points. Useful for spotting plot beats, dramatic pivots, or rhetorical hooks.</p>
+      </div>
+
+      <div class="input-panel">
+        <div class="input-bodies">
+          <div class="input-body is-active">
+            <textarea class="input-textarea" id="shiftsText" maxlength="3000" placeholder="Paste a passage with emotional pivots, happiness to anger, calm to fear, etc."></textarea>
+            <div class="input-meta">
+              <div class="input-emotion-buttons">
+                <span class="input-quick-label">Quick test:</span>
+                <button class="quick-btn" data-sh-quick="rollercoaster">🎢 Rollercoaster</button>
+                <button class="quick-btn" data-sh-quick="news">📰 News</button>
+              </div>
+              <span class="input-counter" id="shiftsCounter">0 / 3000</span>
+            </div>
+          </div>
+        </div>
+        <div class="input-actions">
+          <button class="btn btn--primary" id="btnShifts">
+            <span class="btn-logo">▲</span>
+            Find turning points
+          </button>
+        </div>
+        <div class="input-status" id="shiftsStatus"></div>
+      </div>
+
+      <div class="results" id="shiftsResults" hidden>
+        <div class="result-card">
+          <div class="result-card-head">
+            <span class="result-card-eyebrow">Turning points</span>
+            <h4 class="result-card-title" id="shiftsSummary">-</h4>
+          </div>
+          <div class="shifts-detailed" id="shiftsDetailed"></div>
+        </div>
+      </div>
+    </section>
+
+   <!-- ============ PAGE: PERSUASION ============ -->
+    <section class="page page--persuasion" data-page="persuasion" id="page-persuasion" hidden>
+      <div class="page-head">
+        <h2 class="page-title">Persuasion</h2>
+        <p class="page-sub">Measure how persuasive the speaker is. Rhetorical strength, emotional appeal, consistency, variety, with an AI-written verdict.</p>
+      </div>
+
+      <div class="input-panel">
+        <div class="input-bodies">
+          <div class="input-body is-active">
+            <textarea class="input-textarea" id="persuasionText" maxlength="3000" placeholder="Paste a speech, monologue, pitch, or persuasive content…"></textarea>
+            <div class="input-meta">
+              <div class="input-emotion-buttons">
+                <span class="input-quick-label">Quick test:</span>
+                <button class="quick-btn" data-pe-quick="trump">📰 Press</button>
+                <button class="quick-btn" data-pe-quick="ted">🎤 TED talk</button>
+                <button class="quick-btn" data-pe-quick="ad">📺 Ad pitch</button>
+              </div>
+              <span class="input-counter" id="persuasionCounter">0 / 3000</span>
+            </div>
+          </div>
+        </div>
+        <div class="input-actions">
+          <button class="btn btn--primary" id="btnPersuasion">
+            <span class="btn-logo">▲</span>
+            Analyse persuasion
+          </button>
+        </div>
+        <div class="input-status" id="persuasionStatus"></div>
+      </div>
+
+      <div class="results" id="persuasionResults" hidden>
+        <!-- Big gauge -->
+        <div class="result-card persuasion-headline">
+          <div class="persuasion-gauge">
+            <svg viewBox="0 0 200 200" class="persuasion-gauge-svg">
+              <circle cx="100" cy="100" r="86" fill="none" stroke="#1f1f1f" stroke-width="14"/>
+              <circle cx="100" cy="100" r="86" fill="none" stroke="url(#pgauge)" stroke-width="14" stroke-linecap="round"
+                stroke-dasharray="540" stroke-dashoffset="540" id="persGaugeArc"
+                transform="rotate(-90 100 100)"/>
+              <defs>
+                <linearGradient id="pgauge" x1="0%" y1="0%" x2="100%" y2="0%">
+                  <stop offset="0%" stop-color="#0070f3"/>
+                  <stop offset="50%" stop-color="#7928ca"/>
+                  <stop offset="100%" stop-color="#ff0080"/>
+                </linearGradient>
+              </defs>
+              <text x="100" y="100" text-anchor="middle" dominant-baseline="central" fill="#fff" font-family="Geist Mono, monospace" font-size="40" font-weight="700" id="persGaugeNum">0%</text>
+              <text x="100" y="140" text-anchor="middle" fill="#a1a1a1" font-family="Geist Mono, monospace" font-size="11" letter-spacing="2" id="persGaugeLabel">-</text>
+            </svg>
+          </div>
+          <div class="persuasion-info">
+            <span class="result-card-eyebrow">AI verdict</span>
+            <p class="persuasion-assessment" id="persAssessment">-</p>
+          </div>
+        </div>
+
+        <!-- 4 axes -->
+        <div class="result-card">
+          <div class="result-card-head">
+            <span class="result-card-eyebrow">Breakdown</span>
+            <h4 class="result-card-title">Four persuasion signals</h4>
+          </div>
+          <div class="persuasion-axes" id="persAxes"></div>
+        </div>
+      </div>
+    </section>
+<!-- ============ PAGE: ABOUT ============ -->
+    <section class="page page--about" data-page="about" id="page-about" hidden>
+      <div class="about-hero">
+        <span class="about-eyebrow">About</span>
+        <h1 class="about-title">
+          Building <span class="about-grad">emotion intelligence</span><br>
+          for content creators.
+        </h1>
+        <p class="about-sub">
+          EmotionScope is a Block D Sprint 4 project built by NLP Group 1 at Breda University of Applied Sciences (BUas), in collaboration with the Content Intelligence Agency.
+        </p>
+      </div>
+
+      <!-- Story -->
+      <div class="about-section">
+        <h2 class="about-h2">The project</h2>
+        <p class="about-p">
+          Our client, the <a href="https://www.contentintelligence.nl/" target="_blank" rel="noopener" class="about-link">Content Intelligence Agency</a>, analyses TV shows, podcasts and reality content for production studios across the Netherlands. They needed a way to <em>quickly profile any piece of content</em>: who's in it, where the energy peaks, what audience it fits, and how it stacks up against another show.
+        </p>
+        <p class="about-p">
+          EmotionScope started as a 7-emotion classifier and grew into a full content-intelligence pipeline with 8 production features, 13 REST endpoints, and AI-generated narrative outputs.
+        </p>
+      </div>
+
+      <!-- Tech stack -->
+      <div class="about-section">
+        <h2 class="about-h2">Under the hood</h2>
+        <div class="about-stack">
+          <div class="about-stack-item">
+            <span class="about-stack-icon" style="color: var(--c-blue);">●</span>
+            <div>
+              <h4>Whisper</h4>
+              <p>Speech-to-text on any audio or video file. Handles long-form English transcripts at ~60s per minute of audio.</p>
+            </div>
+          </div>
+          <div class="about-stack-item">
+            <span class="about-stack-icon" style="color: var(--c-cyan);">●</span>
+            <div>
+              <h4>MarianMT</h4>
+              <p>Translates EN -> NL when needed for the Dutch market client.</p>
+            </div>
+          </div>
+          <div class="about-stack-item">
+            <span class="about-stack-icon" style="color: var(--c-yellow);">●</span>
+            <div>
+              <h4>DeBERTa</h4>
+              <p>Fine-tuned on 7 emotions (happiness, neutral, anger, sadness, surprise, fear, disgust). The core classifier.</p>
+            </div>
+          </div>
+          <div class="about-stack-item">
+            <span class="about-stack-icon" style="color: var(--c-orange);">●</span>
+            <div>
+              <h4>spaCy NER</h4>
+              <p>Extracts named entities, characters, places, organizations, so we know <em>who</em> is in the content.</p>
+            </div>
+          </div>
+          <div class="about-stack-item">
+            <span class="about-stack-icon" style="color: var(--c-red);">●</span>
+            <div>
+              <h4>Groq · Llama 3.1</h4>
+              <p>Generates AI titles, scene names, taglines, persuasion verdicts, and content classifications.</p>
+            </div>
+          </div>
+          <div class="about-stack-item">
+            <span class="about-stack-icon" style="color: var(--c-pink);">●</span>
+            <div>
+              <h4>FastAPI + Vanilla JS</h4>
+              <p>Python backend with FastAPI; no-framework frontend with Chart.js for visualizations.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Client -->
+      <div class="about-section about-client">
+        <h2 class="about-h2">Built for</h2>
+        <div class="about-client-card">
+          <div class="about-client-logo">CIA</div>
+          <div>
+            <h3>Content Intelligence Agency</h3>
+            <p class="about-client-tagline">Data-driven content analytics for TV, film and reality production.</p>
+            <a href="https://www.contentintelligence.nl/" target="_blank" rel="noopener" class="about-link">contentintelligence.nl ↗</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Team -->
+      <div class="about-section">
+        <h2 class="about-h2">The team</h2>
+        <p class="about-p about-p--muted">NLP Group 1 · Block D · Breda University of Applied Sciences</p>
+        <div class="about-team">
+          <div class="about-team-member">
+            <div class="about-team-avatar" style="background: linear-gradient(135deg, var(--c-pink), var(--c-violet));">C</div>
+            <h4>Ceren Kurt</h4>
+          </div>
+          <div class="about-team-member">
+            <div class="about-team-avatar" style="background: linear-gradient(135deg, var(--c-blue), var(--c-cyan));">A</div>
+            <h4>Asma</h4>
+          </div>
+          <div class="about-team-member">
+            <div class="about-team-avatar" style="background: linear-gradient(135deg, var(--c-green), var(--c-cyan));">Z</div>
+            <h4>Zofia</h4>
+          </div>
+          <div class="about-team-member">
+            <div class="about-team-avatar" style="background: linear-gradient(135deg, var(--c-yellow), var(--c-orange));">A</div>
+            <h4>Arayah</h4>
+          </div>
+          <div class="about-team-member">
+            <div class="about-team-avatar" style="background: linear-gradient(135deg, var(--c-orange), var(--c-red));">A</div>
+            <h4>Ali</h4>
+          </div>
+        </div>
+      </div>
+
+      <!-- Stats -->
+      <div class="about-stats">
+        <div class="about-stat">
+          <span class="about-stat-num">8</span>
+          <span class="about-stat-label">features</span>
+        </div>
+        <div class="about-stat">
+          <span class="about-stat-num">13</span>
+          <span class="about-stat-label">endpoints</span>
+        </div>
+        <div class="about-stat">
+          <span class="about-stat-num">7</span>
+          <span class="about-stat-label">emotions</span>
+        </div>
+        <div class="about-stat">
+          <span class="about-stat-num">5</span>
+          <span class="about-stat-label">AI outputs</span>
+        </div>
+      </div>
+    </section>
+  </main>
+<!-- ============ PAGE: DASHBOARD ============ -->
+    <section class="page page--dashboard" data-page="dashboard" id="page-dashboard" hidden>
+      <div class="page-head">
+        <h2 class="page-title">Monitor</h2>
+        <p class="page-sub">Feedback flywheel, model monitoring, and pipeline performance.</p>
+      </div>
+
+      <!-- Admin gate: this page is for the team, not visitors. app.js shows
+           either this login card or the dashboard content below, depending on
+           whether a valid admin token is stored for this browser session. -->
+      <div class="dash-login" id="dashLogin" hidden>
+        <div class="dash-login-card">
+          <h3 class="dash-login-title">🔒 Admin access</h3>
+          <p class="dash-login-sub">The monitoring dashboard is restricted to the team. Please sign in.</p>
+          <input type="text" class="input-url dash-login-input" id="dashLoginUser"
+                 placeholder="Username" autocomplete="username" />
+          <input type="password" class="input-url dash-login-input" id="dashLoginPass"
+                 placeholder="Password" autocomplete="current-password" />
+          <button class="btn btn--primary" id="dashLoginBtn" type="button">Sign in</button>
+          <div class="input-status" id="dashLoginStatus"></div>
+        </div>
+      </div>
+
+      <!-- Everything below is only revealed after a successful admin login. -->
+      <div id="dashContent" hidden>
+
+      <div class="dash-admin-bar">
+        <span class="dash-admin-note">Signed in as admin</span>
+        <button class="btn btn--ghost btn--sm" id="dashLogout" type="button">Log out</button>
+      </div>
+
+      <!-- KPI row -->
+      <div class="kpi-grid" id="dash-kpi-grid">
+        <div class="kpi-box"><div class="kpi-box-val" id="dash-total">-</div><div class="kpi-box-label">Total feedback</div></div>
+        <div class="kpi-box"><div class="kpi-box-val" id="dash-agreement">-</div><div class="kpi-box-label">Agreement rate</div></div>
+        <div class="kpi-box"><div class="kpi-box-val" id="dash-corrections">-</div><div class="kpi-box-label">New corrections</div></div>
+        <div class="kpi-box"><div class="kpi-box-val" id="dash-remaining">-</div><div class="kpi-box-label">Until retrain</div></div>
+        <div class="kpi-box"><div class="kpi-box-val" id="dash-runs">-</div><div class="kpi-box-label">Pipeline runs</div></div>
+        <div class="kpi-box"><div class="kpi-box-val" id="dash-avg-latency">-</div><div class="kpi-box-label">Avg latency</div></div>
+      </div>
+
+      <!-- Flywheel progress -->
+      <div class="dash-section">
+        <h3 class="dash-section-title">Retrain Flywheel</h3>
+        <div class="dash-flywheel">
+          <div class="dash-flywheel-label">
+            <span>Corrections collected</span>
+            <span id="dash-flywheel-text">0 / 20</span>
+          </div>
+          <div class="dash-flywheel-track">
+            <div class="dash-flywheel-fill" id="dash-flywheel-fill" style="width:0%"></div>
+          </div>
+          <p class="dash-flywheel-note" id="dash-flywheel-note">Collecting user corrections, retrain triggers automatically at threshold.</p>
+        </div>
+      </div>
+
+      <!-- Model endpoint info -->
+      <div class="dash-section">
+        <h3 class="dash-section-title">Model Deployment</h3>
+        <div class="dash-endpoint-grid" id="dash-endpoint-grid">
+          <div class="dash-endpoint-row"><span class="dash-endpoint-label">Endpoint</span><span class="dash-endpoint-val" id="dash-endpoint-name">-</span></div>
+          <div class="dash-endpoint-row"><span class="dash-endpoint-label">Scoring URI</span><span class="dash-endpoint-val dash-endpoint-uri" id="dash-endpoint-uri">-</span></div>
+          <div class="dash-endpoint-row"><span class="dash-endpoint-label">Status</span><span class="dash-endpoint-val" id="dash-endpoint-status">-</span></div>
+          <div class="dash-endpoint-row"><span class="dash-endpoint-label">Traffic split</span><span class="dash-endpoint-val" id="dash-endpoint-traffic">-</span></div>
+        </div>
+      </div>
+
+      <!-- Per-model breakdown -->
+      <div class="dash-section">
+        <h3 class="dash-section-title">Per-Model Feedback</h3>
+        <div class="dash-model-cards" id="dash-model-cards">
+          <p style="opacity:.5;font-size:.85rem">No feedback yet.</p>
+        </div>
+      </div>
+
+      <!-- Pipeline performance -->
+      <div class="dash-section">
+        <h3 class="dash-section-title">Pipeline Performance</h3>
+        <div class="dash-perf-grid" id="dash-perf-grid">
+          <div class="dash-perf-row"><span>Avg Whisper</span><span id="dash-t-whisper">-</span></div>
+          <div class="dash-perf-row"><span>Avg Translate</span><span id="dash-t-translate">-</span></div>
+          <div class="dash-perf-row"><span>Avg Classify</span><span id="dash-t-classify">-</span></div>
+          <div class="dash-perf-row"><span>Avg Total</span><span id="dash-t-total">-</span></div>
+        </div>
+      </div>
+
+      <!-- Retrain history -->
+      <div class="dash-section">
+        <h3 class="dash-section-title">Retrain History</h3>
+        <div id="dash-retrain-history"><p style="opacity:.5">No retrains recorded yet.</p></div>
+      </div>
+
+      </div> <!-- /dashContent -->
+    </section>
+
+<!-- ============ PAGE: HISTORY ============ -->
+    <section class="page page--history" data-page="history" id="page-history" hidden>
+      <div class="page-head">
+        <h2 class="page-title">History</h2>
+        <p class="page-sub">All your past analyses, stored locally in your browser. Click any item to reopen it.</p>
+      </div>
+
+      <div class="history-controls">
+        <div class="history-tabs" id="historyTabs">
+          <button class="history-tab is-active" data-htab="all">All</button>
+          <button class="history-tab" data-htab="analyse">Analyse</button>
+          <button class="history-tab" data-htab="compare">Compare</button>
+          <button class="history-tab" data-htab="cast">Cast</button>
+        </div>
+        <div class="history-actions">
+          <span class="history-count" id="historyCount">0 saved</span>
+          <button class="btn btn--ghost btn--sm" id="btnClearHistory">🗑️ Clear all</button>
+        </div>
+      </div>
+
+      <div class="history-list" id="historyList"></div>
+      <div class="history-empty" id="historyEmpty" hidden>
+        <div class="history-empty-icon">📭</div>
+        <h3>No history yet</h3>
+        <p>Run an Analyse, Compare, or Cast, results will appear here automatically.</p>
+        <a href="#analyse" class="btn btn--primary" data-route="analyse">
+          <span class="btn-logo">▲</span>
+          Start analysing
+        </a>
+      </div>
+   </section>
+  </main>
+
+  <script src="/static/app.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+name: Deploy to Azure Container Apps
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  id-token: write
+  contents: read
+  packages: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        include:
+          - app: nlp1-backend
+            file: Dockerfile
+            image: nlp-backend
+            port: 8000
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Log in to GHCR
+        uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Build and push
+        uses: docker/build-push-action@v6
+        with:
+          context: .
+          file: ${{ matrix.file }}
+          push: true
+          tags: ghcr.io/bredauniversityadsai/nlp1/${{ matrix.image }}:${{ github.sha }}
+
+      - name: Azure login (OIDC)
+        uses: azure/login@v2
+        with:
+          client-id: ${{ vars.AZURE_CLIENT_ID }}
+          tenant-id: ${{ vars.AZURE_TENANT_ID }}
+          subscription-id: ${{ vars.AZURE_SUBSCRIPTION_ID }}
+
+      - name: Set secrets
+        run: |
+          az containerapp secret set \
+            --name ${{ matrix.app }} \
+            --resource-group ${{ vars.AZURE_RESOURCE_GROUP }} \
+            --secrets \
+            db-url="${{ secrets.DATABASE_URL }}" \
+            ml-key="${{ secrets.ML_ENDPOINT_KEY }}" || true
+
+      - name: Deploy to Container Apps
+        run: |
+          az containerapp registry set \
+            --name ${{ matrix.app }} \
+            --resource-group ${{ vars.AZURE_RESOURCE_GROUP }} \
+            --server ghcr.io \
+            --username ${{ secrets.GHCR_USERNAME }} \
+            --password ${{ secrets.GITHUB_TOKEN }}
+
+          az containerapp update \
+            --name ${{ matrix.app }} \
+            --resource-group ${{ vars.AZURE_RESOURCE_GROUP }} \
+            --image ghcr.io/bredauniversityadsai/nlp1/${{ matrix.image }}:${{ github.sha }} \
+            --min-replicas 1 \
+            --set-env-vars \
+            ML_ENDPOINT_URL=https://adsai2.ngrok.dev/port-31785/api/v1/endpoint/emotion-classifier-endpoint/score \
+            DATABASE_URL=secretref:db-url \
+            ML_ENDPOINT_KEY=secretref:ml-key \
+            TRANSFORMERS_OFFLINE=1 \
+            HF_DATASETS_OFFLINE=1

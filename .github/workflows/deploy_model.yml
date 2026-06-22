@@ -1,0 +1,112 @@
+name: Deploy Model to Azure ML
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'src/emotion_mlops/azure/**'
+      - 'configs/azure_config.yaml'
+
+  workflow_dispatch:
+    inputs:
+      model_version:
+        description: 'Model version to deploy (empty = latest)'
+        required: false
+        default: ''
+      deployment_name:
+        description: 'Deployment name'
+        required: false
+        default: 'blue'
+        type: choice
+        options:
+          - blue
+          - green
+
+permissions:
+  id-token: write
+  contents: read
+
+jobs:
+  deploy-model:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Azure login (OIDC)
+        uses: azure/login@v2
+        with:
+          client-id:       ${{ vars.AZURE_CLIENT_ID }}
+          tenant-id:       ${{ vars.AZURE_TENANT_ID }}
+          subscription-id: ${{ vars.AZURE_SUBSCRIPTION_ID }}
+
+      # -- Install dependencies -----------------------------------------------
+      - name: Install Azure ML dependencies
+        run: |
+          pip install azure-ai-ml azure-identity pyyaml
+          pip install -e .
+
+      - name: Create config.json
+        run: |
+          echo '{
+            "subscription_id": "${{ vars.AZURE_SUBSCRIPTION_ID }}",
+            "resource_group": "${{ vars.AZURE_RESOURCE_GROUP }}",
+            "workspace_name": "${{ vars.AZURE_WORKSPACE_NAME }}"
+          }' > config.json
+          cat config.json
+
+      # -- Deploy model -------------------------------------------------------
+      - name: Deploy model to Azure ML endpoint
+        env:
+          AZURE_SUBSCRIPTION_ID: ${{ vars.AZURE_SUBSCRIPTION_ID }}
+          AZURE_RESOURCE_GROUP: ${{ vars.AZURE_RESOURCE_GROUP }}
+          AZURE_WORKSPACE_NAME: ${{ vars.AZURE_WORKSPACE_NAME }}
+        run: |
+          VERSION="${{ github.event.inputs.model_version }}"
+          DEPLOY="${{ github.event.inputs.deployment_name || 'blue' }}"
+
+          if [ -z "$VERSION" ]; then
+            echo "Deploying latest model version as $DEPLOY"
+            python src/emotion_mlops/azure/deploy_endpoint.py \
+              --deployment-name "$DEPLOY"
+          else
+            echo "Deploying model version $VERSION as $DEPLOY"
+            python src/emotion_mlops/azure/deploy_endpoint.py \
+              --model-version "$VERSION" \
+              --deployment-name "$DEPLOY"
+          fi
+
+      # -- Verify deployment --------------------------------------------------
+      - name: Verify deployment
+        run: |
+          python -c "
+          from azure.identity import AzureCliCredential
+          from azure.ai.ml import MLClient
+
+          client = MLClient(
+              credential=AzureCliCredential(),
+              subscription_id='${{ vars.AZURE_SUBSCRIPTION_ID }}',
+              resource_group_name='${{ vars.AZURE_RESOURCE_GROUP }}',
+              workspace_name='${{ vars.AZURE_WORKSPACE_NAME }}',
+          )
+          endpoint = client.online_endpoints.get('emotion-classifier-endpoint')
+          print('State:', endpoint.provisioning_state)
+          print('Traffic:', endpoint.traffic)
+          assert endpoint.provisioning_state == 'Succeeded', \
+              f'Deployment failed: {endpoint.provisioning_state}'
+          print('Deployment verified successfully')
+          "
+
+      - name: Print deployment summary
+        if: always()
+        run: |
+          echo "## Deployment Summary" >> $GITHUB_STEP_SUMMARY
+          echo "- Endpoint: emotion-classifier-endpoint" >> $GITHUB_STEP_SUMMARY
+          echo "- Deployment: ${{ github.event.inputs.deployment_name || 'blue' }}" >> $GITHUB_STEP_SUMMARY
+          echo "- Model version: ${{ github.event.inputs.model_version || 'latest' }}" >> $GITHUB_STEP_SUMMARY
+          echo "- Triggered by: ${{ github.event_name }}" >> $GITHUB_STEP_SUMMARY
+          echo "- Status: ${{ job.status }}" >> $GITHUB_STEP_SUMMARY

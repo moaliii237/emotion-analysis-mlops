@@ -1,0 +1,92 @@
+# EmotionScope - Production stack for BUas Lambda server
+services:
+
+  backend:
+    image: ghcr.io/bredauniversityadsai/nlp1/nlp-backend:latest
+    container_name: emotionscope-backend-new
+    ports:
+      - "2002:8000"
+    environment:
+      - PYTHONPATH=/app/src
+      - PYTHONUNBUFFERED=1
+      - ML_ENDPOINT_URL=https://emotion-classifier-endpoint.westeurope.inference.ml.azure.com/score
+      - ML_ENDPOINT_KEY
+      - TRANSFORMERS_OFFLINE=1
+      - HF_DATASETS_OFFLINE=1
+      - DATABASE_URL=postgresql://nlp1_user:nlp1_password@postgres:5432/emotionscope
+      - AUTO_RETRAIN_ENABLED=1
+    depends_on:
+      - postgres
+    restart: unless-stopped
+    networks:
+      - emotionscope-net
+
+  postgres:
+    image: postgres:16
+    container_name: emotionscope-postgres
+    ports:
+      - "5433:5432"
+    environment:
+      - POSTGRES_USER=nlp1_user
+      - POSTGRES_PASSWORD=nlp1_password
+      - POSTGRES_DB=emotionscope
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    restart: unless-stopped
+    networks:
+      - emotionscope-net
+
+  prometheus:
+    image: prom/prometheus:latest
+    container_name: emotionscope-prometheus-new
+    ports:
+      - "2003:9090"
+    volumes:
+      - prometheus-data:/prometheus
+    restart: unless-stopped
+    networks:
+      - emotionscope-net
+
+  grafana:
+    image: grafana/grafana:latest
+    container_name: emotionscope-grafana-new
+    ports:
+      - "2004:3000"
+    volumes:
+      - grafana-data:/var/lib/grafana
+    environment:
+      - GF_SECURITY_ADMIN_USER=admin
+      - GF_SECURITY_ADMIN_PASSWORD=admin
+      - GF_USERS_ALLOW_SIGN_UP=false
+    restart: unless-stopped
+    networks:
+      - emotionscope-net
+
+  airflow:
+    image: apache/airflow:2.9.0
+    container_name: emotionscope-airflow
+    ports:
+      - "2005:8080"
+    environment:
+      - AIRFLOW__CORE__EXECUTOR=SequentialExecutor
+      - AIRFLOW__CORE__LOAD_EXAMPLES=False
+      - AIRFLOW__DATABASE__SQL_ALCHEMY_CONN=sqlite:////opt/airflow/airflow.db
+      - _AIRFLOW_DB_MIGRATE=true
+      - _AIRFLOW_WWW_USER_CREATE=true
+      - _AIRFLOW_WWW_USER_USERNAME=admin
+      - _AIRFLOW_WWW_USER_PASSWORD=admin
+    volumes:
+      - airflow-data:/opt/airflow
+    restart: unless-stopped
+    networks:
+      - emotionscope-net
+
+volumes:
+  prometheus-data:
+  grafana-data:
+  airflow-data:
+  postgres-data:
+
+networks:
+  emotionscope-net:
+    driver: bridge

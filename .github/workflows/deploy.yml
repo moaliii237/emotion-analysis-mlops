@@ -1,0 +1,93 @@
+name: Deploy
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  id-token: write
+  contents: write
+  packages: write
+
+jobs:
+  build-backend:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Log in to GHCR
+        uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Build and push backend image
+        uses: docker/build-push-action@v6
+        with:
+          context: .
+          file: Dockerfile
+          push: true
+          provenance: false
+          sbom: false
+          tags: |
+            ghcr.io/bredauniversityadsai/nlp1/nlp-backend:latest
+            ghcr.io/bredauniversityadsai/nlp1/nlp-backend:${{ github.sha }}
+
+  build-frontend:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Log in to GHCR
+        uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Build and push frontend image
+        uses: docker/build-push-action@v6
+        with:
+          context: .
+          file: Dockerfile.frontend
+          push: true
+          provenance: false
+          sbom: false
+          tags: |
+            ghcr.io/bredauniversityadsai/nlp1/nlp-frontend:latest
+            ghcr.io/bredauniversityadsai/nlp1/nlp-frontend:${{ github.sha }}
+
+  publish-deploy:
+    needs: [build-backend, build-frontend]
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Publish deploy branch
+        run: |
+          yq -i '
+            .services.backend.image = "ghcr.io/bredauniversityadsai/nlp1/nlp-backend:${{ github.sha }}" |
+            .services.frontend.image = "ghcr.io/bredauniversityadsai/nlp1/nlp-frontend:${{ github.sha }}"
+          ' docker-compose.yml
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git checkout -B deploy
+          git rm -r --cached .github/ 2>/dev/null || true
+          git add docker-compose.yml
+          git commit -m "deploy ${{ github.sha }}"
+          git push -f origin deploy
+
+  deploy-portainer:
+      needs: [build-backend, build-frontend]
+      runs-on: self-hosted
+      steps:
+        - name: Trigger Portainer redeploy
+          env:
+            WEBHOOK: ${{ secrets.PORTAINER_WEBHOOK_URL }}
+          run: |
+            curl --fail --silent --show-error -X POST "${WEBHOOK}"

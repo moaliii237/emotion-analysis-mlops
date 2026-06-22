@@ -1,0 +1,128 @@
+# Contributing Guide
+
+This document explains how our team works with GitHub. Please read this before pushing any code.
+
+---
+
+## Branch Structure
+
+We have 3 permanent branches. **Never push directly to any of them** — always use a Pull Request.
+
+| Branch | Purpose |
+|---|---|
+| `main` | Live / production. Only updated when client approves. |
+| `staging` | Client preview. Updated at the end of each sprint. |
+| `develop` | Team's shared working branch. Everyone merges their work here. |
+
+---
+
+## Your Daily Workflow
+
+### Step 1 — Create your feature branch
+
+Always start from `develop`. In GitHub Desktop:
+
+1. Switch to `develop` and click **Fetch origin** to get the latest version
+2. Click **Current Branch** → **New Branch**
+3. Name it: `feature/yourname-taskname` (e.g. `feature/ali-tokenizer`)
+4. Make sure it says **"from develop"** — very important!
+
+### Step 2 — Do your work
+
+Add your files to the project folder. GitHub Desktop will detect them automatically.
+
+Use clear commit messages with these prefixes:
+- `feat:` for new features (e.g. `feat: add emotion classifier`)
+- `fix:` for bug fixes (e.g. `fix: correct label mapping`)
+- `docs:` for documentation (e.g. `docs: update README`)
+- `test:` for tests (e.g. `test: add unit tests for pipeline`)
+
+### Step 3 — Commit and Push
+
+1. In GitHub Desktop, write your commit message in the Summary box
+2. Click **Commit to feature/yourname-taskname**
+3. Click **Push origin**
+
+### Step 4 — Open a Pull Request
+
+1. GitHub Desktop will show **Create Pull Request** — click it
+2. In the browser, make sure it says: `base: develop ← compare: feature/yourname-taskname`
+3. Add a clear title and short description of what you did
+4. Click **Create Pull Request**
+5. Share the PR link with the team on the group chat
+
+### Step 5 — Review and Merge
+
+- At least **1 teammate must review and approve** your PR before it can be merged
+- The reviewer clicks **Files changed** to see what was added
+- If everything looks good → **Approve** → **Submit review**
+- If something needs fixing → **Request changes** → write a comment
+- After approval → click **Merge Pull Request** → **Confirm merge**
+- The feature branch is deleted automatically after merging ✅
+
+---
+
+## Sprint Release Cycle
+
+At the end of every sprint, the team lead opens a PR:
+
+```
+develop → staging
+```
+
+This deploys to Azure and the client reviews it here. **Never show the client a feature branch or develop directly.**
+
+When the client approves:
+
+```
+staging → main
+```
+
+This is the official release.
+
+---
+
+## Naming Conventions
+
+Always use lowercase and hyphens. No spaces, no capital letters, no file extensions.
+
+```
+✅ feature/ali-tokenizer
+✅ feature/ceren-initial-model
+✅ feature/zofia-data-preprocessing
+
+❌ features/Ali/model.py
+❌ feature/Ali_Tokenizer
+❌ feature/ceren-requirements.txt
+```
+
+---
+
+## Important Rules
+
+- 🔒 **Never push directly** to `main`, `staging`, or `develop`
+- 🌿 **Always branch from `develop`**, not from `main`
+- 👀 **Always get 1 approval** before merging into `develop`
+- 🗑️ **Delete your feature branch** after merging (happens automatically)
+- 📝 **Use commit prefixes** — `feat:`, `fix:`, `docs:`, `test:`
+- 🔄 **Always fetch the latest `develop`** before creating a new branch
+
+---
+
+## Quick Reference
+
+```
+create branch from develop
+       ↓
+do your work + commit
+       ↓
+push + open PR → develop
+       ↓
+teammate reviews + approves
+       ↓
+merge + branch deleted ✅
+       ↓ (end of sprint)
+develop → staging → show client
+       ↓ (client approves)
+staging → main ✅
+```

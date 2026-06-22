@@ -1,0 +1,1169 @@
+Start Time,End Time,Sentence,Translation,Emotion_fine,Emotion_core,Intensity
+00:00:00,00:00:05.200000,"This season, Hell's Kitchen promises to be","This season, Hell's Kitchen promises to be",anticipation,happiness,mild
+00:00:05.200000,00:00:06.560000,the most shocking ever.,the most shocking ever.,astonishment,surprise,intense
+00:00:06.560000,00:00:08.480000,"Let's go step outside, mother fucker.","Let's go step outside, mother fucker.",provocation,anger,intense
+00:00:08.480000,00:00:10.440000,Everyone is in a fighting mood.,Everyone is in a fighting mood.,agitation,anger,moderate
+00:00:10.440000,00:00:11.340000,Listen to me!,Listen to me!,command,anger,moderate
+00:00:11.340000,00:00:12.480000,Shut your fucking mouth.,Shut your fucking mouth.,hostility,anger,intense
+00:00:12.480000,00:00:15.240000,This new crop of chefs is ready to bring it.,This new crop of chefs is ready to bring it.,confidence,happiness,moderate
+00:00:15.240000,00:00:16.139000,I'm fucking ready.,I'm fucking ready.,determination,happiness,intense
+00:00:16.139000,00:00:18.840000,And while some may lack expertise.,And while some may lack expertise.,doubt,neutral,mild
+00:00:18.840000,00:00:21.959000,The chicken is pinker than your fucking lipstick.,The chicken is pinker than your fucking lipstick.,contempt,disgust,intense
+00:00:21.959000,00:00:23.480000,They more than make up for it.,They more than make up for it.,reassurance,happiness,mild
+00:00:23.480000,00:00:25.480000,"If you single chef, I'm going to be pissed.","If you single chef, I'm going to be pissed.",irritation,anger,moderate
+00:00:25.480000,00:00:26.400000,In attitude.,In attitude.,indifference,neutral,neutral
+00:00:26.400000,00:00:28.320000,"Get out, you fucking donkey.","Get out, you fucking donkey.",contempt,anger,intense
+00:00:28.440000,00:00:30.400000,I'm busting my balls out here.,I'm busting my balls out here.,frustration,anger,moderate
+00:00:30.400000,00:00:31.400000,Get off my station.,Get off my station.,irritation,anger,moderate
+00:00:31.400000,00:00:34.200000,You just shut the fuck up for a minute and fucking relax.,You just shut the fuck up for a minute and fucking relax.,irritation,anger,intense
+00:00:34.200000,00:00:35.639000,Help me out here.,Help me out here.,appeal,neutral,mild
+00:00:35.639000,00:00:38.439000,These chefs are the most dedicated competitors yet.,These chefs are the most dedicated competitors yet.,admiration,happiness,moderate
+00:00:38.439000,00:00:40.480000,"I'm in so much pain right now, I'm","I'm in so much pain right now, I'm",distress,sadness,intense
+00:00:40.480000,00:00:42.360000,ready to break down and cry.,ready to break down and cry.,despair,sadness,intense
+00:00:42.360000,00:00:44.840000,Don't act like a cry baby.,Don't act like a cry baby.,contempt,disgust,moderate
+00:00:44.840000,00:00:47.439000,They will risk life.,They will risk life.,determination,fear,moderate
+00:00:47.439000,00:00:48.799000,"Everybody get up, we got an emergency.","Everybody get up, we got an emergency.",alarm,fear,intense
+00:00:51.720000,00:00:52.619000,And live.,And live.,hope,happiness,mild
+00:00:52.619000,00:00:53.520000,Ah!,Ah!,surprise,surprise,mild
+00:00:53.520000,00:00:55,"Medic, I need a medic!","Medic, I need a medic!",urgency,fear,intense
+00:00:55,00:00:56.680000,Oh my god.,Oh my god.,shock,surprise,moderate
+00:00:56.720000,00:00:59.240000,I cut straight to the bone.,I cut straight to the bone.,bluntness,neutral,moderate
+00:00:59.240000,00:01:02.119000,I go to go upstairs.,I go to go upstairs.,determination,neutral,neutral
+00:01:02.119000,00:01:03.160000,There goes one ankle.,There goes one ankle.,resignation,sadness,mild
+00:01:03.160000,00:01:04.160000,I can't even walk.,I can't even walk.,frustration,sadness,intense
+00:01:04.160000,00:01:07.440000,These chefs let no one stand in their way.,These chefs let no one stand in their way.,determination,happiness,moderate
+00:01:07.440000,00:01:09,I'll punch you in your face.,I'll punch you in your face.,threat,anger,intense
+00:01:09,00:01:11.199000,You never want to see this face.,You never want to see this face.,warning,fear,moderate
+00:01:11.199000,00:01:12.160000,Not even.,Not even.,dismissal,neutral,neutral
+00:01:12.160000,00:01:13.800000,"You're upset now, because you're crap.","You're upset now, because you're crap.",insult,anger,intense
+00:01:13.800000,00:01:14.699000,You're crap.,You're crap.,contempt,disgust,moderate
+00:01:14.699000,00:01:15.599000,Chef Ramsay.,Chef Ramsay.,neutrality,neutral,neutral
+00:01:15.599000,00:01:17,Shut your fat fucking mouth off.,Shut your fat fucking mouth off.,hostility,anger,intense
+00:01:17,00:01:17.900000,You don't look stiff.,You don't look stiff.,reassurance,happiness,mild
+00:01:17.900000,00:01:18.800000,You're not.,You're not.,dismissal,anger,mild
+00:01:18.800000,00:01:19.800000,"Shut up, brother.","Shut up, brother.",irritation,anger,moderate
+00:01:19.800000,00:01:22.400000,"You can dish it, but you can't take it.","You can dish it, but you can't take it.",resentment,anger,moderate
+00:01:22.400000,00:01:24.400000,Get ready for the most physical.,Get ready for the most physical.,anticipation,surprise,moderate
+00:01:24.400000,00:01:26.160000,You better get out of my face.,You better get out of my face.,hostility,anger,intense
+00:01:26.160000,00:01:27.320000,Most emotional.,Most emotional.,emotion,neutral,moderate
+00:01:27.320000,00:01:29.519000,"Hormone, agony, pain.","Hormone, agony, pain.",agony,sadness,intense
+00:01:29.519000,00:01:30.839000,Most surprising.,Most surprising.,astonishment,surprise,moderate
+00:01:30.839000,00:01:31.720000,Get out!,Get out!,rejection,anger,intense
+00:01:31.720000,00:01:33.760000,He can kiss my ass.,He can kiss my ass.,contempt,anger,intense
+00:01:33.760000,00:01:35.120000,Hell's Kitchen ever.,Hell's Kitchen ever.,neutrality,neutral,neutral
+00:01:35.120000,00:01:36.599000,Get out!,Get out!,rejection,anger,intense
+00:01:36.599000,00:01:38.040000,I am so pissed.,I am so pissed.,frustration,anger,intense
+00:01:38.040000,00:01:39.080000,You're making me mad.,You're making me mad.,irritation,anger,moderate
+00:01:39.080000,00:01:40.440000,Stupid cows.,Stupid cows.,contempt,disgust,moderate
+00:01:40.440000,00:01:44.120000,No one's got my back here.,No one's got my back here.,isolation,sadness,moderate
+00:01:44.120000,00:01:46.959000,"Once again, the culinary world has focused","Once again, the culinary world has focused",anticipation,neutral,mild
+00:01:46.959000,00:01:50.760000,"its sights on Los Angeles, because it's time","its sights on Los Angeles, because it's time",anticipation,happiness,mild
+00:01:50.760000,00:01:55.760000,to open the doors to hell.,to open the doors to hell.,foreboding,fear,moderate
+00:01:55.760000,00:01:57.160000,Where are they?,Where are they?,confusion,surprise,mild
+00:01:57.160000,00:01:59.519000,Chef Ramsay's going to kill me.,Chef Ramsay's going to kill me.,dread,fear,intense
+00:01:59.519000,00:02:00.419000,Too late.,Too late.,regret,sadness,mild
+00:02:08.759000,00:02:10.639000,The newest crop of aspiring chefs,The newest crop of aspiring chefs,anticipation,happiness,mild
+00:02:10.639000,00:02:11.880000,can't wait to get started.,can't wait to get started.,anticipation,happiness,moderate
+00:02:11.880000,00:02:12.779000,JP!,JP!,neutrality,neutral,neutral
+00:02:12.779000,00:02:13.679000,Woo!,Woo!,excitement,happiness,moderate
+00:02:13.679000,00:02:15.240000,"Yeah, that's right.","Yeah, that's right.",agreement,neutral,neutral
+00:02:15.240000,00:02:17.080000,"I'm at Hell's Kitchen, baby.","I'm at Hell's Kitchen, baby.",excitement,happiness,moderate
+00:02:17.080000,00:02:18.080000,"I'm like, what?","I'm like, what?",confusion,surprise,mild
+00:02:18.080000,00:02:18.979000,Excellent.,Excellent.,satisfaction,happiness,mild
+00:02:18.979000,00:02:19.880000,Yeah!,Yeah!,enthusiasm,happiness,moderate
+00:02:19.880000,00:02:21.800000,"I'm ready to do a back flip right now, baby.","I'm ready to do a back flip right now, baby.",excitement,happiness,intense
+00:02:21.800000,00:02:22.960000,A back flip.,A back flip.,anticipation,surprise,mild
+00:02:22.960000,00:02:24.679000,But maitre d' Jean-Philippe doesn't,But maitre d' Jean-Philippe doesn't,doubt,sadness,mild
+00:02:24.679000,00:02:27.119000,think they're quite ready.,think they're quite ready.,doubt,fear,mild
+00:02:27.119000,00:02:29.919000,"Each year, chefs who come to Hell's Kitchen","Each year, chefs who come to Hell's Kitchen",anticipation,happiness,mild
+00:02:29.919000,00:02:32.479000,are giving me an absolute nightmare,are giving me an absolute nightmare,distress,fear,intense
+00:02:32.479000,00:02:34.679000,with their stupid mistakes.,with their stupid mistakes.,irritation,anger,moderate
+00:02:34.679000,00:02:37.320000,"As a result, I've had my problems with customers.","As a result, I've had my problems with customers.",frustration,anger,mild
+00:02:37.320000,00:02:38.839000,"Don't get in my face, buddy.","Don't get in my face, buddy.",irritation,anger,moderate
+00:02:38.839000,00:02:40.559000,Problems with Chef Ramsay.,Problems with Chef Ramsay.,frustration,anger,moderate
+00:02:40.559000,00:02:41.460000,Jean-Philippe.,Jean-Philippe.,neutrality,neutral,neutral
+00:02:41.460000,00:02:42.360000,Jean-Philippe.,Jean-Philippe.,neutrality,neutral,neutral
+00:02:42.360000,00:02:43.600000,Jean-Philippe!,Jean-Philippe!,attention,neutral,neutral
+00:02:43.600000,00:02:46.600000,Problems with keeping my head on straight.,Problems with keeping my head on straight.,confusion,sadness,moderate
+00:02:46.600000,00:02:47.960000,"Oh, fuck me.","Oh, fuck me.",frustration,anger,moderate
+00:02:47.960000,00:02:51.559000,"Now, this year, I've decided to help you","Now, this year, I've decided to help you",generosity,happiness,mild
+00:02:51.559000,00:02:53.279000,with giving you some tips.,with giving you some tips.,helpfulness,happiness,mild
+00:02:53.279000,00:02:54.520000,"Now, follow me.","Now, follow me.",command,neutral,neutral
+00:03:00.440000,00:03:02.399000,Yoo-hoo!,Yoo-hoo!,playfulness,happiness,mild
+00:03:02.399000,00:03:03.300000,"Hi, guys!","Hi, guys!",greeting,neutral,neutral
+00:03:03.300000,00:03:04.639000,Over here!,Over here!,alertness,surprise,moderate
+00:03:04.639000,00:03:06.279000,"Hi, I'm Bonnie.","Hi, I'm Bonnie.",openness,neutral,neutral
+00:03:06.279000,00:03:07.559000,"And when I was in Hell's Kitchen,","And when I was in Hell's Kitchen,",reminiscence,neutral,neutral
+00:03:07.559000,00:03:09.279000,I definitely broke my fair share of rules.,I definitely broke my fair share of rules.,confession,neutral,mild
+00:03:09.279000,00:03:10.179000,Bonnie.,Bonnie.,neutrality,neutral,neutral
+00:03:10.179000,00:03:11.080000,"Yes, Chef?","Yes, Chef?",attentiveness,neutral,neutral
+00:03:11.080000,00:03:13.960000,"You're cooking, and your fucking gas is not even on.","You're cooking, and your fucking gas is not even on.",frustration,anger,intense
+00:03:13.960000,00:03:15.160000,"Oh, is it?","Oh, is it?",skepticism,surprise,mild
+00:03:15.160000,00:03:16.059000,No.,No.,rejection,anger,mild
+00:03:16.059000,00:03:17.960000,No.,No.,rejection,anger,mild
+00:03:17.960000,00:03:18.860000,Duh.,Duh.,annoyance,anger,mild
+00:03:18.860000,00:03:20.520000,Who cooks with no heat?,Who cooks with no heat?,curiosity,neutral,neutral
+00:03:20.520000,00:03:23.080000,"Rule number one, always turn the stove","Rule number one, always turn the stove",instruction,neutral,neutral
+00:03:23.080000,00:03:25.759000,on before you start cooking.,on before you start cooking.,instruction,neutral,neutral
+00:03:25.759000,00:03:26.679000,Hey!,Hey!,greeting,neutral,neutral
+00:03:26.679000,00:03:27.759000,"Hey, you!","Hey, you!",attention,neutral,neutral
+00:03:27.759000,00:03:28.919000,Come on over here.,Come on over here.,invitation,neutral,neutral
+00:03:28.919000,00:03:31.639000,"I'm Colleen, and I've got some advice for you.","I'm Colleen, and I've got some advice for you.",helpfulness,neutral,mild
+00:03:31.639000,00:03:32.539000,Hm.,Hm.,contemplation,neutral,neutral
+00:03:32.539000,00:03:33.440000,Ha!,Ha!,amusement,happiness,mild
+00:03:33.440000,00:03:35.839000,Ha!,Ha!,amusement,happiness,mild
+00:03:35.839000,00:03:40.520000,"That, quite frankly, is the worst risotto I've ever tasted","That, quite frankly, is the worst risotto I've ever tasted",disapproval,disgust,intense
+00:03:40.520000,00:03:42.559000,in my entire cooking career.,in my entire cooking career.,reflection,neutral,neutral
+00:03:42.559000,00:03:44.240000,Who put sugar in there?,Who put sugar in there?,curiosity,surprise,mild
+00:03:44.240000,00:03:45.139000,I grabbed this.,I grabbed this.,assertiveness,neutral,neutral
+00:03:45.139000,00:03:46.639000,I thought that was salt.,I thought that was salt.,confusion,surprise,mild
+00:03:46.639000,00:03:47.880000,"Man, I've done that.","Man, I've done that.",resignation,neutral,mild
+00:03:47.880000,00:03:49.119000,"Oh, crap, I hope I don't do that.","Oh, crap, I hope I don't do that.",apprehension,fear,moderate
+00:03:49.119000,00:03:50.320000,That's some shit I'm going to do.,That's some shit I'm going to do.,determination,anger,moderate
+00:03:51.119000,00:03:52.020000,Shit!,Shit!,frustration,anger,intense
+00:03:52.020000,00:03:54.080000,Follow this simple rule.,Follow this simple rule.,instruction,neutral,neutral
+00:03:54.080000,00:03:57.080000,Always taste your food before you serve it.,Always taste your food before you serve it.,caution,neutral,neutral
+00:03:57.080000,00:03:58.320000,I really could use those tips.,I really could use those tips.,need,sadness,moderate
+00:03:58.320000,00:03:59.880000,I'm hoping later that maybe you can teach,I'm hoping later that maybe you can teach,hope,happiness,mild
+00:03:59.880000,00:04:01.800000,me how to tie my shoelaces.,me how to tie my shoelaces.,confusion,neutral,mild
+00:04:01.800000,00:04:02.800000,Come on now.,Come on now.,impatience,anger,mild
+00:04:02.800000,00:04:03.679000,"Hey, you guys.","Hey, you guys.",greeting,neutral,neutral
+00:04:03.679000,00:04:05.279000,"Hey, you guys, come over here.","Hey, you guys, come over here.",invitation,neutral,neutral
+00:04:05.279000,00:04:06.399000,I'm Aaron.,I'm Aaron.,calm,neutral,neutral
+00:04:06.399000,00:04:09.600000,"I was so excited for my first dinner service,","I was so excited for my first dinner service,",anticipation,happiness,intense
+00:04:09.600000,00:04:10.960000,and then this happened.,and then this happened.,anticipation,surprise,mild
+00:04:10.960000,00:04:12.559000,"Aaron, how are you feeling?","Aaron, how are you feeling?",curiosity,neutral,neutral
+00:04:12.559000,00:04:16.760000,I can't believe I'm crying.,I can't believe I'm crying.,vulnerability,sadness,moderate
+00:04:16.760000,00:04:18.920000,I'm cracking up right now.,I'm cracking up right now.,amusement,happiness,intense
+00:04:18.920000,00:04:20.279000,Aaron is a sissy.,Aaron is a sissy.,contempt,disgust,moderate
+00:04:20.279000,00:04:22.359000,I don't know how to feel about it.,I don't know how to feel about it.,confusion,neutral,mild
+00:04:22.359000,00:04:24.160000,"Suck it up, fat boy.","Suck it up, fat boy.",mockery,anger,moderate
+00:04:24.160000,00:04:25.079000,Stop.,Stop.,command,anger,mild
+00:04:25.079000,00:04:25.959000,Stop.,Stop.,command,anger,moderate
+00:04:25.959000,00:04:27.679000,Remember this one rule.,Remember this one rule.,instruction,neutral,neutral
+00:04:27.679000,00:04:29.519000,There's no crying in Hell's Kitchen.,There's no crying in Hell's Kitchen.,assertiveness,anger,moderate
+00:04:32.239000,00:04:33.119000,Are you ready?,Are you ready?,anticipation,neutral,neutral
+00:04:33.119000,00:04:34.019000,Who is that?,Who is that?,curiosity,neutral,mild
+00:04:34.019000,00:04:34.920000,I know that.,I know that.,certainty,neutral,neutral
+00:04:34.920000,00:04:38.239000,Are you ready?,Are you ready?,anticipation,neutral,neutral
+00:04:38.239000,00:04:40.720000,"I said, are you ready?","I said, are you ready?",expectation,neutral,mild
+00:04:43.600000,00:04:46.440000,"Oh, shit.","Oh, shit.",alarm,fear,moderate
+00:04:46.440000,00:04:47.320000,It's Hell.,It's Hell.,despair,sadness,intense
+00:04:47.320000,00:04:49.959000,It's going around.,It's going around.,resignation,neutral,neutral
+00:04:49.959000,00:04:51.679000,Don't stand there staring at me.,Don't stand there staring at me.,irritation,anger,mild
+00:04:51.679000,00:04:53.880000,Get in there and cook me your signature dishes.,Get in there and cook me your signature dishes.,command,neutral,neutral
+00:04:53.880000,00:04:55.079000,"Let's go, all of you.","Let's go, all of you.",command,neutral,neutral
+00:04:55.079000,00:04:56,Let's go.,Let's go.,readiness,happiness,mild
+00:04:56,00:04:58.399000,It's time to rumble.,It's time to rumble.,anticipation,surprise,moderate
+00:04:58.399000,00:04:59.839000,It's game time.,It's game time.,anticipation,happiness,moderate
+00:04:59.839000,00:05:00.720000,Let's go.,Let's go.,readiness,neutral,neutral
+00:05:00.720000,00:05:01.640000,Unbelievable.,Unbelievable.,astonishment,surprise,moderate
+00:05:01.640000,00:05:02.559000,Bloody hell.,Bloody hell.,frustration,anger,moderate
+00:05:02.559000,00:05:03.440000,Here I go again.,Here I go again.,resignation,sadness,mild
+00:05:20.959000,00:05:21.760000,Ah.,Ah.,resignation,neutral,mild
+00:05:24.160000,00:05:25.040000,"Go, go, go.","Go, go, go.",urgency,fear,intense
+00:05:25.040000,00:05:25.839000,"Go, go, go.","Go, go, go.",urgency,fear,intense
+00:05:33.839000,00:05:34.640000,"Hey, hey.","Hey, hey.",friendliness,happiness,mild
+00:05:43.839000,00:05:44.640000,Hey.,Hey.,greeting,neutral,neutral
+00:05:44.640000,00:05:45.440000,Ah.,Ah.,resignation,neutral,mild
+00:05:48.440000,00:05:49.239000,Ah.,Ah.,resignation,neutral,mild
+00:05:49.959000,00:05:50.760000,Ah.,Ah.,resignation,neutral,mild
+00:05:56.760000,00:05:57.959000,Game time.,Game time.,anticipation,happiness,moderate
+00:05:57.959000,00:05:59.320000,Chef Ramsay believes that there's,Chef Ramsay believes that there's,expectation,neutral,neutral
+00:05:59.320000,00:06:01.600000,no quicker way to assess a chef's ability,no quicker way to assess a chef's ability,evaluation,neutral,neutral
+00:06:01.600000,00:06:03.799000,than to taste their signature dish.,than to taste their signature dish.,anticipation,happiness,mild
+00:06:03.799000,00:06:04.720000,Right behind you.,Right behind you.,reassurance,happiness,mild
+00:06:04.720000,00:06:06.160000,Hot pan coming through.,Hot pan coming through.,alertness,surprise,moderate
+00:06:06.160000,00:06:08.640000,And these chefs will have just 45 minutes,And these chefs will have just 45 minutes,pressure,fear,moderate
+00:06:08.640000,00:06:10.480000,to make their first impression.,to make their first impression.,anticipation,surprise,mild
+00:06:10.480000,00:06:13.040000,I'm going to be the hottest Hell's Kitchen winner.,I'm going to be the hottest Hell's Kitchen winner.,confidence,happiness,intense
+00:06:13.040000,00:06:16.679000,"I'm spicy, sweet, and sexy hot.","I'm spicy, sweet, and sexy hot.",confidence,happiness,intense
+00:06:16.679000,00:06:17.720000,"Halfway through, yes?","Halfway through, yes?",uncertainty,neutral,mild
+00:06:17.720000,00:06:18.959000,I'm a legitimate chef.,I'm a legitimate chef.,pride,happiness,mild
+00:06:18.959000,00:06:21.279000,I've won most every award you could do.,I've won most every award you could do.,pride,happiness,moderate
+00:06:21.279000,00:06:23.359000,"I'm here to win Hell's Kitchen, first and foremost.","I'm here to win Hell's Kitchen, first and foremost.",determination,happiness,intense
+00:06:23.359000,00:06:24.720000,Just over 30 seconds to go.,Just over 30 seconds to go.,anticipation,surprise,mild
+00:06:24.720000,00:06:25.600000,"That's right, baby.","That's right, baby.",confidence,happiness,mild
+00:06:25.600000,00:06:26.519000,Cook.,Cook.,instruction,neutral,neutral
+00:06:26.519000,00:06:27.519000,"Come on, baby.","Come on, baby.",encouragement,happiness,mild
+00:06:27.519000,00:06:28.440000,Let's go.,Let's go.,readiness,happiness,mild
+00:06:28.440000,00:06:33.399000,"Five, four, three, two, and stop.","Five, four, three, two, and stop.",anticipation,surprise,mild
+00:06:37.880000,00:06:41.079000,"Before I start tasting your signature dishes,","Before I start tasting your signature dishes,",anticipation,happiness,mild
+00:06:41.079000,00:06:42.559000,I need to tell you something.,I need to tell you something.,anticipation,neutral,mild
+00:06:42.559000,00:06:45.559000,This year's prize is like nothing,This year's prize is like nothing,disappointment,sadness,mild
+00:06:45.559000,00:06:47.559000,I've ever offered before.,I've ever offered before.,uncertainty,neutral,neutral
+00:06:47.559000,00:06:50.160000,The winner this year of Hell's Kitchen,The winner this year of Hell's Kitchen,anticipation,happiness,mild
+00:06:50.160000,00:06:53.279000,is going to become the head chef at one of the finest,is going to become the head chef at one of the finest,anticipation,happiness,moderate
+00:06:53.279000,00:06:56.880000,"restaurants in Canada, the beautiful Araxi","restaurants in Canada, the beautiful Araxi",admiration,happiness,mild
+00:06:56.880000,00:07:01.760000,Restaurant and Bar at stunning Whistler in British Columbia.,Restaurant and Bar at stunning Whistler in British Columbia.,admiration,happiness,mild
+00:07:01.760000,00:07:03.799000,"The prize, I think it's tremendous.","The prize, I think it's tremendous.",admiration,happiness,moderate
+00:07:03.799000,00:07:05.119000,I couldn't be more psyched.,I couldn't be more psyched.,excitement,happiness,intense
+00:07:05.119000,00:07:06.440000,This is what I want.,This is what I want.,determination,happiness,mild
+00:07:06.440000,00:07:10,The winner will be there to welcome the world as it's,The winner will be there to welcome the world as it's,anticipation,happiness,mild
+00:07:10,00:07:13.640000,hosting the 2010 Winter Olympics.,hosting the 2010 Winter Olympics.,anticipation,happiness,mild
+00:07:13.640000,00:07:17.679000,So the stakes are higher than ever.,So the stakes are higher than ever.,anticipation,fear,moderate
+00:07:17.679000,00:07:20.119000,I'm already polishing up my skis.,I'm already polishing up my skis.,anticipation,happiness,mild
+00:07:20.119000,00:07:21.559000,Swoosh.,Swoosh.,anticipation,surprise,mild
+00:07:21.559000,00:07:23.160000,"OK, let's clear one thing up.","OK, let's clear one thing up.",determination,neutral,mild
+00:07:23.160000,00:07:25.399000,"Ladies, you're the red team.","Ladies, you're the red team.",announcement,neutral,neutral
+00:07:25.399000,00:07:26.679000,"Gentlemen, the blue team.","Gentlemen, the blue team.",anticipation,neutral,neutral
+00:07:26.679000,00:07:27.559000,"Yes, chef.","Yes, chef.",respect,neutral,neutral
+00:07:27.559000,00:07:29.679000,"For the first time ever in Hell's Kitchen,","For the first time ever in Hell's Kitchen,",anticipation,surprise,moderate
+00:07:29.679000,00:07:32.720000,the red team's signature dishes will,the red team's signature dishes will,anticipation,surprise,mild
+00:07:32.720000,00:07:37.880000,go head to head with the blue team's signature dishes.,go head to head with the blue team's signature dishes.,competition,neutral,moderate
+00:07:37.880000,00:07:38.760000,Is that clear?,Is that clear?,uncertainty,neutral,neutral
+00:07:38.760000,00:07:39.720000,"Yes, chef.","Yes, chef.",respect,neutral,neutral
+00:07:39.720000,00:07:40.619000,Let's go.,Let's go.,readiness,happiness,mild
+00:07:40.820000,00:07:41.899000,So first name is?,So first name is?,curiosity,neutral,neutral
+00:07:41.899000,00:07:42.820000,Suzanne.,Suzanne.,neutrality,neutral,neutral
+00:07:42.820000,00:07:43.700000,Good.,Good.,satisfaction,happiness,mild
+00:07:43.700000,00:07:44.899000,"And what is it, please?","And what is it, please?",curiosity,neutral,mild
+00:07:44.899000,00:07:46.899000,Fontina fonduta risotto.,Fontina fonduta risotto.,neutrality,neutral,neutral
+00:07:46.899000,00:07:48.660000,My food is classical.,My food is classical.,pride,happiness,mild
+00:07:48.660000,00:07:50.859000,My food is perfect.,My food is perfect.,satisfaction,happiness,moderate
+00:07:50.859000,00:07:53.220000,I can kick anybody's ass.,I can kick anybody's ass.,confidence,anger,moderate
+00:07:53.220000,00:07:57.739000,"Even before I start to taste it, the rice looks undercooked.","Even before I start to taste it, the rice looks undercooked.",disappointment,sadness,mild
+00:07:57.739000,00:07:59.380000,I definitely don't believe so at all.,I definitely don't believe so at all.,skepticism,disgust,moderate
+00:08:04.339000,00:08:05.220000,Would you mind?,Would you mind?,hesitation,fear,mild
+00:08:05.220000,00:08:06.100000,Sure.,Sure.,agreement,neutral,neutral
+00:08:06.100000,00:08:07.859000,I'm going to start with the risotto.,I'm going to start with the risotto.,anticipation,neutral,mild
+00:08:08.059000,00:08:08.940000,Would you mind?,Would you mind?,uncertainty,fear,mild
+00:08:08.940000,00:08:10.500000,Sure.,Sure.,agreement,neutral,neutral
+00:08:08.905986,00:08:13.705986,What does that taste like?,What does that taste like?,curiosity,neutral,mild
+00:08:13.705986,00:08:14.705986,It's a little chalky.,It's a little chalky.,disappointment,disgust,mild
+00:08:14.705986,00:08:15.705986,A little?,A little?,uncertainty,surprise,mild
+00:08:15.705986,00:08:16.705986,A lot.,A lot.,uncertainty,neutral,neutral
+00:08:16.705986,00:08:17.705986,That's just ignorant.,That's just ignorant.,contempt,disgust,moderate
+00:08:17.705986,00:08:18.705986,"He's absolutely, unmistakably wrong.","He's absolutely, unmistakably wrong.",indignation,anger,moderate
+00:08:18.705986,00:08:19.705986,"Now, madam, it's crunchy.","Now, madam, it's crunchy.",satisfaction,happiness,mild
+00:08:19.705986,00:08:20.705986,It's bright white in the center.,It's bright white in the center.,observation,neutral,neutral
+00:08:20.705986,00:08:21.705986,"I'm telling you, that is undercooked.","I'm telling you, that is undercooked.",frustration,anger,moderate
+00:08:21.705986,00:08:22.705986,Right.,Right.,agreement,neutral,neutral
+00:08:22.705986,00:08:23.705986,First name is?,First name is?,curiosity,neutral,neutral
+00:08:23.705986,00:08:24.705986,Dave.,Dave.,neutrality,neutral,neutral
+00:08:24.705986,00:08:25.704986,What is it?,What is it?,curiosity,neutral,mild
+00:08:25.704986,00:08:26.704986,I don't know.,I don't know.,uncertainty,neutral,neutral
+00:08:26.704986,00:08:27.704986,Dave.,Dave.,neutrality,neutral,neutral
+00:08:27.704986,00:08:28.704986,Dave.,Dave.,neutrality,neutral,neutral
+00:08:28.704986,00:08:29.704986,Dave.,Dave.,neutrality,neutral,neutral
+00:08:29.704986,00:08:30.704986,Dave.,Dave.,neutrality,neutral,neutral
+00:08:30.704986,00:08:31.704986,Dave.,Dave.,neutrality,neutral,neutral
+00:08:31.704986,00:08:32.704986,Dave.,Dave.,neutrality,neutral,neutral
+00:08:32.704986,00:08:33.704986,Dave.,Dave.,neutrality,neutral,neutral
+00:08:33.704986,00:08:34.704986,Dave.,Dave.,neutrality,neutral,neutral
+00:08:34.704986,00:08:35.704986,Dave.,Dave.,neutrality,neutral,neutral
+00:08:35.704986,00:08:36.704986,Dave.,Dave.,neutrality,neutral,neutral
+00:08:36.704986,00:08:37.704986,Dave.,Dave.,neutrality,neutral,neutral
+00:08:37.704986,00:08:38.704986,Dave.,Dave.,neutrality,neutral,neutral
+00:08:38.704986,00:08:39.704986,Dave.,Dave.,neutrality,neutral,neutral
+00:08:39.704986,00:08:40.704986,Dave.,Dave.,neutrality,neutral,neutral
+00:08:40.704986,00:08:41.704986,Dave.,Dave.,neutrality,neutral,neutral
+00:08:41.704986,00:08:42.704986,Dave.,Dave.,neutrality,neutral,neutral
+00:08:42.704986,00:08:43.704986,Dave.,Dave.,neutrality,neutral,neutral
+00:08:43.704986,00:08:44.704986,Dave.,Dave.,neutrality,neutral,neutral
+00:08:44.704986,00:08:45.704986,Dave.,Dave.,neutrality,neutral,neutral
+00:08:45.704986,00:08:46.704986,Dave.,Dave.,neutrality,neutral,neutral
+00:08:46.704986,00:08:47.704986,Dave.,Dave.,neutrality,neutral,neutral
+00:08:47.704986,00:08:48.704986,Dave.,Dave.,neutrality,neutral,neutral
+00:08:48.704986,00:08:49.704986,Dave.,Dave.,neutrality,neutral,neutral
+00:08:49.704986,00:08:50.704986,Dave.,Dave.,neutrality,neutral,neutral
+00:08:50.704986,00:08:51.704986,I think it's the most undercooked thing I've ever tasted.,I think it's the most undercooked thing I've ever tasted.,disappointment,disgust,moderate
+00:08:51.704986,00:08:52.704986,I've definitely idolized Chef Ramsay for years.,I've definitely idolized Chef Ramsay for years.,admiration,happiness,moderate
+00:08:52.704986,00:08:53.704986,I wanna earn his respect.,I wanna earn his respect.,aspiration,happiness,moderate
+00:08:53.704986,00:08:54.704986,"If Chef Ramsay takes my dish and tells me it's crap, I think it could seriously do permanent","If Chef Ramsay takes my dish and tells me it's crap, I think it could seriously do permanent",apprehension,fear,moderate
+00:08:54.704986,00:08:57.544986,mental damage to me.,mental damage to me.,hurt,sadness,moderate
+00:08:57.544986,00:09:00.704986,Beautifully seasoned.,Beautifully seasoned.,appreciation,happiness,mild
+00:09:00.704986,00:09:03.465986,Very nice.,Very nice.,appreciation,happiness,mild
+00:09:03.465986,00:09:06.465986,Oh dear.,Oh dear.,concern,fear,mild
+00:09:06.465986,00:09:09.385986,Why are these fucking Brussels sprouts undercooked?,Why are these fucking Brussels sprouts undercooked?,frustration,anger,intense
+00:09:09.385986,00:09:10.385986,My bad.,My bad.,regret,sadness,mild
+00:09:10.385986,00:09:11.385986,"Ah, shit.","Ah, shit.",frustration,anger,mild
+00:09:11.385986,00:09:12.385986,Brussels sprouts.,Brussels sprouts.,neutrality,neutral,neutral
+00:09:12.385986,00:09:13.385986,Ah!,Ah!,surprise,surprise,mild
+00:09:13.385986,00:09:18.905986,It's like heartbreaking that he didn't like that.,It's like heartbreaking that he didn't like that.,disappointment,sadness,intense
+00:09:18.905986,00:09:21.585986,The ostrich is cooked beautifully.,The ostrich is cooked beautifully.,appreciation,happiness,mild
+00:09:21.585986,00:09:24.464986,"It's pink and it's tender, but there's no fucking excuse for undercooked vegetables.","It's pink and it's tender, but there's no fucking excuse for undercooked vegetables.",frustration,anger,moderate
+00:09:24.464986,00:09:25.464986,You're right.,You're right.,agreement,neutral,neutral
+00:09:25.464986,00:09:26.464986,"Piss off, both of you.","Piss off, both of you.",hostility,anger,intense
+00:09:26.464986,00:09:27.464986,Neither of you gets a point.,Neither of you gets a point.,disappointment,sadness,mild
+00:09:27.464986,00:09:28.464986,Let's go.,Let's go.,readiness,happiness,mild
+00:09:28.464986,00:09:29.464986,Right.,Right.,agreement,neutral,neutral
+00:09:29.464986,00:09:30.464986,Ladies first.,Ladies first.,courtesy,neutral,neutral
+00:09:30.464986,00:09:31.464986,"So, first name is?","So, first name is?",curiosity,neutral,neutral
+00:09:31.464986,00:09:32.464986,Tech.,Tech.,neutrality,neutral,neutral
+00:09:32.464986,00:09:33.464986,"Right, Tech.","Right, Tech.",acceptance,neutral,neutral
+00:09:33.464986,00:09:34.464986,This is chipotle honey grilled shrimp.,This is chipotle honey grilled shrimp.,interest,neutral,neutral
+00:09:34.464986,00:09:35.464986,And how long you been cooking?,And how long you been cooking?,curiosity,neutral,neutral
+00:09:35.464986,00:09:36.464986,"Um, about 10 years except I'm unemployed at the moment.","Um, about 10 years except I'm unemployed at the moment.",insecurity,sadness,mild
+00:09:36.464986,00:09:45.464986,I am not coming in with a career to go back to.,I am not coming in with a career to go back to.,uncertainty,sadness,moderate
+00:09:45.464986,00:09:46.464986,"Like, I need this job.","Like, I need this job.",desperation,fear,moderate
+00:09:46.464986,00:09:47.464986,I got a family to support.,I got a family to support.,responsibility,fear,moderate
+00:09:47.464986,00:09:50.225986,I gotta fucking win this.,I gotta fucking win this.,determination,anger,intense
+00:09:50.225986,00:09:55.824986,That's nice.,That's nice.,appreciation,happiness,mild
+00:09:55.824986,00:10:04.964986,Those prawns are cooked beautifully.,Those prawns are cooked beautifully.,admiration,happiness,mild
+00:10:04.964986,00:10:09.544986,I'm patting myself on the back.,I'm patting myself on the back.,pride,happiness,moderate
+00:10:09.544986,00:10:10.544986,And this is?,And this is?,curiosity,surprise,mild
+00:10:10.544986,00:10:11.544986,Louis.,Louis.,neutrality,neutral,neutral
+00:10:11.544986,00:10:14.125986,I've been cooking in the diner scene for the last 25 years.,I've been cooking in the diner scene for the last 25 years.,pride,happiness,mild
+00:10:14.125986,00:10:16.504986,"Right, off you go.","Right, off you go.",dismissal,neutral,mild
+00:10:16.504986,00:10:19.285986,Well fuck me.,Well fuck me.,astonishment,surprise,intense
+00:10:20.285986,00:10:21.345986,What is that?,What is that?,curiosity,surprise,mild
+00:10:21.345986,00:10:23.164986,Sausage gravy over biscuits.,Sausage gravy over biscuits.,neutrality,neutral,neutral
+00:10:23.164986,00:10:24.164986,Sausage gravy?,Sausage gravy?,confusion,surprise,mild
+00:10:24.164986,00:10:25.164986,Yes.,Yes.,neutrality,neutral,neutral
+00:10:25.164986,00:10:26.164986,Over biscuits?,Over biscuits?,confusion,surprise,mild
+00:10:26.164986,00:10:27.164986,Yes.,Yes.,neutrality,neutral,neutral
+00:10:27.164986,00:10:28.164986,I sell about five gallons of it a week.,I sell about five gallons of it a week.,pride,happiness,mild
+00:10:28.164986,00:10:29.164986,Gallons?,Gallons?,disbelief,surprise,mild
+00:10:29.164986,00:10:30.164986,Gallons.,Gallons.,insistence,neutral,mild
+00:10:30.164986,00:10:31.164986,"What, you serve it to pigs?","What, you serve it to pigs?",sarcasm,disgust,moderate
+00:10:31.164986,00:10:33.164986,"No, actually I own a diner.","No, actually I own a diner.",defensiveness,neutral,mild
+00:10:33.164986,00:10:34.164986,Okay.,Okay.,acceptance,neutral,neutral
+00:10:34.164986,00:10:35.164986,And how much do you charge for that?,And how much do you charge for that?,curiosity,neutral,mild
+00:10:35.164986,00:10:36.164986,$4.75.,$4.75.,neutrality,neutral,neutral
+00:10:36.164986,00:10:37.164986,$4.75?,$4.75?,confusion,surprise,mild
+00:10:37.164986,00:10:38.164986,Yeah.,Yeah.,agreement,neutral,neutral
+00:10:38.164986,00:10:39.164986,With coffee.,With coffee.,anticipation,neutral,neutral
+00:10:39.164986,00:10:40.164986,Fuck me.,Fuck me.,frustration,anger,moderate
+00:10:40.164986,00:10:50.565986,What's wrong with it?,What's wrong with it?,concern,fear,mild
+00:10:50.565986,00:10:51.804986,What's wrong with it?,What's wrong with it?,concern,fear,mild
+00:10:51.804986,00:10:54.565986,It tastes like gunk.,It tastes like gunk.,disgust,disgust,moderate
+00:10:54.565986,00:10:57.645986,Hundreds of people eat that in my diner every week.,Hundreds of people eat that in my diner every week.,pride,happiness,mild
+00:10:57.645986,00:10:59.964986,I don't think it was worth spitting out.,I don't think it was worth spitting out.,disappointment,sadness,mild
+00:10:59.964986,00:11:02.164986,"Ladies, one nil.","Ladies, one nil.",pride,happiness,mild
+00:11:02.164986,00:11:03.164986,Thank you.,Thank you.,gratitude,happiness,mild
+00:11:03.164986,00:11:05.164986,"Thank you, Chef.","Thank you, Chef.",gratitude,happiness,mild
+00:11:05.164986,00:11:07.324986,"Okay, let's go.","Okay, let's go.",readiness,neutral,mild
+00:11:07.324986,00:11:09.444986,"With the women up by a point, former Marine","With the women up by a point, former Marine",anticipation,surprise,mild
+00:11:09.444986,00:11:12.645986,Joseph is ready for battle.,Joseph is ready for battle.,determination,happiness,moderate
+00:11:12.645986,00:11:13.645986,First name is?,First name is?,curiosity,neutral,neutral
+00:11:13.645986,00:11:14.645986,Joseph.,Joseph.,neutrality,neutral,neutral
+00:11:14.645986,00:11:15.645986,Joseph.,Joseph.,neutrality,neutral,neutral
+00:11:15.645986,00:11:16.645986,I just feel like a dog that's been taken off his leash.,I just feel like a dog that's been taken off his leash.,liberation,happiness,moderate
+00:11:16.645986,00:11:17.645986,I'm hungry.,I'm hungry.,desire,neutral,mild
+00:11:17.645986,00:11:18.645986,I'm hungry.,I'm hungry.,desire,neutral,mild
+00:11:18.645986,00:11:19.645986,And I want this.,And I want this.,desire,happiness,mild
+00:11:19.645986,00:11:20.645986,And I'm going to get this.,And I'm going to get this.,determination,happiness,moderate
+00:11:20.645986,00:11:22.485986,None of them will get in my fucking way.,None of them will get in my fucking way.,defiance,anger,intense
+00:11:22.485986,00:11:23.485986,And this is?,And this is?,curiosity,surprise,mild
+00:11:23.485986,00:11:25.044986,This right here is a roasted veal chop.,This right here is a roasted veal chop.,pride,happiness,mild
+00:11:25.044986,00:11:26.044986,Uh-huh.,Uh-huh.,acknowledgment,neutral,neutral
+00:11:26.044986,00:11:27.044986,With roasted beet vegetables.,With roasted beet vegetables.,anticipation,neutral,neutral
+00:11:27.044986,00:11:28.044986,Lovely color on there.,Lovely color on there.,appreciation,happiness,mild
+00:11:28.044986,00:11:29.044986,Thank you.,Thank you.,gratitude,happiness,mild
+00:11:29.044986,00:11:30.044986,Now the vegetables.,Now the vegetables.,anticipation,neutral,neutral
+00:11:30.044986,00:11:32.365986,What a shame the Brussels sprouts are rock hard.,What a shame the Brussels sprouts are rock hard.,disappointment,sadness,mild
+00:11:32.365986,00:11:34.044986,Are they supposed to be that crunchy?,Are they supposed to be that crunchy?,uncertainty,surprise,mild
+00:11:34.044986,00:11:35.044986,No.,No.,rejection,anger,mild
+00:11:35.044986,00:11:36.044986,"Have a little taste for me, please.","Have a little taste for me, please.",encouragement,happiness,mild
+00:11:36.044986,00:11:37.044986,Absolutely.,Absolutely.,agreement,neutral,neutral
+00:11:37.765986,00:11:40.765986,You got a fork?,You got a fork?,expectation,neutral,neutral
+00:11:40.765986,00:11:41.765986,I ain't no animal.,I ain't no animal.,defensiveness,anger,moderate
+00:11:41.765986,00:11:44.684986,"If there's a fork available, I like to fucking use it.","If there's a fork available, I like to fucking use it.",insistence,anger,moderate
+00:11:44.684986,00:11:45.684986,You can buy that.,You can buy that.,encouragement,neutral,neutral
+00:11:45.684986,00:11:46.684986,You're a big boy.,You're a big boy.,encouragement,happiness,mild
+00:11:46.684986,00:11:47.684986,I'm not an animal.,I'm not an animal.,defensiveness,anger,moderate
+00:11:47.684986,00:11:49.884986,Do I look like a caveman?,Do I look like a caveman?,insecurity,sadness,mild
+00:11:49.884986,00:11:52.244986,Do I eat with my fucking hands?,Do I eat with my fucking hands?,irritation,anger,moderate
+00:11:52.244986,00:11:53.244986,Don't get defensive.,Don't get defensive.,defensiveness,anger,mild
+00:11:53.244986,00:11:54.244986,Huh?,Huh?,confusion,surprise,mild
+00:11:54.244986,00:11:55.244986,"I was like, damn.","I was like, damn.",astonishment,surprise,moderate
+00:11:55.244986,00:11:56.244986,"Throwdown, Chef Ramsay.","Throwdown, Chef Ramsay.",challenge,anger,moderate
+00:11:56.244986,00:11:57.244986,Are you mad?,Are you mad?,suspicion,anger,mild
+00:11:57.244986,00:12:01.804986,"Me and him, we're going to go head to head.","Me and him, we're going to go head to head.",determination,anger,moderate
+00:12:01.804986,00:12:04.324986,Without a fucking doubt.,Without a fucking doubt.,certainty,happiness,intense
+00:12:04.324986,00:12:05.324986,That's bullshit.,That's bullshit.,contempt,anger,intense
+00:12:05.324986,00:12:06.324986,"No, I nailed that fucking dish.","No, I nailed that fucking dish.",pride,happiness,intense
+00:12:06.365986,00:12:07.365986,He knew it.,He knew it.,certainty,neutral,neutral
+00:12:07.365986,00:12:08.365986,I knew it.,I knew it.,satisfaction,happiness,mild
+00:12:08.365986,00:12:09.365986,No fucking way.,No fucking way.,incredulity,surprise,intense
+00:12:09.365986,00:12:10.365986,Relax.,Relax.,calm,neutral,mild
+00:12:10.365986,00:12:11.365986,What a shame.,What a shame.,regret,sadness,mild
+00:12:11.365986,00:12:12.365986,First name is?,First name is?,curiosity,neutral,neutral
+00:12:12.365986,00:12:13.365986,Tenille.,Tenille.,neutrality,neutral,neutral
+00:12:13.365986,00:12:14.365986,"What is it, please?","What is it, please?",curiosity,neutral,mild
+00:12:14.365986,00:12:15.365986,"Chef, this is a lamb chop with balsamic glaze.","Chef, this is a lamb chop with balsamic glaze.",presentation,neutral,neutral
+00:12:15.365986,00:12:16.365986,It's nice.,It's nice.,contentment,happiness,mild
+00:12:16.365986,00:12:17.365986,"Thank you, Chef.","Thank you, Chef.",gratitude,happiness,mild
+00:12:17.365986,00:12:18.365986,Yeah?,Yeah?,curiosity,surprise,mild
+00:12:18.365986,00:12:19.365986,Congratulations.,Congratulations.,pride,happiness,mild
+00:12:19.365986,00:12:20.365986,Two Nil to the ladies.,Two Nil to the ladies.,pride,happiness,mild
+00:12:20.365986,00:12:21.365986,I'll take autographs later.,I'll take autographs later.,dismissiveness,neutral,mild
+00:12:21.365986,00:12:22.365986,I'll take autographs later.,I'll take autographs later.,assurance,neutral,neutral
+00:12:22.365986,00:12:23.365986,Let's go.,Let's go.,readiness,happiness,mild
+00:12:23.365986,00:12:24.365986,Two seconds.,Two seconds.,anticipation,neutral,neutral
+00:12:24.365986,00:12:25.364986,I need to grab one thing.,I need to grab one thing.,focus,neutral,neutral
+00:12:25.364986,00:12:26.364986,What is it?,What is it?,curiosity,neutral,neutral
+00:12:27.105986,00:12:28.105986,I'll take autographs later.,I'll take autographs later.,confidence,neutral,mild
+00:12:28.105986,00:12:29.565986,I'll take autographs later.,I'll take autographs later.,confidence,happiness,mild
+00:12:29.565986,00:12:30.464986,Let's go.,Let's go.,readiness,happiness,mild
+00:12:33.505986,00:12:34.505986,Two seconds.,Two seconds.,anticipation,neutral,neutral
+00:12:34.505986,00:12:38.125986,I need to grab one thing.,I need to grab one thing.,focus,neutral,neutral
+00:12:38.125986,00:12:39.464986,What's that?,What's that?,curiosity,surprise,mild
+00:12:39.464986,00:12:40.464986,Tequila.,Tequila.,neutrality,neutral,neutral
+00:12:40.464986,00:12:42.785986,Tequila.,Tequila.,neutrality,neutral,neutral
+00:12:42.785986,00:12:44.524986,I'm definitely asking Chef Ramsay,I'm definitely asking Chef Ramsay,determination,neutral,moderate
+00:12:44.524986,00:12:45.644986,to do a shot of tequila with me.,to do a shot of tequila with me.,invitation,neutral,neutral
+00:12:45.644986,00:12:46.804986,It goes with the dish.,It goes with the dish.,acceptance,neutral,neutral
+00:12:46.804986,00:12:47.804986,And what's your dish?,And what's your dish?,curiosity,neutral,mild
+00:12:47.804986,00:12:50.625986,Margarita french toast with tequila lime butter.,Margarita french toast with tequila lime butter.,interest,neutral,mild
+00:12:50.625986,00:12:51.424986,Show me.,Show me.,curiosity,neutral,mild
+00:12:51.424986,00:12:56.864986,I thought you were joking.,I thought you were joking.,confusion,surprise,mild
+00:12:56.864986,00:12:58.304986,You're cooking me a slice of fucking toast,You're cooking me a slice of fucking toast,irritation,anger,moderate
+00:12:58.304986,00:12:59.204986,that dipped in egg.,that dipped in egg.,neutrality,neutral,neutral
+00:12:59.204986,00:13:00.105986,"Yes, Chef.","Yes, Chef.",respect,neutral,neutral
+00:13:00.105986,00:13:03.785986,With tequila to get me drunk.,With tequila to get me drunk.,anticipation,happiness,mild
+00:13:03.785986,00:13:07.704986,"One tequila, two tequila, three tequila, four.","One tequila, two tequila, three tequila, four.",playfulness,happiness,mild
+00:13:07.704986,00:13:09.065986,Give me a lot more.,Give me a lot more.,desire,happiness,moderate
+00:13:09.065986,00:13:09.964986,Keep on going.,Keep on going.,encouragement,happiness,mild
+00:13:13.945986,00:13:15.984986,Are you kidding me?,Are you kidding me?,incredulity,surprise,moderate
+00:13:15.984986,00:13:17.665986,Why would you do that?,Why would you do that?,confusion,surprise,moderate
+00:13:17.665986,00:13:19.024986,That's it?,That's it?,doubt,surprise,mild
+00:13:19.024986,00:13:22.065986,What the fuck were you doing for 42 minutes?,What the fuck were you doing for 42 minutes?,irritation,anger,intense
+00:13:22.065986,00:13:24.785986,Because that takes literally three minutes.,Because that takes literally three minutes.,impatience,anger,mild
+00:13:24.785986,00:13:26.905986,Shocking.,Shocking.,shock,surprise,intense
+00:13:26.905986,00:13:28.984986,So you're cooking where?,So you're cooking where?,curiosity,neutral,mild
+00:13:28.984986,00:13:30.065986,I cook at home.,I cook at home.,contentment,neutral,neutral
+00:13:30.065986,00:13:33.144986,I'm a manager of a culinary retail store.,I'm a manager of a culinary retail store.,pride,happiness,mild
+00:13:33.144986,00:13:35.424986,So where did you learn to cook?,So where did you learn to cook?,curiosity,neutral,mild
+00:13:35.424986,00:13:36.825986,Out of my heart.,Out of my heart.,longing,sadness,moderate
+00:13:36.825986,00:13:37.945986,So you've never been to culinary school?,So you've never been to culinary school?,skepticism,surprise,mild
+00:13:37.945986,00:13:38.845986,No.,No.,rejection,anger,mild
+00:13:38.845986,00:13:41.385986,You don't need to go to culinary school,You don't need to go to culinary school,reassurance,neutral,mild
+00:13:41.385986,00:13:44.984986,"because if you have a passion for cooking, you will succeed.","because if you have a passion for cooking, you will succeed.",encouragement,happiness,mild
+00:13:44.984986,00:13:46.665986,So this is?,So this is?,confusion,surprise,mild
+00:13:46.665986,00:13:47.545986,Mussels with chorizo.,Mussels with chorizo.,neutrality,neutral,neutral
+00:13:51.304986,00:13:52.424986,There's potential there.,There's potential there.,hope,happiness,mild
+00:13:52.424986,00:13:53.304986,Nice.,Nice.,appreciation,happiness,mild
+00:13:53.304986,00:13:54.744986,"Yeah, thank you.","Yeah, thank you.",gratitude,happiness,mild
+00:13:54.744986,00:13:56.105986,One point to the men.,One point to the men.,acknowledgment,neutral,neutral
+00:13:56.105986,00:13:57.345986,Bada bing.,Bada bing.,neutrality,neutral,neutral
+00:13:57.345986,00:13:59.105986,I got the potential.,I got the potential.,confidence,happiness,mild
+00:13:59.105986,00:13:59.984986,And here it comes.,And here it comes.,anticipation,surprise,mild
+00:14:04.625986,00:14:05.625986,"OK, what is it?","OK, what is it?",curiosity,surprise,mild
+00:14:05.625986,00:14:09.464986,We have a poached lobster and savory portobello mushrooms.,We have a poached lobster and savory portobello mushrooms.,appetite,happiness,mild
+00:14:09.464986,00:14:10.864986,My dish.,My dish.,ownership,neutral,neutral
+00:14:10.864986,00:14:13.024986,It's very rich and succulent.,It's very rich and succulent.,satisfaction,happiness,mild
+00:14:13.024986,00:14:16.584986,It's luscious and velvety.,It's luscious and velvety.,pleasure,happiness,mild
+00:14:16.584986,00:14:18.984986,You can just feel what's happening in your mouth,You can just feel what's happening in your mouth,enjoyment,happiness,mild
+00:14:18.984986,00:14:20.744986,and the satisfaction that comes.,and the satisfaction that comes.,satisfaction,happiness,mild
+00:14:26.264986,00:14:27.385986,Where's the lobster tail?,Where's the lobster tail?,confusion,surprise,moderate
+00:14:32.464986,00:14:34.704986,Where's the fucking tail?,Where's the fucking tail?,frustration,anger,moderate
+00:14:34.704986,00:14:37.704986,"During the cooking process, I had some challenges.","During the cooking process, I had some challenges.",frustration,sadness,mild
+00:14:41.665986,00:14:44.945986,"Poached lobster tail, where's the fucking tail?","Poached lobster tail, where's the fucking tail?",exasperation,anger,moderate
+00:14:44.945986,00:14:48.024986,Absolutely fucking pathetic.,Absolutely fucking pathetic.,contempt,disgust,intense
+00:14:48.024986,00:14:50.704986,"Dang, that's another zero.","Dang, that's another zero.",disappointment,sadness,moderate
+00:14:50.704986,00:14:51.744986,So first name is?,So first name is?,inquiry,neutral,neutral
+00:14:51.744986,00:14:52.625986,Jim.,Jim.,identification,neutral,neutral
+00:14:52.625986,00:14:54.345986,"Jim, do me a favor.","Jim, do me a favor.",request,neutral,neutral
+00:14:54.345986,00:14:56.024986,I'm not intimidated by anybody.,I'm not intimidated by anybody.,defiance,anger,mild
+00:14:56.024986,00:14:56.984986,Take your coat off.,Take your coat off.,command,neutral,neutral
+00:14:56.984986,00:14:59.665986,OK.,OK.,acceptance,neutral,neutral
+00:14:59.665986,00:15:02.345986,"All right, I'm a little intimidated by Chef Ramsay.","All right, I'm a little intimidated by Chef Ramsay.",nervousness,fear,mild
+00:15:02.345986,00:15:05.825986,This is a seared ahi tuna with a soy ginger vinaigrette.,This is a seared ahi tuna with a soy ginger vinaigrette.,description,neutral,neutral
+00:15:09.584986,00:15:11.144986,It tastes delicious.,It tastes delicious.,satisfaction,happiness,mild
+00:15:11.144986,00:15:12.625986,"Congratulations, men.","Congratulations, men.",pride,happiness,mild
+00:15:12.625986,00:15:15.385986,"One more point, that makes it 2-2.","One more point, that makes it 2-2.",anticipation,happiness,mild
+00:15:15.385986,00:15:18.464986,With the men and women tied at two points each.,With the men and women tied at two points each.,anticipation,neutral,mild
+00:15:18.464986,00:15:19.945986,"Right, off you go.","Right, off you go.",dismissal,neutral,neutral
+00:15:19.945986,00:15:21.704986,Executive Chef Kevin.,Executive Chef Kevin.,neutrality,neutral,neutral
+00:15:21.704986,00:15:25.225986,"I wouldn't put coffee over a tender, delicious fillet steak.","I wouldn't put coffee over a tender, delicious fillet steak.",disapproval,disgust,mild
+00:15:25.225986,00:15:27.864986,And sous chef Ariel face off.,And sous chef Ariel face off.,anticipation,surprise,mild
+00:15:27.864986,00:15:29.505986,I can't believe that you undercooked,I can't believe that you undercooked,disappointment,sadness,moderate
+00:15:29.505986,00:15:30.945986,the duck with raw fat.,the duck with raw fat.,neutrality,neutral,neutral
+00:15:30.945986,00:15:32.545986,But no one scores.,But no one scores.,disappointment,sadness,mild
+00:15:32.545986,00:15:35.984986,"Two executive chefs, Lovely and Andy.","Two executive chefs, Lovely and Andy.",neutrality,neutral,neutral
+00:15:35.984986,00:15:37.744986,I was hoping to award one of you at least a point.,I was hoping to award one of you at least a point.,disappointment,sadness,mild
+00:15:37.744986,00:15:39.825986,Come away empty handed.,Come away empty handed.,disappointment,sadness,moderate
+00:15:39.825986,00:15:40.665986,Fucking no chance.,Fucking no chance.,frustration,anger,intense
+00:15:42.785986,00:15:44.464986,We have a tie at 2-2.,We have a tie at 2-2.,anticipation,surprise,mild
+00:15:44.464986,00:15:47.825986,It comes down to these last two dishes.,It comes down to these last two dishes.,anticipation,surprise,moderate
+00:15:47.825986,00:15:51.304986,"Right, off you go.","Right, off you go.",dismissal,neutral,neutral
+00:15:51.304986,00:15:53.464986,"Wow, and what is it?","Wow, and what is it?",curiosity,surprise,mild
+00:15:53.464986,00:15:55.785986,It is a chipotle rubbed pork tenderloin.,It is a chipotle rubbed pork tenderloin.,description,neutral,neutral
+00:15:58.864986,00:16:00.905986,"Lord Jesus, please let the girls win.","Lord Jesus, please let the girls win.",hope,happiness,moderate
+00:16:00.905986,00:16:01.785986,I want a prize.,I want a prize.,desire,happiness,mild
+00:16:01.785986,00:16:02.665986,I want a prize.,I want a prize.,desire,happiness,mild
+00:16:02.665986,00:16:04.105986,I want a prize.,I want a prize.,desire,happiness,mild
+00:16:04.105986,00:16:06.945986,Is there chili in there?,Is there chili in there?,curiosity,neutral,mild
+00:16:06.945986,00:16:08.984986,Why is it so hot?,Why is it so hot?,discomfort,disgust,mild
+00:16:08.984986,00:16:11.464986,It's blowing my mouth away.,It's blowing my mouth away.,amazement,surprise,moderate
+00:16:11.545986,00:16:13.065986,"Oh, it's so spicy.","Oh, it's so spicy.",surprise,surprise,moderate
+00:16:13.065986,00:16:15.424986,"All right, well, it does reflect me.","All right, well, it does reflect me.",acceptance,neutral,mild
+00:16:15.424986,00:16:18.625986,So maybe I'm too spicy.,So maybe I'm too spicy.,self-doubt,sadness,mild
+00:16:17.811995,00:16:20.411995,"And this is Van, from where?","And this is Van, from where?",curiosity,surprise,mild
+00:16:20.411995,00:16:21.611995,"Dallas, Texas.","Dallas, Texas.",neutrality,neutral,neutral
+00:16:21.611995,00:16:23.411995,"I think sometimes people underestimate me,","I think sometimes people underestimate me,",insecurity,sadness,mild
+00:16:23.411995,00:16:26.651995,because I'm just a tatted up country boy from Texas.,because I'm just a tatted up country boy from Texas.,self-acceptance,neutral,mild
+00:16:26.651995,00:16:27.551995,Right.,Right.,agreement,neutral,neutral
+00:16:27.551995,00:16:28.851995,Off you go.,Off you go.,dismissal,neutral,neutral
+00:16:28.851995,00:16:30.691995,But I'm a beer drinker with a sophisticated palate.,But I'm a beer drinker with a sophisticated palate.,pride,happiness,mild
+00:16:30.691995,00:16:31.591995,Ah!,Ah!,surprise,surprise,mild
+00:16:31.591995,00:16:32.991995,"Ha, ha, ha, ha.","Ha, ha, ha, ha.",amusement,happiness,moderate
+00:16:32.991995,00:16:35.091995,"Right, Van, that looks interesting.","Right, Van, that looks interesting.",curiosity,surprise,mild
+00:16:35.091995,00:16:36.391995,What is it?,What is it?,curiosity,neutral,mild
+00:16:36.391995,00:16:39.671995,It's a seared foie gras with minted caramel.,It's a seared foie gras with minted caramel.,interest,neutral,mild
+00:16:39.671995,00:16:41.571995,It's very neat.,It's very neat.,appreciation,happiness,mild
+00:16:41.571995,00:16:43.770995,"Oh, it's looking grim for us.","Oh, it's looking grim for us.",dread,fear,moderate
+00:16:43.770995,00:16:46.770995,"But if the other guy's dish sucks,","But if the other guy's dish sucks,",doubt,disgust,mild
+00:16:46.770995,00:16:47.671995,there's still hope.,there's still hope.,hope,happiness,mild
+00:16:51.871995,00:16:53.471995,There's something quite intriguing about that.,There's something quite intriguing about that.,curiosity,surprise,mild
+00:16:53.471995,00:16:57.551995,The mint cuts down the richness of the foie gras.,The mint cuts down the richness of the foie gras.,appreciation,happiness,mild
+00:16:57.551995,00:16:59.011995,"Congratulations, men.","Congratulations, men.",pride,happiness,mild
+00:16:59.011995,00:16:59.910995,Well done.,Well done.,appreciation,happiness,mild
+00:16:59.910995,00:17:00.811995,Woo-hoo!,Woo-hoo!,excitement,happiness,intense
+00:17:03.891995,00:17:06.691995,Looks are very deceiving.,Looks are very deceiving.,skepticism,surprise,mild
+00:17:06.691995,00:17:09.331995,That guy's got some talent under those muscles.,That guy's got some talent under those muscles.,admiration,happiness,mild
+00:17:09.331995,00:17:10.651995,Well done.,Well done.,appreciation,happiness,mild
+00:17:10.651995,00:17:12.191995,The men have clearly won.,The men have clearly won.,triumph,happiness,moderate
+00:17:12.191995,00:17:13.631995,Well done.,Well done.,appreciation,happiness,mild
+00:17:13.631995,00:17:15.391995,But the mess of those kitchens.,But the mess of those kitchens.,displeasure,disgust,moderate
+00:17:15.391995,00:17:16.291995,Have a look.,Have a look.,curiosity,neutral,neutral
+00:17:17.291995,00:17:18.491995,Ah!,Ah!,surprise,surprise,mild
+00:17:18.491995,00:17:20.230995,"Oh, my god.","Oh, my god.",astonishment,surprise,moderate
+00:17:20.230995,00:17:22.891995,"Ladies, your punishment is to get","Ladies, your punishment is to get",foreboding,fear,moderate
+00:17:22.891995,00:17:28.230995,those kitchens immaculate for the opening of Hell's Kitchen.,those kitchens immaculate for the opening of Hell's Kitchen.,anticipation,happiness,mild
+00:17:28.230995,00:17:32.770995,"Women are the best at cleaning, so it's right up their alley.","Women are the best at cleaning, so it's right up their alley.",condescension,disgust,moderate
+00:17:32.770995,00:17:35.971995,"Gentlemen, winning a challenge comes with great rewards.","Gentlemen, winning a challenge comes with great rewards.",anticipation,happiness,mild
+00:17:35.971995,00:17:38.111995,You guys are getting a takeout.,You guys are getting a takeout.,expectation,happiness,mild
+00:17:38.111995,00:17:40.071995,But not any takeout.,But not any takeout.,preference,neutral,neutral
+00:17:40.071995,00:17:42.211995,I'm talking about a special dinner,I'm talking about a special dinner,anticipation,happiness,mild
+00:17:42.211995,00:17:44.950995,"from my restaurant, the London West Hollywood's.","from my restaurant, the London West Hollywood's.",pride,happiness,mild
+00:17:45.050995,00:17:48.311995,And you're going to sit and indulge and enjoy.,And you're going to sit and indulge and enjoy.,pleasure,happiness,mild
+00:17:48.311995,00:17:49.891995,Congratulations.,Congratulations.,pride,happiness,mild
+00:17:49.891995,00:17:50.811995,Right.,Right.,agreement,neutral,neutral
+00:17:50.811995,00:17:53.251995,I want you to meet my sous chefs.,I want you to meet my sous chefs.,anticipation,happiness,mild
+00:17:53.251995,00:17:55.991995,Sous chef Scott is back to run the blue kitchen.,Sous chef Scott is back to run the blue kitchen.,anticipation,happiness,mild
+00:17:55.991995,00:17:58.230995,And Chef Ramsay has asked someone special,And Chef Ramsay has asked someone special,curiosity,surprise,mild
+00:17:58.230995,00:18:00.171995,to help run the red kitchen.,to help run the red kitchen.,duty,neutral,neutral
+00:18:00.171995,00:18:02.031995,"This is our winner, Heather, from season","This is our winner, Heather, from season",pride,happiness,mild
+00:18:02.031995,00:18:03.031995,two of Hell's Kitchen.,two of Hell's Kitchen.,neutrality,neutral,neutral
+00:18:06.171995,00:18:07.730995,Scott and Heather are going to show you the way.,Scott and Heather are going to show you the way.,assurance,happiness,mild
+00:18:07.730995,00:18:08.631995,Off you go.,Off you go.,dismissal,neutral,neutral
+00:18:09.631995,00:18:13.590995,The men will be treated to a three,The men will be treated to a three,anticipation,happiness,mild
+00:18:13.590995,00:18:15.230995,course dinner on the patio.,course dinner on the patio.,anticipation,happiness,mild
+00:18:15.230995,00:18:16.131995,Welcome.,Welcome.,warmth,happiness,mild
+00:18:16.131995,00:18:17.770995,"Congratulations, gentlemen.","Congratulations, gentlemen.",pride,happiness,mild
+00:18:17.770995,00:18:18.671995,Cheers.,Cheers.,gratitude,happiness,mild
+00:18:18.671995,00:18:20.270995,The women clean where they should be at.,The women clean where they should be at.,resignation,neutral,neutral
+00:18:20.270995,00:18:21.471995,Cheers.,Cheers.,gratitude,happiness,mild
+00:18:21.471995,00:18:22.971995,And while they toast their victory,And while they toast their victory,anticipation,happiness,mild
+00:18:22.971995,00:18:25.510995,"with a little champagne, the women are treated","with a little champagne, the women are treated",appreciation,happiness,mild
+00:18:25.510995,00:18:27.411995,to a different kind of bubbly.,to a different kind of bubbly.,curiosity,neutral,mild
+00:18:27.411995,00:18:28.311995,You got to hustle.,You got to hustle.,determination,neutral,moderate
+00:18:28.311995,00:18:29.811995,You got to get wet.,You got to get wet.,resignation,neutral,neutral
+00:18:29.811995,00:18:31.251995,You can get it off faster.,You can get it off faster.,impatience,anger,mild
+00:18:31.251995,00:18:32.551995,Please show me how.,Please show me how.,request,neutral,neutral
+00:18:32.551995,00:18:34.051995,You could be here all night doing that.,You could be here all night doing that.,resignation,sadness,mild
+00:18:34.051995,00:18:34.950995,I'm not doing that.,I'm not doing that.,refusal,anger,mild
+00:18:34.950995,00:18:37.051995,It wasn't new.,It wasn't new.,disappointment,sadness,mild
+00:18:37.070995,00:18:38.611995,"OK, guys.","OK, guys.",readiness,neutral,neutral
+00:18:38.611995,00:18:41.311995,Here's your dinner.,Here's your dinner.,neutrality,neutral,neutral
+00:18:41.311995,00:18:43.150995,Who the hell wants a bologna sandwich?,Who the hell wants a bologna sandwich?,contempt,disgust,moderate
+00:18:43.150995,00:18:44.450995,"Bon appetit, guys.","Bon appetit, guys.",warmth,happiness,mild
+00:18:44.450995,00:18:46.891995,I thought bologna was illegal in California.,I thought bologna was illegal in California.,confusion,surprise,mild
+00:18:46.891995,00:18:48.691995,"Like, what the hell?","Like, what the hell?",confusion,surprise,moderate
+00:18:48.691995,00:18:49.590995,Here we are.,Here we are.,acceptance,neutral,neutral
+00:18:53.430995,00:18:54.331995,This is money.,This is money.,neutrality,neutral,neutral
+00:18:54.331995,00:18:55.230995,Fantastic.,Fantastic.,enthusiasm,happiness,moderate
+00:18:55.230995,00:18:56.131995,This is so good.,This is so good.,satisfaction,happiness,moderate
+00:18:56.131995,00:18:57.391995,This is very good.,This is very good.,satisfaction,happiness,mild
+00:18:57.391995,00:18:59.070995,"Oh, so amazing.","Oh, so amazing.",admiration,happiness,moderate
+00:18:59.070995,00:19:01.971995,All the flavors were just like exploding in my mouth.,All the flavors were just like exploding in my mouth.,excitement,happiness,intense
+00:19:01.971995,00:19:03.631995,"Let's get used to it, all right?","Let's get used to it, all right?",acceptance,neutral,mild
+00:19:03.631995,00:19:04.531995,I like that attitude.,I like that attitude.,appreciation,happiness,mild
+00:19:04.531995,00:19:06.070995,We're fucking used to it.,We're fucking used to it.,resignation,sadness,moderate
+00:19:06.090995,00:19:08.331995,"It's been a long night for the ladies,","It's been a long night for the ladies,",weariness,sadness,mild
+00:19:08.331995,00:19:10.430995,but their work isn't over yet.,but their work isn't over yet.,anticipation,neutral,mild
+00:19:10.430995,00:19:11.631995,Here's your recipe book.,Here's your recipe book.,helpfulness,happiness,mild
+00:19:11.631995,00:19:13.831995,"Study hard, whatever for dinner service tomorrow night.","Study hard, whatever for dinner service tomorrow night.",determination,neutral,mild
+00:19:13.831995,00:19:16.171995,Sweet dreams.,Sweet dreams.,affection,happiness,mild
+00:19:16.171995,00:19:19.111995,Waiting for me in my bed was this big binder,Waiting for me in my bed was this big binder,curiosity,surprise,mild
+00:19:19.111995,00:19:21.850995,"of all of the recipes, which I have","of all of the recipes, which I have",curiosity,neutral,mild
+00:19:21.850995,00:19:24.171995,to have memorized by tomorrow.,to have memorized by tomorrow.,pressure,fear,moderate
+00:19:24.171995,00:19:26.111995,I guess I'm not going to be sleeping tonight.,I guess I'm not going to be sleeping tonight.,resignation,sadness,mild
+00:19:26.111995,00:19:31.990995,"While the women hit the books, Louie hits the hot tub.","While the women hit the books, Louie hits the hot tub.",amusement,happiness,mild
+00:19:31.990995,00:19:32.891995,Yeah!,Yeah!,enthusiasm,happiness,moderate
+00:19:32.891995,00:19:33.790995,Woo!,Woo!,excitement,happiness,intense
+00:19:33.790995,00:19:34.691995,Woo!,Woo!,excitement,happiness,intense
+00:19:34.971995,00:19:36.971995,I need some more wine now.,I need some more wine now.,craving,neutral,mild
+00:19:36.971995,00:19:39.990995,"The girls are done studying, but the guys aren't planning","The girls are done studying, but the guys aren't planning",impatience,anger,mild
+00:19:39.990995,00:19:41.650995,to start any time soon.,to start any time soon.,uncertainty,neutral,neutral
+00:19:50.230995,00:19:53.430995,Tonight is the grand reopening of Hell's Kitchen.,Tonight is the grand reopening of Hell's Kitchen.,anticipation,happiness,moderate
+00:19:53.430995,00:19:54.870995,I have your knife kits for you.,I have your knife kits for you.,helpfulness,happiness,mild
+00:19:54.870995,00:19:56.230995,This is from Hanko.,This is from Hanko.,neutrality,neutral,neutral
+00:19:56.230995,00:19:57.471995,These are beautiful.,These are beautiful.,admiration,happiness,mild
+00:19:57.471995,00:19:58.570995,And the chefs have everything they,And the chefs have everything they,anticipation,happiness,mild
+00:19:58.570995,00:20:01.111995,"need to succeed, provided they're","need to succeed, provided they're",ambition,happiness,moderate
+00:20:01.111995,00:20:03.311995,up to the task at hand.,up to the task at hand.,confidence,happiness,mild
+00:20:03.331995,00:20:04.790995,I had a couple of drinks.,I had a couple of drinks.,nonchalance,neutral,neutral
+00:20:04.790995,00:20:09.971995,"I'm not even, I got to chill out on all that.","I'm not even, I got to chill out on all that.",restraint,neutral,mild
+00:20:09.971995,00:20:11.971995,"There's something in that champagne, man.","There's something in that champagne, man.",suspicion,fear,moderate
+00:20:11.971995,00:20:13.331995,It wasn't good.,It wasn't good.,disappointment,sadness,mild
+00:20:13.331995,00:20:16.150995,While the men are a little slow in getting started.,While the men are a little slow in getting started.,impatience,neutral,mild
+00:20:16.150995,00:20:20.650995,"Like, where is the pesto even on this?","Like, where is the pesto even on this?",confusion,surprise,moderate
+00:20:20.650995,00:20:23.290995,The women are already going full steam.,The women are already going full steam.,determination,happiness,moderate
+00:20:23.290995,00:20:26.990995,I'm ready to whip some ass tonight.,I'm ready to whip some ass tonight.,determination,anger,intense
+00:20:26.990995,00:20:29.051995,"Both kitchenss are ready for dinner service,","Both kitchenss are ready for dinner service,",readiness,neutral,neutral
+00:20:29.051995,00:20:31.930995,and Chef Ramsay has high hopes.,and Chef Ramsay has high hopes.,optimism,happiness,mild
+00:20:31.950995,00:20:34.751995,I'm expecting a bloody good service.,I'm expecting a bloody good service.,expectation,happiness,moderate
+00:20:34.751995,00:20:36.011995,"Yes, Chef.","Yes, Chef.",respect,neutral,neutral
+00:20:36.011995,00:20:36.911995,Good.,Good.,satisfaction,happiness,mild
+00:20:36.911995,00:20:38.150995,Let's go.,Let's go.,readiness,happiness,mild
+00:20:38.150995,00:20:40.791995,"But moments from opening, his optimism.","But moments from opening, his optimism.",hope,happiness,mild
+00:20:40.791995,00:20:41.691995,"Oh, dear.","Oh, dear.",concern,fear,mild
+00:20:41.691995,00:20:42.590995,Who cooked these?,Who cooked these?,curiosity,neutral,mild
+00:20:42.590995,00:20:44.231995,Begins to fade.,Begins to fade.,resignation,sadness,mild
+00:20:44.231995,00:20:45.631995,Who cooked the fondants?,Who cooked the fondants?,curiosity,neutral,mild
+00:20:45.631995,00:20:46.531995,Lovely.,Lovely.,appreciation,happiness,mild
+00:20:46.531995,00:20:47.430995,Lovely?,Lovely?,curiosity,neutral,mild
+00:20:47.430995,00:20:48.330995,"Yes, Chef.","Yes, Chef.",respect,neutral,neutral
+00:20:48.330995,00:20:49.231995,Wish they're not.,Wish they're not.,doubt,sadness,mild
+00:20:49.231995,00:20:50.131995,Come here.,Come here.,command,neutral,neutral
+00:20:50.131995,00:20:52.471995,Why are these all cooked?,Why are these all cooked?,confusion,surprise,mild
+00:20:52.471995,00:20:54.911995,We put it in the oven when the order comes on.,We put it in the oven when the order comes on.,routine,neutral,neutral
+00:20:54.911995,00:20:56.571995,"Yes, Chef.","Yes, Chef.",respect,neutral,neutral
+00:20:56.571995,00:20:58.670995,"We haven't even opened yet, and you've cooked them.","We haven't even opened yet, and you've cooked them.",frustration,anger,moderate
+00:20:58.670995,00:21:00.311995,That's all we have to work with.,That's all we have to work with.,resignation,sadness,mild
+00:21:00.370995,00:21:01.930995,We're fucking screwed.,We're fucking screwed.,desperation,fear,intense
+00:21:01.930995,00:21:03.691995,Look at that.,Look at that.,curiosity,surprise,mild
+00:21:03.691995,00:21:05.090995,Look.,Look.,command,neutral,neutral
+00:21:05.090995,00:21:06.930995,Like a fucking hockey puck.,Like a fucking hockey puck.,frustration,anger,moderate
+00:21:06.930995,00:21:08.811995,"Oh, my god.","Oh, my god.",astonishment,surprise,moderate
+00:21:08.811995,00:21:11.571995,"We're not even open yet, and you screwed it up.","We're not even open yet, and you screwed it up.",frustration,anger,moderate
+00:21:11.571995,00:21:13.370995,What a fucking disaster.,What a fucking disaster.,frustration,anger,intense
+00:21:13.370995,00:21:14.610995,"That's it, the end.","That's it, the end.",finality,neutral,neutral
+00:21:14.610995,00:21:17.090995,Get fucked.,Get fucked.,hostility,anger,intense
+00:21:17.090995,00:21:19.451995,"Obviously, I was thrown in a kitchen","Obviously, I was thrown in a kitchen",resignation,sadness,mild
+00:21:19.451995,00:21:22.571995,with a bunch of circus clowns.,with a bunch of circus clowns.,whimsy,happiness,mild
+00:21:22.571995,00:21:24.930995,"I'm on it, guys.","I'm on it, guys.",determination,happiness,mild
+00:21:24.930995,00:21:26.610995,"Come on, guys.","Come on, guys.",encouragement,happiness,mild
+00:21:26.610995,00:21:29.011995,I'm going to have to bust my ass to make sure,I'm going to have to bust my ass to make sure,determination,neutral,moderate
+00:21:29.191995,00:21:32.471995,that the ladies win tonight.,that the ladies win tonight.,hope,happiness,mild
+00:21:32.471995,00:21:34.631995,"Jean-Philippe, open Hell's Kitchen, please.","Jean-Philippe, open Hell's Kitchen, please.",request,neutral,neutral
+00:21:34.631995,00:21:35.531995,Let's go.,Let's go.,readiness,happiness,mild
+00:21:49.110995,00:21:51.150995,"This year in Hell's Kitchen, the dining room","This year in Hell's Kitchen, the dining room",anticipation,neutral,neutral
+00:21:51.150995,00:21:53.031995,has been completely redesigned.,has been completely redesigned.,anticipation,neutral,neutral
+00:21:53.031995,00:21:55.890995,"Chef Ramsay has also revised and expanded the menu,","Chef Ramsay has also revised and expanded the menu,",anticipation,happiness,mild
+00:21:55.911995,00:21:58.110995,"adding several new items, including","adding several new items, including",anticipation,happiness,mild
+00:21:58.110995,00:22:01.031995,"a capellini appetizer, a salmon en croute entree,","a capellini appetizer, a salmon en croute entree,",anticipation,happiness,mild
+00:22:01.031995,00:22:02.670995,and four new side dishes.,and four new side dishes.,anticipation,happiness,mild
+00:22:02.670995,00:22:04.830995,I'll have the pan-roasted carrots.,I'll have the pan-roasted carrots.,expectation,neutral,neutral
+00:22:04.830995,00:22:06.710995,I'm going to have the scallops.,I'm going to have the scallops.,decision,neutral,neutral
+00:22:06.710995,00:22:07.610995,Good choice.,Good choice.,approval,happiness,mild
+00:22:07.610995,00:22:08.511995,Thank you.,Thank you.,gratitude,happiness,mild
+00:22:08.511995,00:22:10.390995,Thank you.,Thank you.,gratitude,happiness,mild
+00:22:10.390995,00:22:13.031995,"All right, ladies, first ticket, yes?","All right, ladies, first ticket, yes?",anticipation,neutral,mild
+00:22:13.031995,00:22:15.670995,"One scallops, one capellini, entree, one salmon, one lamb.","One scallops, one capellini, entree, one salmon, one lamb.",focus,neutral,neutral
+00:22:15.670995,00:22:16.590995,"Yes, Chef.","Yes, Chef.",respect,neutral,neutral
+00:22:16.590995,00:22:17.631995,Let's go.,Let's go.,readiness,happiness,mild
+00:22:17.631995,00:22:18.550995,"We're going to do it, y'all.","We're going to do it, y'all.",determination,happiness,moderate
+00:22:18.550995,00:22:19.550995,Don't worry.,Don't worry.,reassurance,happiness,mild
+00:22:19.550995,00:22:20.670995,"OK, gentlemen, on order.","OK, gentlemen, on order.",command,neutral,neutral
+00:22:20.670995,00:22:21.751995,"One scallops, one capellini.","One scallops, one capellini.",focus,neutral,neutral
+00:22:21.751995,00:22:24.191995,"Side, one zucchini blossom flower.","Side, one zucchini blossom flower.",neutrality,neutral,neutral
+00:22:26.890995,00:22:27.791995,"Oh, come on.","Oh, come on.",frustration,anger,mild
+00:22:31.231995,00:22:32.390995,"What did I say, Tony?","What did I say, Tony?",impatience,anger,mild
+00:22:32.390995,00:22:38.311995,"Capellini, one scallop, one blossom squash bottom squash.","Capellini, one scallop, one blossom squash bottom squash.",neutrality,neutral,neutral
+00:22:38.311995,00:22:39.631995,I don't know the recipes yet.,I don't know the recipes yet.,uncertainty,fear,mild
+00:22:39.631995,00:22:40.670995,Guys!,Guys!,alertness,surprise,mild
+00:22:40.670995,00:22:43.150995,Chef Ramsay is going to eat us alive.,Chef Ramsay is going to eat us alive.,dread,fear,intense
+00:22:43.150995,00:22:44.550995,"When I finish calling out the order,","When I finish calling out the order,",anticipation,neutral,mild
+00:22:44.550995,00:22:46.791995,"then just shout as a team that you've all got it,","then just shout as a team that you've all got it,",encouragement,happiness,moderate
+00:22:46.791995,00:22:48.150995,"understood it. Yes, Chef?","understood it. Yes, Chef?",readiness,neutral,neutral
+00:22:48.150995,00:22:49.511995,"Yes, Chef.","Yes, Chef.",respect,neutral,neutral
+00:22:49.511995,00:22:50.471995,Let's go.,Let's go.,readiness,happiness,mild
+00:22:50.471995,00:22:54.550995,"As the men struggle to begin in the red kitchen,","As the men struggle to begin in the red kitchen,",uncertainty,fear,mild
+00:22:54.571995,00:22:59.571995,Tec is already bringing up the first appetizers.,Tec is already bringing up the first appetizers.,anticipation,happiness,mild
+00:22:59.571995,00:23:03.090995,Where are those bells?,Where are those bells?,curiosity,neutral,mild
+00:23:03.090995,00:23:03.990995,Tec!,Tec!,neutrality,neutral,neutral
+00:23:03.990995,00:23:04.890995,"Yes, Chef?","Yes, Chef?",curiosity,neutral,neutral
+00:23:04.890995,00:23:06.890995,Scallops are raw.,Scallops are raw.,disappointment,disgust,moderate
+00:23:06.890995,00:23:10.370995,"Yeah, yeah, stone cold in the center, cooked on one side,","Yeah, yeah, stone cold in the center, cooked on one side,",frustration,anger,moderate
+00:23:10.370995,00:23:12.291995,and fucking boiled underneath.,and fucking boiled underneath.,frustration,anger,moderate
+00:23:12.291995,00:23:15.811995,"Oh, and by the way, it's raw.","Oh, and by the way, it's raw.",disappointment,disgust,moderate
+00:23:15.811995,00:23:18.531995,"Literally, how hard can it be to cook scallops?","Literally, how hard can it be to cook scallops?",skepticism,surprise,mild
+00:23:18.531995,00:23:21.650995,"Like, oh my god, I'm embarrassed.","Like, oh my god, I'm embarrassed.",embarrassment,sadness,moderate
+00:23:21.650995,00:23:23.291995,My pasta is a minute away.,My pasta is a minute away.,anticipation,happiness,mild
+00:23:23.311995,00:23:24.830995,"So, lovely.","So, lovely.",appreciation,happiness,mild
+00:23:24.830995,00:23:28.311995,So that's overcooked now.,So that's overcooked now.,disappointment,sadness,mild
+00:23:28.311995,00:23:30.471995,That's overcooked now.,That's overcooked now.,disappointment,sadness,mild
+00:23:30.471995,00:23:32.311995,Start over.,Start over.,determination,neutral,neutral
+00:23:32.311995,00:23:33.590995,Fucking hell's bells.,Fucking hell's bells.,frustration,anger,intense
+00:23:33.590995,00:23:34.710995,"Yes, Chef.","Yes, Chef.",respect,neutral,neutral
+00:23:34.710995,00:23:35.791995,Tec messed up.,Tec messed up.,disappointment,sadness,mild
+00:23:35.791995,00:23:37.631995,Now I look like I'm all wrong.,Now I look like I'm all wrong.,embarrassment,sadness,moderate
+00:23:37.631995,00:23:40.311995,So I'm going to have to stay on her ass,So I'm going to have to stay on her ass,determination,anger,moderate
+00:23:40.311995,00:23:42.270995,to make sure that she's staying up with me so we can get,to make sure that she's staying up with me so we can get,concern,fear,mild
+00:23:42.270995,00:23:44.231995,apps out on time together.,apps out on time together.,cooperation,happiness,mild
+00:23:44.231995,00:23:45.550995,"Fire it again, guys. Let's go.","Fire it again, guys. Let's go.",determination,happiness,moderate
+00:23:45.550995,00:23:46.430995,Do it right.,Do it right.,demand,anger,mild
+00:23:46.430995,00:23:49.231995,"While the red team starts over on their first order,","While the red team starts over on their first order,",resignation,sadness,mild
+00:23:49.231995,00:23:51.430995,the blue team is counting on Jim.,the blue team is counting on Jim.,expectation,neutral,mild
+00:23:51.430995,00:23:52.430995,Scallops are up.,Scallops are up.,anticipation,surprise,mild
+00:23:52.451995,00:23:54.971995,To get their first appetizers out.,To get their first appetizers out.,anticipation,neutral,mild
+00:23:54.971995,00:23:55.870995,Jim!,Jim!,alertness,surprise,mild
+00:23:55.870995,00:23:56.770995,"Yes, Chef.","Yes, Chef.",respect,neutral,neutral
+00:23:56.770995,00:23:57.670995,Look at me.,Look at me.,command,neutral,neutral
+00:23:57.670995,00:24:00.731995,"Three scallops, cut in half, means what?","Three scallops, cut in half, means what?",confusion,surprise,mild
+00:24:00.731995,00:24:01.631995,Six pieces.,Six pieces.,neutrality,neutral,neutral
+00:24:01.631995,00:24:02.930995,I've got four.,I've got four.,neutrality,neutral,neutral
+00:24:02.930995,00:24:04.571995,Are you doing this on purpose to get me going?,Are you doing this on purpose to get me going?,irritation,anger,moderate
+00:24:04.571995,00:24:05.471995,No.,No.,rejection,anger,mild
+00:24:05.471995,00:24:08.731995,Don't insult Chef Ramsay's intelligence.,Don't insult Chef Ramsay's intelligence.,defensiveness,anger,moderate
+00:24:08.731995,00:24:09.650995,So look at me.,So look at me.,insistence,anger,mild
+00:24:09.650995,00:24:10.571995,Count to six for me.,Count to six for me.,request,neutral,neutral
+00:24:10.571995,00:24:11.691995,"One, two, three, four, five, six.","One, two, three, four, five, six.",neutrality,neutral,neutral
+00:24:11.691995,00:24:12.610995,Louder.,Louder.,impatience,anger,mild
+00:24:12.610995,00:24:13.490995,"One, two, three, four, five.","One, two, three, four, five.",neutrality,neutral,neutral
+00:24:13.490995,00:24:14.390995,Now wake up!,Now wake up!,urgency,anger,moderate
+00:24:14.390995,00:24:15.291995,"Yes, Chef.","Yes, Chef.",respect,neutral,neutral
+00:24:15.291995,00:24:16.490995,I just wasn't paying attention.,I just wasn't paying attention.,regret,sadness,mild
+00:24:16.490995,00:24:19.090995,Ones and twos and threes and twos.,Ones and twos and threes and twos.,confusion,neutral,neutral
+00:24:19.090995,00:24:21.330995,And I thought I had Yahtzee at one point.,And I thought I had Yahtzee at one point.,disappointment,sadness,mild
+00:24:21.330995,00:24:22.990995,"Jim, one minute out.","Jim, one minute out.",anticipation,surprise,mild
+00:24:22.990995,00:24:25.311995,Drop six pieces of scallop.,Drop six pieces of scallop.,instruction,neutral,neutral
+00:24:25.311995,00:24:26.231995,"Yes, Chef.","Yes, Chef.",respect,neutral,neutral
+00:24:26.231995,00:24:28.270995,Both kitchens.,Both kitchens.,neutrality,neutral,neutral
+00:24:26.717982,00:24:28.517982,continue to struggle with the first order.,continue to struggle with the first order.,frustration,sadness,moderate
+00:24:28.517982,00:24:29.917982,You guys are a minute and a half now?,You guys are a minute and a half now?,confusion,surprise,mild
+00:24:29.917982,00:24:30.817982,Yeah.,Yeah.,agreement,neutral,neutral
+00:24:30.817982,00:24:33.017982,"No, this pasta is not done.","No, this pasta is not done.",displeasure,disgust,mild
+00:24:33.017982,00:24:34.817982,"In the dining room, some customers","In the dining room, some customers",anticipation,neutral,neutral
+00:24:34.817982,00:24:37.597982,are beginning to lament ever coming to Hell's Kitchen.,are beginning to lament ever coming to Hell's Kitchen.,regret,sadness,moderate
+00:24:37.597982,00:24:38.697982,I don't understand.,I don't understand.,confusion,neutral,mild
+00:24:38.697982,00:24:41.097982,"I mean, we haven't even got appetizers.","I mean, we haven't even got appetizers.",impatience,anger,mild
+00:24:41.097982,00:24:43.797982,But one diner is returning.,But one diner is returning.,anticipation,surprise,mild
+00:24:43.797982,00:24:46.637982,"I have pericarditis, which leads to heart disease.","I have pericarditis, which leads to heart disease.",concern,fear,moderate
+00:24:46.637982,00:24:48.176982,Are you coming back?,Are you coming back?,uncertainty,fear,mild
+00:24:48.176982,00:24:49.436982,No.,No.,rejection,anger,mild
+00:24:49.436982,00:24:52.016982,Robert has not just been invited back for dinner.,Robert has not just been invited back for dinner.,exclusion,sadness,mild
+00:24:52.016982,00:24:55.077982,Chef Ramsay has another plan to give him a second chance,Chef Ramsay has another plan to give him a second chance,hope,happiness,mild
+00:24:55.077982,00:24:56.676982,to compete in Hell's Kitchen.,to compete in Hell's Kitchen.,anticipation,happiness,mild
+00:24:56.676982,00:24:57.577982,"Hi, how are you?","Hi, how are you?",curiosity,neutral,neutral
+00:24:57.577982,00:24:58.477982,"Hey, Chef, how are you?","Hey, Chef, how are you?",curiosity,neutral,mild
+00:24:58.477982,00:24:59.476982,"Yeah, very well, thank you.","Yeah, very well, thank you.",contentment,happiness,mild
+00:24:59.476982,00:25:00.377982,Good to see you.,Good to see you.,warmth,happiness,mild
+00:25:00.377982,00:25:01.676982,I brought my wife.,I brought my wife.,contentment,happiness,mild
+00:25:01.676982,00:25:02.676982,"How are you, my darling?","How are you, my darling?",affection,happiness,mild
+00:25:02.676982,00:25:03.777982,Nice to see you.,Nice to see you.,warmth,happiness,mild
+00:25:03.777982,00:25:04.676982,Enjoy yourselves.,Enjoy yourselves.,encouragement,happiness,mild
+00:25:04.676982,00:25:05.577982,"Thank you very much, Chef.","Thank you very much, Chef.",gratitude,happiness,mild
+00:25:05.577982,00:25:06.476982,And I'll see you after.,And I'll see you after.,expectation,neutral,neutral
+00:25:06.476982,00:25:07.656982,Thank you.,Thank you.,gratitude,happiness,mild
+00:25:07.656982,00:25:13.797982,"Back in the blue kitchen, Kevin on capellini and Jim on scallops","Back in the blue kitchen, Kevin on capellini and Jim on scallops",focus,neutral,neutral
+00:25:13.797982,00:25:15.957982,are hoping their second attempt at appetizers,are hoping their second attempt at appetizers,hope,happiness,mild
+00:25:15.957982,00:25:17.156982,impresses Chef Ramsay.,impresses Chef Ramsay.,admiration,happiness,mild
+00:25:21.437982,00:25:22.597982,"Service, please.","Service, please.",expectation,neutral,mild
+00:25:22.597982,00:25:23.597982,Let's go to table 10.,Let's go to table 10.,anticipation,neutral,neutral
+00:25:23.597982,00:25:24.636982,"Let's go, guys. Come on.","Let's go, guys. Come on.",encouragement,happiness,mild
+00:25:25.636982,00:25:28.336982,"The blue team has succeeded in sending out an order,","The blue team has succeeded in sending out an order,",satisfaction,happiness,mild
+00:25:28.336982,00:25:30.237982,but the red team is still trying to get,but the red team is still trying to get,determination,neutral,mild
+00:25:30.237982,00:25:32.236982,out their first appetizers.,out their first appetizers.,anticipation,neutral,neutral
+00:25:32.236982,00:25:33.236982,"Picking up, picking up.","Picking up, picking up.",anticipation,happiness,mild
+00:25:33.236982,00:25:34.236982,"There we go, ladies.","There we go, ladies.",encouragement,happiness,mild
+00:25:34.236982,00:25:35.136982,There we go.,There we go.,satisfaction,happiness,mild
+00:25:35.136982,00:25:36.636982,"Way to stay in there, tech.","Way to stay in there, tech.",encouragement,happiness,mild
+00:25:36.636982,00:25:39.537982,Look at this.,Look at this.,curiosity,surprise,mild
+00:25:39.537982,00:25:41.377982,"I swear to god, it's the kind of shit","I swear to god, it's the kind of shit",frustration,anger,moderate
+00:25:41.377982,00:25:42.877982,you'd expect Tiger Woods to tee off with.,you'd expect Tiger Woods to tee off with.,expectation,neutral,neutral
+00:25:42.877982,00:25:43.776982,Look at it.,Look at it.,command,neutral,neutral
+00:25:43.776982,00:25:45.556982,"Rubber, rubber, rubber.","Rubber, rubber, rubber.",boredom,neutral,neutral
+00:25:45.556982,00:25:47.556982,But they have to start over.,But they have to start over.,resignation,sadness,moderate
+00:25:47.556982,00:25:49.217982,It's limp and shit.,It's limp and shit.,disappointment,disgust,moderate
+00:25:49.217982,00:25:50.717982,And over.,And over.,resignation,sadness,mild
+00:25:50.717982,00:25:54.456982,It's fucking raw.,It's fucking raw.,frustration,anger,intense
+00:25:55.276982,00:25:58.356982,"They have only had one table, but have","They have only had one table, but have",uncertainty,neutral,neutral
+00:25:58.356982,00:26:01.916982,made the same dish six million times.,made the same dish six million times.,boredom,sadness,moderate
+00:26:01.916982,00:26:02.816982,That's chaos.,That's chaos.,confusion,surprise,moderate
+00:26:02.816982,00:26:04.897982,"That's, like, apocalyptic chaos.","That's, like, apocalyptic chaos.",alarm,fear,intense
+00:26:04.897982,00:26:07.496982,"Three fire, one capellini, one scallops, guys.","Three fire, one capellini, one scallops, guys.",urgency,fear,moderate
+00:26:07.496982,00:26:08.736982,On the hoo-ha.,On the hoo-ha.,confusion,neutral,neutral
+00:26:08.736982,00:26:11.297982,"While the women start over one more time,","While the women start over one more time,",resignation,sadness,mild
+00:26:11.297982,00:26:13.297982,the men are already moving on to entrees.,the men are already moving on to entrees.,impatience,neutral,mild
+00:26:13.297982,00:26:14.197982,How long on those lamb?,How long on those lamb?,curiosity,neutral,neutral
+00:26:14.197982,00:26:15.096982,Two more minutes.,Two more minutes.,impatience,anger,mild
+00:26:15.096982,00:26:16.096982,"All right, fellas.","All right, fellas.",readiness,neutral,neutral
+00:26:16.096982,00:26:17.937982,"And on the meat station, diner chef","And on the meat station, diner chef",anticipation,neutral,neutral
+00:26:17.937982,00:26:20.176982,Louis is tending to the lamb.,Louis is tending to the lamb.,care,happiness,mild
+00:26:20.176982,00:26:21.077982,Louis.,Louis.,neutrality,neutral,neutral
+00:26:21.077982,00:26:21.977982,"Yes, sir.","Yes, sir.",respect,neutral,neutral
+00:26:21.977982,00:26:23.017982,Did you just put a lamb in the oven?,Did you just put a lamb in the oven?,bewilderment,surprise,moderate
+00:26:23.017982,00:26:23.916982,Yes.,Yes.,agreement,neutral,neutral
+00:26:24.377982,00:26:25.377982,"Hey, guys. Come here.","Hey, guys. Come here.",invitation,neutral,neutral
+00:26:25.377982,00:26:26.477982,"Come here. Quick, quick, quick.","Come here. Quick, quick, quick.",urgency,fear,intense
+00:26:26.477982,00:26:28.617982,"I think you should know, Louis' entrees,","I think you should know, Louis' entrees,",anticipation,neutral,mild
+00:26:28.617982,00:26:31.276982,and the fucking lamb goes in the oven like that.,and the fucking lamb goes in the oven like that.,frustration,anger,moderate
+00:26:31.276982,00:26:34.316982,"No salt, no pepper, no seasoning.","No salt, no pepper, no seasoning.",disappointment,sadness,moderate
+00:26:34.316982,00:26:36.416982,Not even seared.,Not even seared.,disappointment,sadness,mild
+00:26:36.416982,00:26:37.957982,I'm sorry.,I'm sorry.,remorse,sadness,mild
+00:26:37.957982,00:26:40.297982,"Louis, why do we sear meat?","Louis, why do we sear meat?",curiosity,neutral,neutral
+00:26:40.297982,00:26:41.717982,"To lock in the juices, sir.","To lock in the juices, sir.",assurance,neutral,neutral
+00:26:41.717982,00:26:44.797982,"To give it color, to improve the flavor.","To give it color, to improve the flavor.",purposefulness,neutral,neutral
+00:26:44.797982,00:26:45.696982,"Sorry, sir.","Sorry, sir.",regret,sadness,mild
+00:26:45.696982,00:26:46.937982,You're a man.,You're a man.,assertion,neutral,neutral
+00:26:46.937982,00:26:48.636982,There's a primal instinct inside you,There's a primal instinct inside you,anticipation,neutral,mild
+00:26:48.636982,00:26:50.496982,that knows how to cook meat.,that knows how to cook meat.,expectation,neutral,neutral
+00:26:50.496982,00:26:52.377982,You need to find it.,You need to find it.,expectation,neutral,mild
+00:26:52.377982,00:26:53.537982,Fucking hell.,Fucking hell.,frustration,anger,moderate
+00:26:54.396982,00:26:57.097982,While everyone on the blue team rallies behind Louis.,While everyone on the blue team rallies behind Louis.,support,happiness,mild
+00:26:57.097982,00:26:59.297982,Get a bunch of pans on and get them searing hot.,Get a bunch of pans on and get them searing hot.,determination,neutral,moderate
+00:26:59.297982,00:27:00.196982,Turn it.,Turn it.,command,neutral,neutral
+00:27:00.196982,00:27:01.496982,Render that fat as much as you can.,Render that fat as much as you can.,determination,neutral,moderate
+00:27:01.496982,00:27:02.396982,Right over the heat.,Right over the heat.,anticipation,neutral,neutral
+00:27:02.396982,00:27:03.737982,Leave it there.,Leave it there.,resignation,neutral,mild
+00:27:03.737982,00:27:05.976982,Everyone on the red team is still working,Everyone on the red team is still working,observation,neutral,neutral
+00:27:05.976982,00:27:08.177982,on their first appetizers.,on their first appetizers.,anticipation,neutral,neutral
+00:27:08.177982,00:27:12.317982,"For the eighth time, can I have one fucking scallops","For the eighth time, can I have one fucking scallops",frustration,anger,intense
+00:27:12.317982,00:27:14.717982,and a fucking beautifully cooked capellini?,and a fucking beautifully cooked capellini?,admiration,happiness,intense
+00:27:14.717982,00:27:15.616982,Let's go.,Let's go.,readiness,happiness,mild
+00:27:15.616982,00:27:16.817982,This is right this time.,This is right this time.,relief,happiness,mild
+00:27:16.817982,00:27:18.317982,"OK, you taste the pasta, and you tell me.","OK, you taste the pasta, and you tell me.",curiosity,neutral,mild
+00:27:18.317982,00:27:19.416982,"First check, and we're rolling.","First check, and we're rolling.",readiness,neutral,neutral
+00:27:19.416982,00:27:20.756982,Let's go. We can do it.,Let's go. We can do it.,motivation,happiness,moderate
+00:27:20.756982,00:27:21.817982,Is it cooked or not?,Is it cooked or not?,uncertainty,neutral,mild
+00:27:21.817982,00:27:22.717982,Good.,Good.,satisfaction,happiness,mild
+00:27:23.577982,00:27:24.476982,Is that cooked?,Is that cooked?,uncertainty,surprise,mild
+00:27:24.476982,00:27:25.377982,Looks undercooked.,Looks undercooked.,doubt,disgust,mild
+00:27:25.377982,00:27:26.877982,Is it cooked?,Is it cooked?,curiosity,neutral,neutral
+00:27:26.877982,00:27:27.776982,Not cooked.,Not cooked.,disappointment,sadness,mild
+00:27:27.776982,00:27:28.677982,Not cooked?,Not cooked?,doubt,surprise,mild
+00:27:28.677982,00:27:29.577982,"No, it's not cooked.","No, it's not cooked.",disappointment,sadness,mild
+00:27:29.577982,00:27:31.017982,Not cooked.,Not cooked.,disappointment,sadness,mild
+00:27:31.017982,00:27:32.877982,"Oh, my god.","Oh, my god.",astonishment,surprise,moderate
+00:27:32.877982,00:27:35.916982,"Why'd you throw that away, Melinda?","Why'd you throw that away, Melinda?",confusion,surprise,mild
+00:27:35.916982,00:27:37.817982,"Just put it back on the stove, put a lid on top,","Just put it back on the stove, put a lid on top,",instruction,neutral,neutral
+00:27:37.817982,00:27:39.556982,and 30 seconds cooking it.,and 30 seconds cooking it.,indifference,neutral,neutral
+00:27:39.556982,00:27:40.457982,What'd you do?,What'd you do?,curiosity,neutral,mild
+00:27:40.457982,00:27:42.297982,You just trashed it straight away.,You just trashed it straight away.,disappointment,anger,moderate
+00:27:42.297982,00:27:45.196982,"Melinda, she had that deer in the headlight look,","Melinda, she had that deer in the headlight look,",confusion,fear,moderate
+00:27:45.196982,00:27:47.797982,and that'll kill you.,and that'll kill you.,threat,fear,intense
+00:27:47.797982,00:27:50.836982,Look at all this fucking.,Look at all this fucking.,disdain,disgust,moderate
+00:27:50.896982,00:27:53.597982,Who's putting all this in the bin?,Who's putting all this in the bin?,confusion,surprise,mild
+00:27:53.597982,00:27:57.297982,How many portions are you putting in there?,How many portions are you putting in there?,curiosity,neutral,mild
+00:27:57.297982,00:28:00.396982,How much is in the bin?,How much is in the bin?,curiosity,neutral,neutral
+00:28:00.396982,00:28:01.797982,Look!,Look!,alertness,surprise,moderate
+00:28:01.797982,00:28:03.196982,Look!,Look!,alertness,surprise,moderate
+00:28:03.196982,00:28:04.577982,What the fuck is this?,What the fuck is this?,confusion,anger,moderate
+00:28:04.577982,00:28:05.476982,"Hey, madam.","Hey, madam.",greeting,neutral,neutral
+00:28:05.476982,00:28:10.017982,How much capellini are you throwing away?,How much capellini are you throwing away?,curiosity,neutral,neutral
+00:28:10.017982,00:28:12.616982,Look at it.,Look at it.,command,neutral,neutral
+00:28:12.616982,00:28:15.976982,"What are you doing, Melinda?","What are you doing, Melinda?",curiosity,neutral,mild
+00:28:15.976982,00:28:18.916982,What are you doing?,What are you doing?,curiosity,neutral,mild
+00:28:18.916982,00:28:20.317982,You're making me mad.,You're making me mad.,irritation,anger,moderate
+00:28:20.836982,00:28:22.877982,Fucking mad!,Fucking mad!,rage,anger,intense
+00:28:22.877982,00:28:25.077982,That girl going to lead us to destruction.,That girl going to lead us to destruction.,dread,fear,moderate
+00:28:25.077982,00:28:28.276982,"She's stupid, mad.","She's stupid, mad.",contempt,disgust,moderate
+00:28:28.276982,00:28:31.717982,"While the women have not managed to put out a single dish,","While the women have not managed to put out a single dish,",frustration,sadness,moderate
+00:28:31.717982,00:28:33.356982,"over in the blue kitchen, the men","over in the blue kitchen, the men",neutrality,neutral,neutral
+00:28:33.356982,00:28:34.817982,have served eight appetizers.,have served eight appetizers.,satisfaction,happiness,mild
+00:28:34.817982,00:28:35.817982,"Service, please.","Service, please.",request,neutral,mild
+00:28:35.817982,00:28:38.196982,And Louis is determined to do whatever,And Louis is determined to do whatever,determination,happiness,moderate
+00:28:38.196982,00:28:40.597982,it takes to send out an entree.,it takes to send out an entree.,impatience,anger,mild
+00:28:40.597982,00:28:41.496982,Joseph.,Joseph.,neutrality,neutral,neutral
+00:28:41.496982,00:28:42.396982,"Yes, chef.","Yes, chef.",respect,neutral,neutral
+00:28:42.396982,00:28:43.396982,You're on the garnish.,You're on the garnish.,instruction,neutral,neutral
+00:28:43.396982,00:28:44.296982,Yes.,Yes.,agreement,neutral,neutral
+00:28:44.296982,00:28:45.597982,Louis is on the meat.,Louis is on the meat.,neutrality,neutral,neutral
+00:28:45.597982,00:28:46.496982,Yes.,Yes.,agreement,neutral,neutral
+00:28:46.496982,00:28:48.836982,He's cooking the spinach.,He's cooking the spinach.,neutrality,neutral,neutral
+00:28:48.836982,00:28:49.736982,Why?,Why?,confusion,surprise,mild
+00:28:49.757982,00:28:50.996982,I don't know why.,I don't know why.,confusion,sadness,mild
+00:28:50.996982,00:28:52.396982,"I thought I had to put it all together, chef.","I thought I had to put it all together, chef.",confusion,surprise,mild
+00:28:52.396982,00:28:53.396982,What's your station?,What's your station?,curiosity,neutral,mild
+00:28:53.396982,00:28:55.937982,I'm doing lamb and a rack of lamb and chicken.,I'm doing lamb and a rack of lamb and chicken.,focus,neutral,neutral
+00:28:55.937982,00:28:57.496982,So why are you cooking the spinach?,So why are you cooking the spinach?,curiosity,neutral,mild
+00:28:57.496982,00:28:58.836982,"I thought it went on the plate, sir.","I thought it went on the plate, sir.",confusion,surprise,mild
+00:28:58.836982,00:29:00.437982,I was just trying to get a head start.,I was just trying to get a head start.,defensiveness,neutral,mild
+00:29:00.437982,00:29:02.197982,Maybe Chef Ramsay should just pull the panties,Maybe Chef Ramsay should just pull the panties,sarcasm,neutral,mild
+00:29:02.197982,00:29:03.576982,out of his ass or something.,out of his ass or something.,contempt,disgust,moderate
+00:29:03.576982,00:29:04.477982,Louis.,Louis.,neutrality,neutral,neutral
+00:29:04.477982,00:29:05.377982,"Yes, sir.","Yes, sir.",respect,neutral,mild
+00:29:05.377982,00:29:08.217982,We've got enough problems cooking lamb.,We've got enough problems cooking lamb.,frustration,anger,moderate
+00:29:08.217982,00:29:09.877982,I don't want you touching the fucking spinach.,I don't want you touching the fucking spinach.,irritation,anger,intense
+00:29:09.877982,00:29:11.417982,"OK. Chef, let me do the lamb.","OK. Chef, let me do the lamb.",confidence,happiness,mild
+00:29:11.417982,00:29:12.657982,"Bring him over here, please.","Bring him over here, please.",request,neutral,neutral
+00:29:12.657982,00:29:13.956982,"Listen, listen, listen to me.","Listen, listen, listen to me.",insistence,anger,moderate
+00:29:13.956982,00:29:15.016982,Listen to me.,Listen to me.,assertiveness,neutral,moderate
+00:29:15.016982,00:29:17.357982,"My fucking kitchen, my fucking restaurant,","My fucking kitchen, my fucking restaurant,",territoriality,anger,intense
+00:29:17.377982,00:29:19.176982,"Hey, and right now, big boy, hey, I'm looking","Hey, and right now, big boy, hey, I'm looking",curiosity,neutral,mild
+00:29:19.176982,00:29:20.217982,like a fucking idiot.,like a fucking idiot.,self-loathing,sadness,intense
+00:29:20.217982,00:29:21.917982,I got it.,I got it.,confidence,happiness,mild
+00:29:21.917982,00:29:23.377982,"Joseph, we're not at war.","Joseph, we're not at war.",reassurance,neutral,mild
+00:29:23.377982,00:29:24.616982,We're just in a kitchen.,We're just in a kitchen.,acceptance,neutral,neutral
+00:29:24.616982,00:29:29.157982,"So calm down, and let's cook some carrots.","So calm down, and let's cook some carrots.",reassurance,neutral,mild
+00:29:29.157982,00:29:30.796982,"It's halfway through dinner service,","It's halfway through dinner service,",anticipation,neutral,neutral
+00:29:30.796982,00:29:33.157982,and diners are missing their appetizers.,and diners are missing their appetizers.,frustration,anger,moderate
+00:29:33.157982,00:29:34.556982,How long have we been waiting here?,How long have we been waiting here?,impatience,anger,mild
+00:29:34.556982,00:29:35.456982,I'm starving.,I'm starving.,craving,sadness,moderate
+00:29:35.456982,00:29:37.456982,And the red kitchen is missing.,And the red kitchen is missing.,disappointment,sadness,mild
+00:29:37.456982,00:29:39.037982,What happened to Lovely?,What happened to Lovely?,concern,fear,mild
+00:29:39.037982,00:29:39.937982,A chef.,A chef.,neutrality,neutral,neutral
+00:29:43.276982,00:29:44.576982,I started feeling nauseated.,I started feeling nauseated.,discomfort,disgust,mild
+00:29:44.576982,00:29:46.676982,"So I was like, OK, Lovely.","So I was like, OK, Lovely.",acceptance,neutral,mild
+00:29:46.697982,00:29:48.657982,You need to sit down for your health.,You need to sit down for your health.,concern,fear,mild
+00:29:48.657982,00:29:51.037982,Drink this water.,Drink this water.,command,neutral,neutral
+00:29:51.037982,00:29:53.896982,I drank four bottles of water because I wanted it.,I drank four bottles of water because I wanted it.,desire,neutral,mild
+00:29:53.896982,00:29:57.836982,My body was craving hydration.,My body was craving hydration.,yearning,neutral,mild
+00:29:57.836982,00:30:00.776982,"Lovely is missing in action, but the rest of the team","Lovely is missing in action, but the rest of the team",concern,fear,mild
+00:30:00.776982,00:30:02.176982,is determined to get food out.,is determined to get food out.,determination,happiness,moderate
+00:30:02.176982,00:30:03.676982,"Salmon, lamb, please.","Salmon, lamb, please.",politeness,neutral,neutral
+00:30:03.676982,00:30:04.576982,How long?,How long?,curiosity,neutral,neutral
+00:30:04.576982,00:30:05.776982,"Seven minutes, Chef.","Seven minutes, Chef.",anticipation,neutral,neutral
+00:30:05.776982,00:30:08.556982,"Hey, what's that piece of shit there?","Hey, what's that piece of shit there?",contempt,disgust,moderate
+00:30:08.556982,00:30:10.016982,It's supposed to be the salmon.,It's supposed to be the salmon.,confusion,surprise,mild
+00:30:10.016982,00:30:11.217982,Holy fuck.,Holy fuck.,shock,surprise,intense
+00:30:11.217982,00:30:13.056982,Look at that.,Look at that.,curiosity,surprise,mild
+00:30:13.056982,00:30:14.956982,It's like a bison's penis.,It's like a bison's penis.,disgust,disgust,moderate
+00:30:14.977982,00:30:18.377982,What is that shit?,What is that shit?,contempt,disgust,moderate
+00:30:18.377982,00:30:19.836982,Look at that.,Look at that.,curiosity,surprise,mild
+00:30:19.836982,00:30:22.236982,"Stone cold, frozen salmon.","Stone cold, frozen salmon.",disappointment,sadness,mild
+00:30:22.236982,00:30:26.016982,Who put the salmon in the freezer?,Who put the salmon in the freezer?,curiosity,neutral,neutral
+00:30:26.016982,00:30:26.917982,Me.,Me.,neutrality,neutral,neutral
+00:30:26.917982,00:30:28.016982,I fucked it up.,I fucked it up.,regret,sadness,intense
+00:30:28.016982,00:30:29.757982,"The salmon was my fault, because I","The salmon was my fault, because I",guilt,sadness,moderate
+00:30:29.757982,00:30:32.217982,"stuck it in a freezer instead of the fridge,","stuck it in a freezer instead of the fridge,",confusion,surprise,mild
+00:30:32.217982,00:30:33.257982,and it was frozen.,and it was frozen.,disappointment,sadness,mild
+00:30:33.257982,00:30:36.996982,"Yeah, you fucked up big time.","Yeah, you fucked up big time.",blame,anger,intense
+00:30:36.996982,00:30:38.056982,All the salmon's the same.,All the salmon's the same.,indifference,neutral,neutral
+00:30:38.056982,00:30:38.956982,I think we should mix it.,I think we should mix it.,suggestion,neutral,neutral
+00:30:38.956982,00:30:39.857982,That's right.,That's right.,agreement,neutral,neutral
+00:30:39.857982,00:30:41.056982,Because she wrapped it frozen.,Because she wrapped it frozen.,explanation,neutral,neutral
+00:30:41.056982,00:30:42.657982,And we have five on order.,And we have five on order.,expectation,neutral,neutral
+00:30:42.657982,00:30:43.757982,And we've got five on order.,And we've got five on order.,expectation,neutral,neutral
+00:30:43.757982,00:30:44.657982,Five on order.,Five on order.,anticipation,neutral,neutral
+00:30:44.857982,00:30:46.396982,I didn't see.,I didn't see.,confusion,neutral,neutral
+00:30:46.396982,00:30:47.296982,Great job.,Great job.,appreciation,happiness,mild
+00:30:47.296982,00:30:49.197982,"Yes, Chef.","Yes, Chef.",respect,neutral,neutral
+00:30:49.197982,00:30:50.296982,"Oh, fuck off.","Oh, fuck off.",irritation,anger,moderate
+00:30:54.676982,00:30:56.137982,Good to see you back.,Good to see you back.,warmth,happiness,mild
+00:30:56.137982,00:30:57.336982,"Are you OK, Lovely?","Are you OK, Lovely?",concern,fear,mild
+00:30:57.336982,00:30:58.537982,"I'll be fine, I guess.","I'll be fine, I guess.",uncertainty,sadness,mild
+00:30:58.537982,00:31:02.576982,"After Lovely's heroic return, the red team gets back to work.","After Lovely's heroic return, the red team gets back to work.",relief,happiness,mild
+00:31:02.576982,00:31:04.056982,"Hey, you good?","Hey, you good?",concern,happiness,mild
+00:31:04.056982,00:31:05.776982,Just get a little more color on the other side.,Just get a little more color on the other side.,encouragement,neutral,mild
+00:31:05.776982,00:31:07.417982,"Over in the blue kitchen, Louis is","Over in the blue kitchen, Louis is",anticipation,neutral,mild
+00:31:07.417982,00:31:11.016982,hoping this entree is the one to finally make it to the dining,hoping this entree is the one to finally make it to the dining,hope,happiness,mild
+00:31:11.016982,00:31:11.917982,room.,room.,neutrality,neutral,neutral
+00:31:15.016982,00:31:20.836982,"Louis, what is that?","Louis, what is that?",curiosity,surprise,mild
+00:31:20.836982,00:31:22.757982,What is that?,What is that?,curiosity,surprise,mild
+00:31:22.757982,00:31:24.236982,Did you bite that?,Did you bite that?,suspicion,surprise,mild
+00:31:24.236982,00:31:26.097982,"Look, that's one.","Look, that's one.",alertness,surprise,mild
+00:31:26.097982,00:31:27.097982,That's the other.,That's the other.,indifference,neutral,neutral
+00:31:27.097982,00:31:31.137982,It's on the same fucking table.,It's on the same fucking table.,frustration,anger,intense
+00:31:31.137982,00:31:32.116982,Louis lost.,Louis lost.,disappointment,sadness,mild
+00:31:32.116982,00:31:33.317982,He's out of his league.,He's out of his league.,insecurity,fear,moderate
+00:31:33.317982,00:31:36.477982,What's all that lamb here?,What's all that lamb here?,confusion,surprise,mild
+00:31:36.477982,00:31:38.576982,Look at this.,Look at this.,curiosity,neutral,mild
+00:31:38.576982,00:31:42.757982,"Hey, Van, you, hey, Joseph, stop.","Hey, Van, you, hey, Joseph, stop.",interruption,anger,mild
+00:31:42.817982,00:31:46.296982,Look at this.,Look at this.,curiosity,neutral,mild
+00:31:46.296982,00:31:53.836982,"Look, look, look, what the fuck is this?","Look, look, look, what the fuck is this?",confusion,surprise,intense
+00:31:53.836982,00:31:54.736982,Louis.,Louis.,neutrality,neutral,neutral
+00:31:54.736982,00:31:55.637982,"Yes, sir.","Yes, sir.",respect,neutral,neutral
+00:31:55.637982,00:31:56.836982,Fuck off back there.,Fuck off back there.,hostility,anger,intense
+00:31:56.836982,00:31:58.796982,Get out.,Get out.,dismissal,anger,moderate
+00:31:58.796982,00:32:02.877982,"Yes, get fucked, pile of shit.","Yes, get fucked, pile of shit.",contempt,anger,intense
+00:32:02.877982,00:32:06.417982,"Hey, get upstairs, get your bags packed.","Hey, get upstairs, get your bags packed.",urgency,anger,moderate
+00:32:06.417982,00:32:07.917982,Can I help? Can I help in the kitchen?,Can I help? Can I help in the kitchen?,eagerness,happiness,mild
+00:32:07.917982,00:32:08.817982,"Yeah, you can help me.","Yeah, you can help me.",acceptance,neutral,neutral
+00:32:08.817982,00:32:10.576982,Get out.,Get out.,dismissal,anger,moderate
+00:32:10.576982,00:32:11.817982,You want me out?,You want me out?,rejection,sadness,moderate
+00:32:11.817982,00:32:13.417982,You want me to pack my fucking bags?,You want me to pack my fucking bags?,resentment,anger,intense
+00:32:13.417982,00:32:14.317982,I'm out.,I'm out.,resignation,sadness,mild
+00:32:14.317982,00:32:15.817982,My bags are packed.,My bags are packed.,readiness,neutral,neutral
+00:32:15.817982,00:32:19.317982,He can kiss my fucking ass.,He can kiss my fucking ass.,contempt,anger,intense
+00:32:19.317982,00:32:23.217982,"With the kitchen at a complete standstill,","With the kitchen at a complete standstill,",frustration,anger,moderate
+00:32:23.217982,00:32:25.396982,Chef Ramsay is left with no choice.,Chef Ramsay is left with no choice.,resignation,sadness,moderate
+00:32:25.396982,00:32:26.396982,Switch it off.,Switch it off.,impatience,anger,mild
+00:32:26.396982,00:32:27.296982,"Yes, Chef.","Yes, Chef.",respect,neutral,neutral
+00:32:31.896982,00:32:33.736982,Fuck off.,Fuck off.,hostility,anger,intense
+00:32:35.623991,00:32:40.783991,"Anybody sitting at home thinking they can do this, good luck.","Anybody sitting at home thinking they can do this, good luck.",skepticism,disgust,moderate
+00:32:40.783991,00:32:42.663991,It's tough.,It's tough.,struggle,sadness,moderate
+00:32:42.663991,00:32:44.463991,Never had a dinner service like that.,Never had a dinner service like that.,astonishment,surprise,moderate
+00:32:44.463991,00:32:49.423991,It was a complete and utter nightmare.,It was a complete and utter nightmare.,horror,fear,intense
+00:32:49.423991,00:32:52.743991,It's been a long and disastrous night in Hell's Kitchen.,It's been a long and disastrous night in Hell's Kitchen.,exhaustion,sadness,moderate
+00:32:52.743991,00:32:55.422991,But Chef Ramsay's work isn't done yet.,But Chef Ramsay's work isn't done yet.,anticipation,neutral,mild
+00:32:55.422991,00:33:00.262991,It's now time for him to put his plan into action.,It's now time for him to put his plan into action.,anticipation,happiness,moderate
+00:33:00.262991,00:33:01.703991,"First of all, it's bloody good to see you.","First of all, it's bloody good to see you.",warmth,happiness,moderate
+00:33:01.703991,00:33:02.603991,"Thank you, Chef.","Thank you, Chef.",gratitude,happiness,mild
+00:33:02.603991,00:33:03.502991,Thank you.,Thank you.,gratitude,happiness,mild
+00:33:03.502991,00:33:05.643991,This is an opportunity due to health reasons.,This is an opportunity due to health reasons.,resignation,neutral,neutral
+00:33:05.643991,00:33:12.203991,"Right now, I would love you to seriously consider","Right now, I would love you to seriously consider",hope,happiness,mild
+00:33:12.203991,00:33:14.203991,coming back into Hell's Kitchen.,coming back into Hell's Kitchen.,anticipation,fear,mild
+00:33:14.203991,00:33:15.963991,"I have a second chance, and you know,","I have a second chance, and you know,",hope,happiness,mild
+00:33:15.963991,00:33:19.123991,you don't get many second chances in life.,you don't get many second chances in life.,regret,sadness,moderate
+00:33:19.123991,00:33:20.363991,I would love to take that off.,I would love to take that off.,desire,happiness,mild
+00:33:20.363991,00:33:21.262991,Oh my god.,Oh my god.,shock,surprise,moderate
+00:33:21.262991,00:33:23.483991,Thank you.,Thank you.,gratitude,happiness,mild
+00:33:23.483991,00:33:24.562991,I would love to see you back.,I would love to see you back.,longing,happiness,moderate
+00:33:24.562991,00:33:25.463991,Do you know why?,Do you know why?,curiosity,neutral,mild
+00:33:25.463991,00:33:26.603991,Because you deserve to come back.,Because you deserve to come back.,validation,happiness,mild
+00:33:26.603991,00:33:27.503991,Thank you very much.,Thank you very much.,gratitude,happiness,mild
+00:33:27.503991,00:33:28.922991,Because you're a bloody talented cook.,Because you're a bloody talented cook.,admiration,happiness,moderate
+00:33:28.922991,00:33:30.082991,Thank you.,Thank you.,gratitude,happiness,mild
+00:33:30.082991,00:33:31.003991,Don't be upset.,Don't be upset.,reassurance,happiness,mild
+00:33:31.003991,00:33:31.902991,I'm not.,I'm not.,defensiveness,anger,mild
+00:33:31.902991,00:33:32.803991,I'm so happy.,I'm so happy.,joy,happiness,intense
+00:33:32.803991,00:33:33.983991,Say goodbye to your dear lady.,Say goodbye to your dear lady.,farewell,sadness,moderate
+00:33:33.983991,00:33:35.103991,"I'll see you there in a minute, yes?","I'll see you there in a minute, yes?",expectation,neutral,mild
+00:33:35.103991,00:33:36.003991,"Thank you, Chef.","Thank you, Chef.",gratitude,happiness,mild
+00:33:36.003991,00:33:38.343991,"Good to see you, Robert, yes?","Good to see you, Robert, yes?",warmth,happiness,mild
+00:33:38.343991,00:33:39.623991,"Baby, I'm back.","Baby, I'm back.",reunion,happiness,mild
+00:33:39.623991,00:33:40.523991,You know what I'm saying?,You know what I'm saying?,seeking-understanding,neutral,neutral
+00:33:40.523991,00:33:42.182991,And I plan on winning Hell's Kitchen.,And I plan on winning Hell's Kitchen.,determination,happiness,moderate
+00:33:42.182991,00:33:43.082991,Woo!,Woo!,excitement,happiness,intense
+00:33:53.983991,00:33:55.822991,Oh.,Oh.,disappointment,sadness,mild
+00:33:55.822991,00:33:58.383991,"Obviously, we've got someone new in the kitchen tonight, yes?","Obviously, we've got someone new in the kitchen tonight, yes?",curiosity,surprise,mild
+00:33:58.383991,00:34:01.703991,"Men, you've got Robert on your team.","Men, you've got Robert on your team.",reassurance,happiness,mild
+00:34:01.722991,00:34:05.002991,"Last season, he left Hell's Kitchen for medical reasons.","Last season, he left Hell's Kitchen for medical reasons.",concern,sadness,mild
+00:34:05.002991,00:34:07.203991,"And now, he's getting a second chance","And now, he's getting a second chance",hope,happiness,mild
+00:34:07.203991,00:34:09.843991,to come back in Hell's Kitchen.,to come back in Hell's Kitchen.,anticipation,happiness,mild
+00:34:09.843991,00:34:11.883991,Welcome.,Welcome.,warmth,happiness,mild
+00:34:11.883991,00:34:16.322991,"In my cooking career, I've never had a service like that.","In my cooking career, I've never had a service like that.",disbelief,surprise,moderate
+00:34:16.322991,00:34:17.923991,Nothing positive.,Nothing positive.,disappointment,sadness,mild
+00:34:17.923991,00:34:20.443991,Pathetic.,Pathetic.,contempt,disgust,moderate
+00:34:20.443991,00:34:21.343991,Amanda.,Amanda.,neutrality,neutral,neutral
+00:34:21.343991,00:34:22.243991,"Yes, Chef?","Yes, Chef?",respect,neutral,neutral
+00:34:22.243991,00:34:24.402991,You screwed the kitchen with the salmon,You screwed the kitchen with the salmon,frustration,anger,moderate
+00:34:24.402991,00:34:26.163991,that you froze that you were supposed,that you froze that you were supposed,confusion,neutral,mild
+00:34:26.163991,00:34:27.883991,to put in the fridge.,to put in the fridge.,indifference,neutral,neutral
+00:34:27.883991,00:34:28.883991,"Yes, Chef.","Yes, Chef.",respect,neutral,neutral
+00:34:28.883991,00:34:31.203991,Fucking bravo.,Fucking bravo.,sarcasm,anger,moderate
+00:34:31.203991,00:34:33.262991,Melinda.,Melinda.,neutrality,neutral,neutral
+00:34:33.262991,00:34:35.222991,Lovely.,Lovely.,appreciation,happiness,mild
+00:34:35.222991,00:34:37.063991,You are running out of time.,You are running out of time.,urgency,fear,moderate
+00:34:39.542991,00:34:42.142991,"Tonight, I have to choose a losing team.","Tonight, I have to choose a losing team.",resignation,sadness,moderate
+00:34:42.142991,00:34:45.783991,You both had shocking services.,You both had shocking services.,disapproval,disgust,moderate
+00:34:45.783991,00:34:50.302991,"But gentlemen, you managed to get a few entrees out.","But gentlemen, you managed to get a few entrees out.",acknowledgment,neutral,mild
+00:34:50.302991,00:34:54.662991,"Ladies, you served a whopping zero entrees.","Ladies, you served a whopping zero entrees.",disappointment,sadness,moderate
+00:34:54.662991,00:34:55.662991,Congratulations.,Congratulations.,pride,happiness,mild
+00:34:55.662991,00:34:57.623991,That's a new record.,That's a new record.,pride,happiness,mild
+00:34:57.623991,00:35:00.902991,"Clearly, the losing team.","Clearly, the losing team.",resignation,sadness,mild
+00:35:00.923991,00:35:03.802991,"Now, come to the consensus.","Now, come to the consensus.",expectation,neutral,mild
+00:35:03.802991,00:35:08.522991,Decide which two individuals you all,Decide which two individuals you all,uncertainty,neutral,neutral
+00:35:08.522991,00:35:10.203991,are nominating for elimination.,are nominating for elimination.,apprehension,fear,mild
+00:35:10.203991,00:35:11.203991,Is that clear?,Is that clear?,uncertainty,neutral,mild
+00:35:11.203991,00:35:13.083991,"Yes, Chef.","Yes, Chef.",respect,neutral,neutral
+00:35:13.083991,00:35:14.363991,"Now, piss off up to the doors.","Now, piss off up to the doors.",irritation,anger,moderate
+00:35:18.923991,00:35:20.203991,"I don't know who's going to go home,","I don't know who's going to go home,",uncertainty,fear,mild
+00:35:20.203991,00:35:24.563991,because we were all just bad.,because we were all just bad.,shame,sadness,moderate
+00:35:24.563991,00:35:26.762991,We did what we did today.,We did what we did today.,acceptance,neutral,neutral
+00:35:26.762991,00:35:29.042991,And some people are more hungry than others.,And some people are more hungry than others.,observation,neutral,neutral
+00:35:29.063991,00:35:31.822991,"Clearly, Melinda, you don't want to be here.","Clearly, Melinda, you don't want to be here.",resentment,disgust,moderate
+00:35:31.822991,00:35:32.783991,I do want to be here.,I do want to be here.,commitment,happiness,mild
+00:35:32.783991,00:35:35.063991,"Once I get grounded, I am very strong,","Once I get grounded, I am very strong,",confidence,happiness,moderate
+00:35:35.063991,00:35:36.423991,and I can kick a lot of ass.,and I can kick a lot of ass.,confidence,happiness,moderate
+00:35:36.423991,00:35:39.063991,So I didn't see it tonight.,So I didn't see it tonight.,disappointment,sadness,mild
+00:35:39.063991,00:35:42.863991,"Obviously, Melinda didn't really know much of anything.","Obviously, Melinda didn't really know much of anything.",dismissiveness,disgust,mild
+00:35:42.863991,00:35:44.462991,Send that bitch home.,Send that bitch home.,hostility,anger,intense
+00:35:44.462991,00:35:45.363991,OK.,OK.,acceptance,neutral,neutral
+00:35:45.363991,00:35:47.343991,"Melinda, you're on the cutting block, baby.","Melinda, you're on the cutting block, baby.",threat,fear,moderate
+00:35:47.343991,00:35:48.783991,"Yeah, we're putting you out.","Yeah, we're putting you out.",rejection,anger,moderate
+00:35:48.783991,00:35:51.783991,I'm not done with Hell's Kitchen yet.,I'm not done with Hell's Kitchen yet.,anticipation,neutral,mild
+00:35:51.783991,00:35:55.022991,"Listen, guys, we never got past apps.","Listen, guys, we never got past apps.",frustration,sadness,mild
+00:35:55.022991,00:35:55.902991,Apps?,Apps?,curiosity,neutral,mild
+00:35:55.902991,00:35:58.302991,"Lovely, Melinda, you guys are up.","Lovely, Melinda, you guys are up.",encouragement,happiness,mild
+00:35:58.322991,00:36:00.443991,"Oh, snap.","Oh, snap.",surprise,surprise,mild
+00:36:00.443991,00:36:03.643991,"Well, it sounds like y'all want to put me and Melinda up there.","Well, it sounds like y'all want to put me and Melinda up there.",suspicion,fear,mild
+00:36:03.643991,00:36:05.643991,Mama didn't raise no fool.,Mama didn't raise no fool.,confidence,happiness,moderate
+00:36:05.643991,00:36:07.322991,I'm not going to stop fighting.,I'm not going to stop fighting.,determination,anger,intense
+00:36:07.322991,00:36:09.843991,"The only thing I can say is, yes, I made a mistake.","The only thing I can say is, yes, I made a mistake.",regret,sadness,moderate
+00:36:09.843991,00:36:12.083991,But I'm still a strong person on this team.,But I'm still a strong person on this team.,determination,happiness,moderate
+00:36:12.083991,00:36:15.843991,Lovely was gone for like 45 minutes.,Lovely was gone for like 45 minutes.,concern,sadness,mild
+00:36:15.843991,00:36:16.802991,That ain't cool.,That ain't cool.,disapproval,anger,mild
+00:36:16.802991,00:36:18.483991,Lovely should go home.,Lovely should go home.,dismissal,disgust,mild
+00:36:18.483991,00:36:22.123991,"I have to say, Amanda, I do get the ditzy kind of vibe.","I have to say, Amanda, I do get the ditzy kind of vibe.",judgment,disgust,mild
+00:36:22.123991,00:36:24.762991,"With my salmon in the freezer, I had no idea","With my salmon in the freezer, I had no idea",confusion,surprise,mild
+00:36:24.762991,00:36:25.802991,that was a fucking freezer.,that was a fucking freezer.,discomfort,disgust,moderate
+00:36:25.802991,00:36:28.283991,"You gotta, you gotta be more assertive","You gotta, you gotta be more assertive",encouragement,happiness,moderate
+00:36:29.063991,00:36:30.863991,I fucked up on one thing with the fucking,I fucked up on one thing with the fucking,frustration,anger,moderate
+00:36:30.863991,00:36:33.022991,"salmon in the freezer, and that's it.","salmon in the freezer, and that's it.",resignation,sadness,mild
+00:36:33.022991,00:36:35.182991,I don't deserve to go home tonight.,I don't deserve to go home tonight.,guilt,sadness,moderate
+00:36:35.182991,00:36:38.583991,"Right now, we've got Melinda, we've got Amanda,","Right now, we've got Melinda, we've got Amanda,",listing,neutral,neutral
+00:36:38.583991,00:36:39.943991,and we've got Lovely.,and we've got Lovely.,contentment,happiness,mild
+00:36:39.943991,00:36:41.102991,We're kind of deadlocked.,We're kind of deadlocked.,frustration,sadness,moderate
+00:36:48.983991,00:36:52.823991,The men have already lost and gained a teammate.,The men have already lost and gained a teammate.,resignation,sadness,mild
+00:36:52.823991,00:36:57.783991,Now it's the women's turn to say goodbye to one of their own.,Now it's the women's turn to say goodbye to one of their own.,resignation,sadness,moderate
+00:36:57.783991,00:37:00.843991,"Right, ladies, have you reached your decision?","Right, ladies, have you reached your decision?",expectation,neutral,neutral
+00:37:00.843991,00:37:02.522991,"Yes, Chef.","Yes, Chef.",respect,neutral,neutral
+00:37:02.522991,00:37:04.482991,Good.,Good.,satisfaction,happiness,mild
+00:37:04.482991,00:37:08.362991,"Tennille, first nominee and why, please.","Tennille, first nominee and why, please.",expectation,neutral,neutral
+00:37:08.362991,00:37:15.443991,"The first nominee, Chef, the first nominee was Melinda.","The first nominee, Chef, the first nominee was Melinda.",announcement,neutral,neutral
+00:37:15.443991,00:37:18.242991,"Appetizers really, really, really struggled.","Appetizers really, really, really struggled.",frustration,sadness,moderate
+00:37:18.242991,00:37:21.043991,"And overall, the team did not feel Melinda","And overall, the team did not feel Melinda",disapproval,disgust,mild
+00:37:21.043991,00:37:21.922991,had her head in the game.,had her head in the game.,focus,neutral,mild
+00:37:21.922991,00:37:22.823991,Thank you.,Thank you.,gratitude,happiness,mild
+00:37:25.462991,00:37:28.462991,The red team has nominated Melinda for elimination.,The red team has nominated Melinda for elimination.,apprehension,fear,mild
+00:37:28.462991,00:37:32.022991,"Now, a second nominee must face Chef Ramsay.","Now, a second nominee must face Chef Ramsay.",apprehension,fear,moderate
+00:37:32.022991,00:37:34.103991,And second nominee?,And second nominee?,curiosity,neutral,mild
+00:37:34.103991,00:37:40.582991,"The second nominee, Chef, was Amanda.","The second nominee, Chef, was Amanda.",indifference,neutral,neutral
+00:37:40.582991,00:37:41.742991,"Amanda, do you agree with this?","Amanda, do you agree with this?",curiosity,neutral,mild
+00:37:41.742991,00:37:43.022991,I do not agree at all.,I do not agree at all.,disagreement,anger,moderate
+00:37:45.623991,00:37:48.302991,Who should take your place?,Who should take your place?,curiosity,neutral,neutral
+00:37:48.302991,00:37:49.982991,Lovely.,Lovely.,appreciation,happiness,mild
+00:37:49.982991,00:37:52.043991,"Amanda, do you know the difference between a fridge?","Amanda, do you know the difference between a fridge?",curiosity,neutral,neutral
+00:37:52.043991,00:37:52.943991,"Yes, Chef.","Yes, Chef.",respect,neutral,neutral
+00:37:52.943991,00:37:53.843991,And a freezer?,And a freezer?,curiosity,neutral,neutral
+00:37:53.843991,00:37:54.742991,"Yes, Chef, definitely.","Yes, Chef, definitely.",agreement,happiness,mild
+00:37:54.742991,00:37:55.642991,What is it?,What is it?,curiosity,neutral,mild
+00:37:55.642991,00:37:57.883991,"Freezer freezes it, the fridge cools it.","Freezer freezes it, the fridge cools it.",explanation,neutral,neutral
+00:37:57.883991,00:37:58.763991,Gold star.,Gold star.,approval,happiness,mild
+00:38:01.402991,00:38:03.482991,"Melinda, step forward.","Melinda, step forward.",expectation,neutral,neutral
+00:38:08.242991,00:38:10.283991,"Amanda, get your ass here.","Amanda, get your ass here.",command,anger,moderate
+00:38:13.642991,00:38:14.563991,Melinda.,Melinda.,neutrality,neutral,neutral
+00:38:14.563991,00:38:15.443991,"Yes, Chef.","Yes, Chef.",respect,neutral,neutral
+00:38:15.443991,00:38:17.123991,Why should you stay in Hell's Kitchen?,Why should you stay in Hell's Kitchen?,curiosity,neutral,neutral
+00:38:17.142991,00:38:19.902991,"Chef, I believe I should stay because I","Chef, I believe I should stay because I",hope,happiness,mild
+00:38:19.902991,00:38:22.103991,have passion for cooking.,have passion for cooking.,enthusiasm,happiness,moderate
+00:38:22.103991,00:38:23.503991,I love being in the kitchen.,I love being in the kitchen.,affection,happiness,moderate
+00:38:23.503991,00:38:24.982991,I've been working my ass off.,I've been working my ass off.,frustration,anger,moderate
+00:38:24.982991,00:38:26.823991,And I want to do it.,And I want to do it.,determination,happiness,moderate
+00:38:26.823991,00:38:27.742991,Amanda.,Amanda.,neutrality,neutral,neutral
+00:38:27.742991,00:38:28.943991,"Yes, Chef.","Yes, Chef.",respect,neutral,neutral
+00:38:28.943991,00:38:30.742991,Why should you stay in Hell's Kitchen?,Why should you stay in Hell's Kitchen?,curiosity,neutral,mild
+00:38:30.742991,00:38:32.462991,Because I can do better than that.,Because I can do better than that.,determination,happiness,moderate
+00:38:32.462991,00:38:33.902991,"I mean, I didn't get a chance to cook.","I mean, I didn't get a chance to cook.",regret,sadness,mild
+00:38:33.902991,00:38:36.022991,Let me cook on the line so you can see what I can do.,Let me cook on the line so you can see what I can do.,confidence,happiness,moderate
+00:38:36.022991,00:38:39.022991,"Madam, you can't do fucking worse.","Madam, you can't do fucking worse.",contempt,anger,intense
+00:38:39.022991,00:38:42.022991,That's impossible.,That's impossible.,incredulity,surprise,moderate
+00:38:42.022991,00:38:43.422991,"Yes, Chef.","Yes, Chef.",respect,neutral,neutral
+00:38:43.422991,00:38:44.323991,OK.,OK.,acceptance,neutral,neutral
+00:38:47.263991,00:38:50.902991,My decision is you froze the fucking salmon.,My decision is you froze the fucking salmon.,accusation,anger,intense
+00:38:50.902991,00:38:51.943991,"Yes, I fucked up, Chef.","Yes, I fucked up, Chef.",remorse,sadness,moderate
+00:38:51.943991,00:38:53.462991,"Yeah, you fucked up big time.","Yeah, you fucked up big time.",blame,anger,intense
+00:38:57.302991,00:38:58.702991,"Why did you throw that away, Melinda?","Why did you throw that away, Melinda?",confusion,surprise,moderate
+00:38:58.702991,00:38:59.623991,You're making me mad.,You're making me mad.,irritation,anger,moderate
+00:38:59.623991,00:39:00.522991,"Yes, Chef.","Yes, Chef.",respect,neutral,neutral
+00:39:00.522991,00:39:01.422991,Fucking mad.,Fucking mad.,rage,anger,intense
+00:39:04.063991,00:39:12.422991,"My decision is Melinda, take your jacket off","My decision is Melinda, take your jacket off",authority,neutral,neutral
+00:39:12.422991,00:39:14.343991,and leave Hell's Kitchen.,and leave Hell's Kitchen.,resignation,sadness,mild
+00:39:14.343991,00:39:16.422991,"Thank you, Chef.","Thank you, Chef.",gratitude,happiness,mild
+00:39:16.443991,00:39:17.802991,I expected more.,I expected more.,disappointment,sadness,moderate
+00:39:17.802991,00:39:18.763991,"Yes, Chef.","Yes, Chef.",respect,neutral,neutral
+00:39:18.763991,00:39:19.663991,Thank you.,Thank you.,gratitude,happiness,mild
+00:39:19.663991,00:39:22.283991,Thank you.,Thank you.,gratitude,happiness,mild
+00:39:22.283991,00:39:24.242991,I am really disappointed.,I am really disappointed.,disappointment,sadness,moderate
+00:39:24.242991,00:39:25.962991,I really was looking forward to spending,I really was looking forward to spending,anticipation,happiness,moderate
+00:39:25.962991,00:39:27.883991,more time with Chef Ramsay.,more time with Chef Ramsay.,longing,happiness,mild
+00:39:27.883991,00:39:31.642991,"Chef Gordon Ramsay, I'd love to make you a four-course dinner","Chef Gordon Ramsay, I'd love to make you a four-course dinner",admiration,happiness,moderate
+00:39:31.642991,00:39:36.883991,and you can see exactly what kind of talent I have.,and you can see exactly what kind of talent I have.,confidence,happiness,moderate
+00:39:36.883991,00:39:39.763991,"Back in line, Madam.","Back in line, Madam.",impatience,anger,mild
+00:39:39.763991,00:39:43.242991,"Ladies, one more bit of news.","Ladies, one more bit of news.",anticipation,surprise,mild
+00:39:43.242991,00:39:48.543991,I've made a decision to strengthen the team.,I've made a decision to strengthen the team.,determination,neutral,moderate
+00:39:48.543991,00:39:52.543991,"Robert, you're now part of the ladies' team.","Robert, you're now part of the ladies' team.",acceptance,neutral,neutral
+00:39:52.543991,00:39:53.443991,Join them.,Join them.,encouragement,neutral,neutral
+00:39:53.443991,00:39:54.343991,"Thank you, Chef.","Thank you, Chef.",gratitude,happiness,mild
+00:39:54.343991,00:39:57.862991,"And by the way, big boy, last season you were a hero.","And by the way, big boy, last season you were a hero.",nostalgia,happiness,mild
+00:39:57.862991,00:40:00.103991,Now you're fucking zero.,Now you're fucking zero.,contempt,anger,intense
+00:40:00.103991,00:40:01.182991,"Yes, Chef.","Yes, Chef.",respect,neutral,neutral
+00:40:01.182991,00:40:02.503991,You're all zero.,You're all zero.,contempt,disgust,moderate
+00:40:02.503991,00:40:05.343991,Back to square one.,Back to square one.,frustration,sadness,moderate
+00:40:05.343991,00:40:08.063991,"Now fuck off, all of you.","Now fuck off, all of you.",hostility,anger,intense
+00:40:08.063991,00:40:08.943991,I'm excited.,I'm excited.,anticipation,happiness,moderate
+00:40:08.943991,00:40:11.623991,Robert is for sure the end of the red team on Z Street.,Robert is for sure the end of the red team on Z Street.,certainty,neutral,neutral
+00:40:11.642991,00:40:14.082991,We got to kill it tomorrow.,We got to kill it tomorrow.,determination,happiness,moderate
+00:40:14.082991,00:40:15.603991,Oh my god.,Oh my god.,shock,surprise,moderate
+00:40:15.603991,00:40:17.563991,Elimination's kind of scary.,Elimination's kind of scary.,apprehension,fear,mild
+00:40:17.563991,00:40:20.283991,I hope I'm not next.,I hope I'm not next.,apprehension,fear,moderate
+00:40:20.283991,00:40:23.043991,Melinda was completely lost in space.,Melinda was completely lost in space.,confusion,fear,moderate
+00:40:23.043991,00:40:25.443991,So I sent her back to whatever planet she came from.,So I sent her back to whatever planet she came from.,dismissiveness,anger,moderate

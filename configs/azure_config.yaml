@@ -1,0 +1,31 @@
+compute:
+  name: "lambda-2"
+  instance_type: "gpu"
+
+environment:
+  name: "emotion-mlops-env"
+  version: "9"
+
+data:
+  raw_asset: "emotion-raw"
+  raw_version: "1"
+  train_asset: "emotion-train"
+  train_version: "3"
+  val_asset: "emotion-val"
+  val_version: "1"
+  test_asset: "emotion-test"
+  test_version: "1"
+
+deployment:
+  endpoint_name: "emotion-classifier-endpoint"
+  batch_endpoint_name: "emotion-batch-endpoint"
+  default_deployment: "blue"
+  instance_type: "gpu"
+  compute: "lambda-2"
+  scoring_uri: "${SCORING_URI}"
+  traffic:
+    blue: 70
+    green: 30
+  model_versions:
+    blue: 1
+    green: 2

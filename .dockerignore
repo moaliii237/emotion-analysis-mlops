@@ -1,0 +1,87 @@
+# Python
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+*.so
+.Python
+*.egg-info/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Virtual environments
+.venv*
+venv*
+env/
+ENV/
+
+# Models (mounted at runtime — too large, 1.5 GB)
+# models
+
+# Logs
+logs/
+*.log
+
+# Build artifacts
+build/
+dist/
+*.egg
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Git
+.git/
+.gitignore
+
+# Tests / docs
+tests/
+docs/
+*.md
+
+# Frontend old (Streamlit)
+src/emotion_mlops/frontend/
+
+# Docker
+Dockerfile*
+docker-compose*.yml
+.dockerignore
+
+# CI / config
+.github/
+.pre-commit-config.yaml
+.flake8
+
+# Notebooks
+*.ipynb
+.ipynb_checkpoints/
+
+# Monitoring (dev only)
+monitoring/
+prometheus-data/
+grafana-data/
+
+# Local env
+.env*
+
+# Backup
+_backup/
+_backup_frontend/
+PROJECT_BACKUP/
+
+# Data
+data/
+*.csv
+*.wav
+*.mp3
+*.mp4
+
+# Runs
+runs.json

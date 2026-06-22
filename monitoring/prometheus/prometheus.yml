@@ -1,0 +1,25 @@
+# Prometheus scrape configuration
+# Pulls metrics from the FastAPI backend every 15 seconds
+
+global:
+  scrape_interval: 15s
+  evaluation_interval: 15s
+  external_labels:
+    monitor: 'emotionscope-monitor'
+
+scrape_configs:
+  # Scrape the FastAPI backend on the host machine
+  # host.docker.internal resolves to the host from inside Docker containers
+  - job_name: 'fastapi-backend'
+    metrics_path: '/metrics'
+    scrape_interval: 10s
+    static_configs:
+      - targets:
+          - 'host.docker.internal:8000'   # local development
+        labels:
+          environment: 'local'
+
+  # Scrape Prometheus itself (good practice)
+  - job_name: 'prometheus'
+    static_configs:
+      - targets: ['localhost:9090']

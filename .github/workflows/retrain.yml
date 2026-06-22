@@ -1,0 +1,70 @@
+name: Retrain Pipeline
+
+on:
+  schedule:
+    - cron: '0 6 * * *'
+  workflow_dispatch:
+    inputs:
+      model_version:
+        description: "Model version tag (e.g. v2)"
+        required: true
+        default: "v2"
+      dry_run:
+        description: "Dry run only (no Azure calls)"
+        required: false
+        default: "true"
+        type: choice
+        options: ["true", "false"]
+permissions:
+  id-token: write
+  contents: read
+jobs:
+  retrain:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+          pip install -e .
+
+      - name: Check feedback threshold
+        id: check
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+        run: |
+          READY=$(python -c "
+          import os, sys
+          os.environ['DATABASE_URL'] = os.environ.get('DATABASE_URL', '')
+          sys.path.insert(0, 'src')
+          from emotion_mlops.feedback.auto_retrain import should_retrain
+          result = should_retrain(threshold=10)
+          print('true' if result['ready'] else 'false')
+          ")
+          echo "ready=$READY" >> $GITHUB_OUTPUT
+          echo "Retrain ready: $READY"
+
+      - name: Azure login (OIDC)
+        if: steps.check.outputs.ready == 'true' || github.event_name == 'workflow_dispatch'
+        uses: azure/login@v2
+        with:
+          client-id: ${{ vars.AZURE_CLIENT_ID }}
+          tenant-id: ${{ vars.AZURE_TENANT_ID }}
+          subscription-id: ${{ vars.AZURE_SUBSCRIPTION_ID }}
+
+      - name: Run retrain trigger
+        if: steps.check.outputs.ready == 'true' || github.event_name == 'workflow_dispatch'
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+          MODEL_VERSION: ${{ inputs.model_version || 'v3' }}
+          AZURE_SUBSCRIPTION_ID: ${{ vars.AZURE_SUBSCRIPTION_ID }}
+          AZURE_RESOURCE_GROUP: ${{ vars.AZURE_RESOURCE_GROUP }}
+          AZURE_WORKSPACE_NAME: ${{ vars.AZURE_WORKSPACE_NAME }}
+        run: |
+          PYTHONPATH=src python -m emotion_mlops.feedback.retrain_trigger \
+            ${{ github.event_name == 'workflow_dispatch' && (inputs.dry_run == 'true' && '--dry-run' || '--live') || '--live' }}

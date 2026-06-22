@@ -1,0 +1,102 @@
+services:
+  backend:
+    image: ghcr.io/bredauniversityadsai/nlp1/nlp-backend:latest
+    ports:
+      - "2002:8000"
+    environment:
+      - PYTHONPATH=/app/src
+      - PYTHONUNBUFFERED=1
+      - ML_ENDPOINT_URL
+      - ML_ENDPOINT_KEY
+      - TRANSFORMERS_OFFLINE=1
+      - HF_DATASETS_OFFLINE=1
+      - DATABASE_URL=postgresql://nlp1_user:nlp1_password@postgres:5432/emotionscope
+    restart: unless-stopped
+    networks:
+      - emotionscope-net
+
+  frontend:
+    image: ghcr.io/bredauniversityadsai/nlp1/nlp-frontend:latest
+    ports:
+      - "2001:8501"
+    depends_on:
+      - backend
+    environment:
+      - API_URL=http://backend:8000
+    restart: unless-stopped
+    networks:
+      - emotionscope-net
+
+  prometheus:
+    image: prom/prometheus:latest
+    ports:
+      - "2003:9090"
+    restart: unless-stopped
+    networks:
+      - emotionscope-net
+
+  grafana:
+    image: grafana/grafana:latest
+    ports:
+      - "2004:3000"
+    environment:
+      - GF_SECURITY_ADMIN_USER=admin
+      - GF_SECURITY_ADMIN_PASSWORD=admin
+    restart: unless-stopped
+    networks:
+      - emotionscope-net
+
+  airflow:
+    image: apache/airflow:2.9.0
+    ports:
+      - "2005:8080"
+    environment:
+      - AIRFLOW__CORE__EXECUTOR=SequentialExecutor
+      - AIRFLOW__CORE__LOAD_EXAMPLES=False
+      - AIRFLOW__DATABASE__SQL_ALCHEMY_CONN=sqlite:////opt/airflow/airflow.db
+      - _AIRFLOW_DB_MIGRATE=true
+      - _AIRFLOW_WWW_USER_CREATE=true
+      - _AIRFLOW_WWW_USER_USERNAME=admin
+      - _AIRFLOW_WWW_USER_PASSWORD=admin
+    volumes:
+      - airflow-data:/opt/airflow
+    restart: unless-stopped
+    networks:
+      - emotionscope-net
+
+  mlflow:
+    image: ghcr.io/mlflow/mlflow:latest
+    container_name: emotionscope-mlflow
+    ports:
+      - "2006:5000"
+    volumes:
+      - mlflow-data:/mlflow
+    command: mlflow server --host 0.0.0.0 --port 5000 --backend-store-uri sqlite:///mlflow/mlflow.db --default-artifact-root /mlflow/artifacts
+    restart: unless-stopped
+    networks:
+      - emotionscope-net
+
+  postgres:
+    image: postgres:16
+    container_name: emotionscope-postgres
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_USER=nlp1_user
+      - POSTGRES_PASSWORD=nlp1_password
+      - POSTGRES_DB=emotionscope
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    restart: unless-stopped
+    networks:
+      - emotionscope-net
+
+volumes:
+  emotionscope-logs:
+  airflow-data:
+  mlflow-data:
+  postgres-data:
+
+networks:
+  emotionscope-net:
+    driver: bridge
