@@ -6,25 +6,25 @@
 
 ---
 
-## 🎯 What was added
+## What was added
 
 This sprint added **8 new analysis modules** + **9 new REST endpoints**, plus **5 places where the Groq LLM (llama-3.1-8b-instant)** produces human-readable AI output. All features work across every input type the existing pipeline already supports (raw text, audio/video, transcript CSV, YouTube URL).
 
 | # | Feature | Module | Endpoint | AI? |
 |---|---------|--------|----------|-----|
 | 1 | Cast Analyzer (NER-based character profiling) | `analysis/cast_analyzer.py` | `POST /predict/cast` + auto in pipeline |, |
-| 2 | Side-by-side Compare | `analysis/compare.py` | `POST /compare` | ✨ Auto-title |
+| 2 | Side-by-side Compare | `analysis/compare.py` | `POST /compare` | Auto-title |
 | 3 | Emotion Timeline (Chart.js-ready + peaks) | `analysis/timeline.py` | `POST /predict/timeline` + auto in pipeline |, |
-| 4 | Scene Detection | `analysis/scenes.py` | `POST /predict/scenes` | ✨ Scene title |
-| 5 | Trailer Highlights (best 30-sec clips) | `analysis/trailer.py` | `POST /predict/trailer` | ✨ Tagline |
-| 6 | Content Scorecard (engagement / drama / comedy / pacing) | `analysis/content_score.py` | `POST /predict/score` | ✨ Classification |
+| 4 | Scene Detection | `analysis/scenes.py` | `POST /predict/scenes` | Scene title |
+| 5 | Trailer Highlights (best 30-sec clips) | `analysis/trailer.py` | `POST /predict/trailer` | Tagline |
+| 6 | Content Scorecard (engagement / drama / comedy / pacing) | `analysis/content_score.py` | `POST /predict/score` | Classification |
 | 7 | Emotion Shifts (turning points) | `analysis/shifts.py` | `POST /predict/shifts` |, |
-| 8 | Persuasion Analyzer | `analysis/persuasion.py` | `POST /predict/persuasion` | ✨ Assessment |
+| 8 | Persuasion Analyzer | `analysis/persuasion.py` | `POST /predict/persuasion` | Assessment |
 |, | AI Auto-Title Helper (shared) | `analysis/autotitle.py` | (used internally) |, |
 
 ---
 
-## 🧠 Why these features
+## Why these features
 
 The existing pipeline produced **per-segment emotion labels**. That's a building block, not a product. A real client doesn't ask "what's the emotion of sentence #14?", they ask:
 
@@ -41,7 +41,7 @@ Each module turns raw per-segment data into a producer-facing answer.
 
 ---
 
-## 🔌 Endpoint reference (one-page)
+## Endpoint reference (one-page)
 
 All endpoints accept `application/json` and return `application/json`. They re-use the segment shape produced by `/predict/pipeline` and `/predict/youtube`, so chaining requests on the frontend is straightforward.
 
@@ -77,7 +77,7 @@ Combines rhetorical strength (avg confidence), emotional appeal (% strong-emotio
 
 ---
 
-## 🧠 AI usage (Groq, free tier)
+## AI usage (Groq, free tier)
 
 The Groq LLM is called in five places, with a shared lazy-loaded singleton client (`analysis/autotitle.py::_get_client`). The API key is read from a `.env` file at the repo root and **never committed** (the file is in `.gitignore`).
 
@@ -93,7 +93,7 @@ Every AI call has a **try/except with a graceful fallback**, the endpoint never 
 
 ---
 
-## 📊 Data flow
+## Data flow
 
 ```
                 +----------------------------------------------+
@@ -127,7 +127,7 @@ Every AI call has a **try/except with a graceful fallback**, the endpoint never 
 
 ---
 
-## 🚀 Run locally
+## Run locally
 
 ```powershell
 # Activate the project venv
@@ -148,13 +148,13 @@ uvicorn emotion_mlops.api.app:app --reload --port 8000
 
 ---
 
-## 🔐 Security note
+## Security note
 
 A real Groq API key was accidentally pasted once during development. It was **immediately revoked** through the Groq console and a fresh key was issued and placed only in `.env`. From that point on every dev test was run from `.env` rather than from inline values. `.env` is in `.gitignore`, so no key has ever reached the remote repository.
 
 ---
 
-## 🗺️ Next sprint (frontend)
+## Next sprint (frontend)
 
 All eight features are designed to be consumed by a single Compare-focused frontend page with two parallel input panels (one per side, each supporting the four input types) and a full dashboard below: radar overlay, bar chart, winner badges, character comparison, timeline, trailer clip cards, content-score gauges, shift annotations, and a persuasion meter.
 

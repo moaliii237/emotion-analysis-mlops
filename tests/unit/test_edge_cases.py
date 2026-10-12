@@ -35,5 +35,5 @@ class TestBoundaryInputs:
         assert r.status_code in (200, 422)
 
     def test_unicode(self, client):
-        r = client.post("/predict/text", json={"text": "I'm happy 😄 你好 résumé"})
+        r = client.post("/predict/text", json={"text": "I'm happy 你好 résumé"})
         assert r.status_code == 200

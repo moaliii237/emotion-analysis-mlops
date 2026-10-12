@@ -211,10 +211,10 @@
     const a = document.getElementById("analyseAudioFile");
     const c = document.getElementById("analyseCsvFile");
     if (a) a.addEventListener("change", () => {
-      document.getElementById("analyseAudioName").textContent = a.files[0] ? `✓ ${a.files[0].name}` : "";
+      document.getElementById("analyseAudioName").textContent = a.files[0] ? `${a.files[0].name}` : "";
     });
     if (c) c.addEventListener("change", () => {
-      document.getElementById("analyseCsvName").textContent = c.files[0] ? `✓ ${c.files[0].name}` : "";
+      document.getElementById("analyseCsvName").textContent = c.files[0] ? `${c.files[0].name}` : "";
     });
   }
 
@@ -320,7 +320,7 @@
     } catch (err) {
       btn.disabled = false;
       status.classList.add("is-error");
-      status.textContent = `❌ Failed: ${err.message}`;
+      status.textContent = `Failed: ${err.message}`;
       return;
     }
 
@@ -388,7 +388,7 @@
     resetQaPanel(); // new analysis means a fresh Q&A conversation
     status.classList.remove("is-error");
     status.classList.add("is-ok");
-    status.textContent = "✓ Done";
+    status.textContent = "Done";
     btn.disabled = false;
     results.hidden = false;
     results.scrollIntoView({ behavior: "smooth", block: "start" });
@@ -601,8 +601,8 @@
         <span class="segment-text">${esc(s.Sentence||s.sentence)}</span>
         <span class="segment-conf">${(((s.Confidence||s.confidence)||0)*100).toFixed(0)}%</span>
         <div class="segment-feedback">
-          <button class="fb-btn fb-yes" title="Correct">👍</button>
-          <button class="fb-btn fb-no" title="Wrong">👎</button>
+          <button class="fb-btn fb-yes" title="Correct"></button>
+          <button class="fb-btn fb-no" title="Wrong"></button>
         </div>
         <select class="fb-correct-input">
           <option value="">- Correct label -</option>
@@ -705,7 +705,7 @@
     const text = (ta?.value || "").trim();
     if (!text) {
       status.classList.add("is-error");
-      status.textContent = "❌ Empty text.";
+      status.textContent = "Empty text.";
       return;
     }
     btn.disabled = true;
@@ -730,12 +730,12 @@
     });
       renderCast(d);
       status.classList.add("is-ok");
-      status.textContent = `✓ Found ${d.total_characters} characters`;
+      status.textContent = `Found ${d.total_characters} characters`;
       results.hidden = false;
       results.scrollIntoView({ behavior: "smooth", block: "start" });
     } catch (err) {
       status.classList.add("is-error");
-      status.textContent = `❌ ${err.message}`;
+      status.textContent = `${err.message}`;
     } finally {
       btn.disabled = false;
     }
@@ -859,7 +859,7 @@
       ]);
     } catch (err) {
       status.classList.add("is-error");
-      status.textContent = `❌ ${err.message}`;
+      status.textContent = `${err.message}`;
       btn.disabled = false;
       return;
     }
@@ -878,7 +878,7 @@
       cmp = await r.json();
     } catch (err) {
       status.classList.add("is-error");
-      status.textContent = `❌ ${err.message}`;
+      status.textContent = `${err.message}`;
       btn.disabled = false;
       return;
     }
@@ -897,7 +897,7 @@
     });
     renderCompare(cmp);
     status.classList.add("is-ok");
-    status.textContent = "✓ Done";
+    status.textContent = "Done";
     btn.disabled = false;
     results.hidden = false;
     results.scrollIntoView({ behavior: "smooth", block: "start" });
@@ -1047,7 +1047,7 @@
     const status = document.getElementById("timelineStatus");
     const results = document.getElementById("timelineResults");
     const text = (document.getElementById("timelineText").value || "").trim();
-    if (!text) { status.classList.add("is-error"); status.textContent = "❌ Empty text."; return; }
+    if (!text) { status.classList.add("is-error"); status.textContent = "Empty text."; return; }
 
     btn.disabled = true;
     status.classList.remove("is-error","is-ok");
@@ -1079,12 +1079,12 @@
       const tl = await tlR.json();
       renderTimelinePage(tl);
       status.classList.add("is-ok");
-      status.textContent = `✓ ${tl.segment_count} segments · ${(tl.peaks||[]).length} peaks`;
+      status.textContent = `${tl.segment_count} segments · ${(tl.peaks||[]).length} peaks`;
       results.hidden = false;
       results.scrollIntoView({ behavior: "smooth", block: "start" });
     } catch (err) {
       status.classList.add("is-error");
-      status.textContent = `❌ ${err.message}`;
+      status.textContent = `${err.message}`;
     } finally {
       btn.disabled = false;
     }
@@ -1224,7 +1224,7 @@
     const status = document.getElementById("scenesStatus");
     const results = document.getElementById("scenesResults");
     const text = (document.getElementById("scenesText").value || "").trim();
-    if (!text) { status.classList.add("is-error"); status.textContent = "❌ Empty text."; return; }
+    if (!text) { status.classList.add("is-error"); status.textContent = "Empty text."; return; }
 
     btn.disabled = true;
     status.classList.remove("is-error","is-ok");
@@ -1257,12 +1257,12 @@
       const d = await sR.json();
       renderScenesPage(d);
       status.classList.add("is-ok");
-      status.textContent = `✓ ${(d.scenes||[]).length} scenes detected`;
+      status.textContent = `${(d.scenes||[]).length} scenes detected`;
       results.hidden = false;
       results.scrollIntoView({ behavior: "smooth", block: "start" });
     } catch (err) {
       status.classList.add("is-error");
-      status.textContent = `❌ ${err.message}`;
+      status.textContent = `${err.message}`;
     } finally {
       btn.disabled = false;
     }
@@ -1342,7 +1342,7 @@
     const status = document.getElementById("trailerStatus");
     const results = document.getElementById("trailerResults");
     const text = (document.getElementById("trailerText").value || "").trim();
-    if (!text) { status.classList.add("is-error"); status.textContent = "❌ Empty text."; return; }
+    if (!text) { status.classList.add("is-error"); status.textContent = "Empty text."; return; }
 
     btn.disabled = true;
     status.classList.remove("is-error","is-ok");
@@ -1387,12 +1387,12 @@
       const tr = await trR.json();
       renderTrailerPage(tr);
       status.classList.add("is-ok");
-      status.textContent = `✓ ${(tr.clips||[]).length} clips · ${Math.round(tr.total_duration||0)}s`;
+      status.textContent = `${(tr.clips||[]).length} clips · ${Math.round(tr.total_duration||0)}s`;
       results.hidden = false;
       results.scrollIntoView({ behavior: "smooth", block: "start" });
     } catch (err) {
       status.classList.add("is-error");
-      status.textContent = `❌ ${err.message}`;
+      status.textContent = `${err.message}`;
     } finally {
       btn.disabled = false;
     }
@@ -1463,7 +1463,7 @@
     const status = document.getElementById("scoreStatus");
     const results = document.getElementById("scoreResults");
     const text = (document.getElementById("scoreText").value || "").trim();
-    if (!text) { status.classList.add("is-error"); status.textContent = "❌ Empty text."; return; }
+    if (!text) { status.classList.add("is-error"); status.textContent = "Empty text."; return; }
 
     btn.disabled = true;
     status.classList.remove("is-error","is-ok");
@@ -1497,12 +1497,12 @@
       const score = await sR.json();
       renderScorePage(score);
       status.classList.add("is-ok");
-      status.textContent = `✓ Grade: ${score.grade}`;
+      status.textContent = `Grade: ${score.grade}`;
       results.hidden = false;
       results.scrollIntoView({ behavior: "smooth", block: "start" });
     } catch (err) {
       status.classList.add("is-error");
-      status.textContent = `❌ ${err.message}`;
+      status.textContent = `${err.message}`;
     } finally {
       btn.disabled = false;
     }
@@ -1576,7 +1576,7 @@
     const status = document.getElementById("shiftsStatus");
     const results = document.getElementById("shiftsResults");
     const text = (document.getElementById("shiftsText").value || "").trim();
-    if (!text) { status.classList.add("is-error"); status.textContent = "❌ Empty text."; return; }
+    if (!text) { status.classList.add("is-error"); status.textContent = "Empty text."; return; }
 
     btn.disabled = true;
     status.classList.remove("is-error","is-ok");
@@ -1608,12 +1608,12 @@
       const d = await sR.json();
       renderShiftsPage(d);
       status.classList.add("is-ok");
-      status.textContent = `✓ ${d.shift_count} shifts detected`;
+      status.textContent = `${d.shift_count} shifts detected`;
       results.hidden = false;
       results.scrollIntoView({ behavior: "smooth", block: "start" });
     } catch (err) {
       status.classList.add("is-error");
-      status.textContent = `❌ ${err.message}`;
+      status.textContent = `${err.message}`;
     } finally {
       btn.disabled = false;
     }
@@ -1681,7 +1681,7 @@
     const status = document.getElementById("persuasionStatus");
     const results = document.getElementById("persuasionResults");
     const text = (document.getElementById("persuasionText").value || "").trim();
-    if (!text) { status.classList.add("is-error"); status.textContent = "❌ Empty text."; return; }
+    if (!text) { status.classList.add("is-error"); status.textContent = "Empty text."; return; }
 
     btn.disabled = true;
     status.classList.remove("is-error","is-ok");
@@ -1715,12 +1715,12 @@
       const p = await pR.json();
       renderPersuasionPage(p);
       status.classList.add("is-ok");
-      status.textContent = `✓ ${p.confidence_level}`;
+      status.textContent = `${p.confidence_level}`;
       results.hidden = false;
       results.scrollIntoView({ behavior: "smooth", block: "start" });
     } catch (err) {
       status.classList.add("is-error");
-      status.textContent = `❌ ${err.message}`;
+      status.textContent = `${err.message}`;
     } finally {
       btn.disabled = false;
     }
@@ -1826,7 +1826,7 @@
     empty.hidden = true;
 
     list.innerHTML = filtered.map((e) => {
-      const icon = e.type === "analyse" ? "📝" : e.type === "compare" ? "⚖️" : "🎭";
+      const icon = e.type === "analyse" ? "" : e.type === "compare" ? "" : "";
       const snapshot = renderHistorySnapshot(e);
       return `
         <div class="history-item">
@@ -1841,7 +1841,7 @@
           </div>
           ${snapshot}
           <div class="history-item-actions">
-            <button class="history-item-btn" title="Reopen" data-action="open" data-id="${e.id}">↗</button>
+            <button class="history-item-btn" title="Reopen" data-action="open" data-id="${e.id}">Open</button>
             <button class="history-item-btn history-item-btn--delete" title="Delete" data-action="delete" data-id="${e.id}">×</button>
           </div>
         </div>
@@ -2014,7 +2014,7 @@
       if (!question) return;
       if (!lastResult || !(lastResult.segments || []).length) {
         status.classList.add("is-error");
-        status.textContent = "❌ Run an analysis first, the AI answers from its transcript.";
+        status.textContent = "Run an analysis first, the AI answers from its transcript.";
         return;
       }
       btn.disabled = true;
@@ -2034,11 +2034,11 @@
         const d = await r.json();
         appendQaMessage("a", d.answer || "(no answer)");
         status.classList.add("is-ok");
-        status.textContent = `✓ Answered from ${d.context_segments} transcript lines`;
+        status.textContent = `Answered from ${d.context_segments} transcript lines`;
       } catch (err) {
         appendQaMessage("err", err.message);
         status.classList.add("is-error");
-        status.textContent = `❌ ${err.message}`;
+        status.textContent = `${err.message}`;
       } finally {
         btn.disabled = false;
         input.focus();
@@ -2095,7 +2095,7 @@
       const password = pass?.value || "";
       if (!username || !password) {
         status.classList.add("is-error");
-        status.textContent = "❌ Enter both a username and a password.";
+        status.textContent = "Enter both a username and a password.";
         return;
       }
       btn.disabled = true;
@@ -2113,11 +2113,11 @@
         sessionStorage.setItem(ADMIN_TOKEN_KEY, d.token);
         pass.value = "";
         status.classList.add("is-ok");
-        status.textContent = "✓ Signed in";
+        status.textContent = "Signed in";
         guardDashboard();
       } catch (err) {
         status.classList.add("is-error");
-        status.textContent = `❌ ${err.message}`;
+        status.textContent = `${err.message}`;
       } finally {
         btn.disabled = false;
       }
@@ -2157,7 +2157,7 @@
           `${check.new_corrections ?? 0} / ${check.threshold ?? 20}`;
         document.getElementById("dash-flywheel-note").textContent =
           check.ready
-            ? "✓ Threshold reached, retrain can be triggered."
+            ? "Threshold reached, retrain can be triggered."
             : `${check.remaining ?? "?"} more corrections needed to trigger auto-retrain.`;
       }
 

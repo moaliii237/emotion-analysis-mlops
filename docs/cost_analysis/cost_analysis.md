@@ -361,7 +361,7 @@ The deployed system uses a dedicated GPU-backed Azure Machine Learning endpoint 
 
 Although GPU resources increase operational expenditure compared with CPU-only deployments, they provide substantial improvements in inference speed and throughput. This trade-off was considered acceptable because real-time prediction performance is a core requirement of the platform.
 
-Monitoring data demonstrates that the application backend remains lightly utilized while the machine learning workload is isolated to the dedicated inference infrastructure. This separation improves scalability and allows future resource allocation decisions to be made independently for the application and machine learning layers.
+Monitoring data demonstrates that the application backend remains lightly used while the machine learning workload is isolated to the dedicated inference infrastructure. This separation improves scalability and allows future resource allocation decisions to be made independently for the application and machine learning layers.
 
 
 

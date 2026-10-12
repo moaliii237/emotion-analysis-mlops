@@ -72,7 +72,7 @@ function showToast(message, type = "info", title = null, duration = 4000) {
     const container = document.getElementById("toast-container");
     if (!container) return;
     
-    const icons = { success: "✓", error: "!", warning: "!", info: "i" };
+    const icons = { success: "", error: "!", warning: "!", info: "i" };
     const defaultTitles = { success: "Done", error: "Error", warning: "Warning", info: "Info" };
     
     const toast = document.createElement("div");
@@ -556,8 +556,8 @@ function renderTranscript(segments) {
             <td style="color: var(--text-mute);">${escapeHtml(s.Translation || "")}</td>
             <td><span class="emotion-pill"><span class="emotion-pill-dot" style="background: ${meta.color};"></span>${s.Emotion}</span></td>
             <td>
-                <button onclick="submitSegmentFeedback(${idx}, true)" style="border:none;background:none;cursor:pointer;color:#10A37F;font-size:1rem;">👍</button>
-                <button onclick="submitSegmentFeedback(${idx}, false)" style="border:none;background:none;cursor:pointer;color:#FF5454;font-size:1rem;">👎</button>
+                <button onclick="submitSegmentFeedback(${idx}, true)" style="border:none;background:none;cursor:pointer;color:#10A37F;font-size:1rem;"></button>
+                <button onclick="submitSegmentFeedback(${idx}, false)" style="border:none;background:none;cursor:pointer;color:#FF5454;font-size:1rem;"></button>
                 <select id="fb-seg-${idx}" style="padding:0.2rem 0.4rem;border-radius:6px;border:1px solid rgba(255,255,255,0.15);background:var(--surface,#1e1e2e);color:var(--text,#fafafa);font-size:0.75rem;display:none;">
                     ${options}
                 </select>
@@ -940,8 +940,8 @@ function renderFeedbackUI(result, inputText) {
     section.innerHTML = `
         <p style="margin:0 0 0.75rem; font-size:0.85rem; color:var(--text-mute);">Was this prediction correct?</p>
         <div style="display:flex; gap:0.5rem; align-items:center; flex-wrap:wrap;">
-            <button id="fb-yes" style="padding:0.4rem 1rem; border-radius:8px; border:none; background:#10A37F; color:#fff; cursor:pointer;">👍 Yes</button>
-            <button id="fb-no"  style="padding:0.4rem 1rem; border-radius:8px; border:none; background:#FF5454; color:#fff; cursor:pointer;">👎 No</button>
+            <button id="fb-yes" style="padding:0.4rem 1rem; border-radius:8px; border:none; background:#10A37F; color:#fff; cursor:pointer;">Yes</button>
+            <button id="fb-no"  style="padding:0.4rem 1rem; border-radius:8px; border:none; background:#FF5454; color:#fff; cursor:pointer;">No</button>
             <span id="fb-correction" hidden style="display:flex; gap:0.5rem; align-items:center;">
                 <select id="fb-label" style="padding:0.35rem 0.5rem; border-radius:8px; border:1px solid rgba(255,255,255,0.15); background:var(--surface, #1e1e2e); color:var(--text, #fafafa);">
                     ${Object.keys(EMOTION_META).map(e => `<option value="${e}">${e}</option>`).join("")}

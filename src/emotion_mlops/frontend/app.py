@@ -24,37 +24,37 @@ SERVER_API_URL = os.getenv("SERVER_API_URL", "http://localhost:2001")
 # --- Emotion metadata (emoji, color, description) ------------------------
 EMOTION_META = {
     "anger": {
-        "emoji": "😠",
+        "emoji": "",
         "color": "#FF4B4B",
         "desc": "Strong displeasure or hostility",
     },
     "disgust": {
-        "emoji": "🤢",
+        "emoji": "",
         "color": "#7BC74D",
         "desc": "Strong aversion or revulsion",
     },
     "fear": {
-        "emoji": "😨",
+        "emoji": "",
         "color": "#9B59B6",
         "desc": "Anxiety, worry, or apprehension",
     },
     "happiness": {
-        "emoji": "😄",
+        "emoji": "",
         "color": "#FFC107",
         "desc": "Joy, contentment, or pleasure",
     },
     "neutral": {
-        "emoji": "😐",
+        "emoji": "",
         "color": "#9E9E9E",
         "desc": "No strong emotional signal",
     },
     "sadness": {
-        "emoji": "😢",
+        "emoji": "",
         "color": "#3498DB",
         "desc": "Sorrow, grief, or unhappiness",
     },
     "surprise": {
-        "emoji": "😲",
+        "emoji": "",
         "color": "#FF9800",
         "desc": "Astonishment or unexpected reaction",
     },
@@ -64,7 +64,7 @@ EMOTION_META = {
 # --- Page configuration ---------------------------------------------------
 st.set_page_config(
     page_title="EmotionScope",
-    page_icon="🎭",
+    page_icon="",
     layout="wide",
     initial_sidebar_state="expanded",
 )
@@ -134,7 +134,7 @@ st.markdown(
 
 # --- Sidebar --------------------------------------------------------------
 with st.sidebar:
-    st.markdown("### ⚙️ Settings")
+    st.markdown("### Settings")
 
     api_choice = st.radio(
         "API source",
@@ -151,7 +151,7 @@ with st.sidebar:
     st.divider()
 
     # History stats in sidebar
-    st.markdown("### 📊 Session Stats")
+    st.markdown("### Session Stats")
     st.metric("Total predictions", len(st.session_state.history))
 
     if st.session_state.history:
@@ -164,7 +164,7 @@ with st.sidebar:
 
     st.divider()
 
-    st.markdown("### 📚 About")
+    st.markdown("### About")
     st.markdown(
         "**EmotionScope** is a fine-tuned DeBERTa-based emotion classifier "
         "trained on TV transcripts and GoEmotions data."
@@ -172,7 +172,7 @@ with st.sidebar:
 
 
 # --- Header ---------------------------------------------------------------
-st.markdown('<h1 class="main-title">🎭 EmotionScope</h1>', unsafe_allow_html=True)
+st.markdown('<h1 class="main-title">EmotionScope</h1>', unsafe_allow_html=True)
 st.markdown(
     '<p class="subtitle">Real-time emotion analysis powered by DeBERTa</p>',
     unsafe_allow_html=True,
@@ -183,18 +183,18 @@ st.markdown(
 try:
     health = requests.get(f"{API_URL}/health", timeout=3).json()
     if health.get("model_loaded"):
-        st.success(f"✅ Connected, model: `{health.get('model_version')}`")
+        st.success(f"Connected, model: `{health.get('model_version')}`")
     else:
-        st.warning("⚠️ API is reachable but model is not loaded.")
+        st.warning("API is reachable but model is not loaded.")
         st.stop()
 except Exception:
-    st.error(f"❌ Cannot reach API at {API_URL}. Is the server running?")
+    st.error(f"Cannot reach API at {API_URL}. Is the server running?")
     st.stop()
 
 
 # --- Tabs for organization ------------------------------------------------
 tab_predict, tab_history, tab_analytics = st.tabs(
-    ["🔮 Predict", "📜 History", "📈 Analytics"]
+    ["Predict", "History", "Analytics"]
 )
 
 
@@ -202,7 +202,7 @@ tab_predict, tab_history, tab_analytics = st.tabs(
 # TAB 1: PREDICTION
 # ==========================================================================
 with tab_predict:
-    st.markdown("### 📝 Enter a sentence")
+    st.markdown("### Enter a sentence")
 
     samples = [
         "I cannot believe this is happening to me!",
@@ -228,7 +228,7 @@ with tab_predict:
         st.markdown("**Quick samples:**")
         for i, sample in enumerate(samples[:3]):
             if st.button(
-                f"📝 Sample {i+1}", key=f"sample_{i}", use_container_width=True
+                f"Sample {i+1}", key=f"sample_{i}", use_container_width=True
             ):
                 st.session_state["sample_text"] = sample
                 st.rerun()
@@ -237,16 +237,16 @@ with tab_predict:
         text_input = st.session_state.pop("sample_text")
 
     predict_button = st.button(
-        "🔮 Analyze Emotion",
+        "Analyze Emotion",
         type="primary",
         use_container_width=True,
     )
 
     if predict_button:
         if not text_input.strip():
-            st.warning("⚠️ Please enter a sentence first.")
+            st.warning("Please enter a sentence first.")
         else:
-            with st.spinner("🔍 Analyzing emotion..."):
+            with st.spinner("Analyzing emotion..."):
                 try:
                     response = requests.post(
                         f"{API_URL}/predict/text",
@@ -286,7 +286,7 @@ with tab_predict:
                     )
 
                     # Confidence bar chart
-                    st.markdown("### 📊 Confidence Score")
+                    st.markdown("### Confidence Score")
                     fig = go.Figure(
                         go.Bar(
                             x=[confidence * 100],
@@ -311,27 +311,27 @@ with tab_predict:
 
                     # Metrics
                     col_a, col_b, col_c = st.columns(3)
-                    col_a.metric("📝 Words", len(text_input.split()))
-                    col_b.metric("🔤 Characters", len(text_input))
-                    col_c.metric("🤖 Model", result["model_version"])
+                    col_a.metric("Words", len(text_input.split()))
+                    col_b.metric("Characters", len(text_input))
+                    col_c.metric("Model", result["model_version"])
 
-                    with st.expander("🔬 View raw API response"):
+                    with st.expander("View raw API response"):
                         st.json(result)
 
-                    st.success("✅ Saved to history. Check the **History** tab.")
+                    st.success("Saved to history. Check the **History** tab.")
 
                 except requests.exceptions.RequestException as e:
-                    st.error(f"❌ Request failed: {e}")
+                    st.error(f"Request failed: {e}")
 
 
 # ==========================================================================
 # TAB 2: HISTORY
 # ==========================================================================
 with tab_history:
-    st.markdown("### 📜 Prediction History")
+    st.markdown("### Prediction History")
 
     if not st.session_state.history:
-        st.info("🔍 No predictions yet. Make a prediction in the **Predict** tab.")
+        st.info("No predictions yet. Make a prediction in the **Predict** tab.")
     else:
         # Convert history to DataFrame for nice display
         df = pd.DataFrame(st.session_state.history)
@@ -340,7 +340,7 @@ with tab_history:
         # Display options
         col1, col2, col3 = st.columns([2, 1, 1])
         with col1:
-            search = st.text_input("🔍 Search text", "", key="search_history")
+            search = st.text_input("Search text", "", key="search_history")
         with col2:
             emotion_filter = st.selectbox(
                 "Filter by emotion",
@@ -350,7 +350,7 @@ with tab_history:
         with col3:
             st.markdown(" ")  # spacing
             st.markdown(" ")
-            if st.button("🗑️ Clear history", use_container_width=True):
+            if st.button("Clear history", use_container_width=True):
                 st.session_state.history = []
                 st.rerun()
 
@@ -381,13 +381,13 @@ with tab_history:
         )
 
         # Download buttons
-        st.markdown("### 💾 Export")
+        st.markdown("### Export")
         col_csv, col_json = st.columns(2)
 
         with col_csv:
             csv = filtered_df.to_csv(index=False).encode("utf-8")
             st.download_button(
-                "v️ Download as CSV",
+                "vDownload as CSV",
                 data=csv,
                 file_name=f"emotion_history_{datetime.now().strftime('%Y%m%d_%H%M%S')}.csv",
                 mime="text/csv",
@@ -397,7 +397,7 @@ with tab_history:
         with col_json:
             json_data = filtered_df.to_json(orient="records", indent=2).encode("utf-8")
             st.download_button(
-                "v️ Download as JSON",
+                "vDownload as JSON",
                 data=json_data,
                 file_name=f"emotion_history_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json",
                 mime="application/json",
@@ -409,19 +409,19 @@ with tab_history:
 # TAB 3: ANALYTICS
 # ==========================================================================
 with tab_analytics:
-    st.markdown("### 📈 Analytics Dashboard")
+    st.markdown("### Analytics Dashboard")
 
     if not st.session_state.history:
-        st.info("🔍 Make some predictions first to see analytics here.")
+        st.info("Make some predictions first to see analytics here.")
     else:
         df = pd.DataFrame(st.session_state.history)
 
         # Top metrics
         col1, col2, col3, col4 = st.columns(4)
-        col1.metric("📊 Total predictions", len(df))
-        col2.metric("📏 Avg confidence", f"{df['confidence'].mean() * 100:.1f}%")
-        col3.metric("🎯 Unique emotions", df["emotion"].nunique())
-        col4.metric("📝 Avg text length", f"{df['text'].str.len().mean():.0f} chars")
+        col1.metric("Total predictions", len(df))
+        col2.metric("Avg confidence", f"{df['confidence'].mean() * 100:.1f}%")
+        col3.metric("Unique emotions", df["emotion"].nunique())
+        col4.metric("Avg text length", f"{df['text'].str.len().mean():.0f} chars")
 
         st.divider()
 
@@ -429,7 +429,7 @@ with tab_analytics:
         col_pie, col_bar = st.columns(2)
 
         with col_pie:
-            st.markdown("#### 🥧 Emotion Distribution")
+            st.markdown("#### Emotion Distribution")
             emotion_counts = df["emotion"].value_counts()
             colors = [EMOTION_META[e]["color"] for e in emotion_counts.index]
 
@@ -456,7 +456,7 @@ with tab_analytics:
             st.plotly_chart(fig_pie, use_container_width=True)
 
         with col_bar:
-            st.markdown("#### 📊 Average Confidence by Emotion")
+            st.markdown("#### Average Confidence by Emotion")
             avg_conf = df.groupby("emotion")["confidence"].mean().sort_values()
             colors_bar = [EMOTION_META[e]["color"] for e in avg_conf.index]
 
